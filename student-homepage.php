@@ -65,14 +65,14 @@ header("location:student-login.php");
         <div id="pageheader-background"><!-- area with alternate background -->
             <div class="pageheader-title">
              <span class="mailno"><?php include "StudentUnreadMail.php"; ?></span>
-                <h1>Student Home</h1><span style="margin:0px 30px 0px 0px; float:right;"> 
-                <a href="StudentRegisteredWebinar.php" class="button red">Registered Webinar</a>   
-                 <a href="StudentWatchedWebinar.php" class="button red">Watched Webinar</a>               
-                 <a href="postedJob.php" class="button red">Job Application</a> 
-                  <a href="AppliedPostedJob.php" class="button red">Applied Job</a> 
-                <a href="studentInbox.php" class="button red">Inbox</a> 
-                <a href="student-profile.php" class="button red">Profile</a> 
-                <a href="studentAccount.php" class="button red">Account</a>
+                <h1>My Dashboard</h1><span style="margin:0px 30px 0px 0px; float:right;"> 
+                <a href="StudentRegisteredWebinar.php" class="button red">My Webinars</a>   
+                 <a href="StudentWatchedWebinar.php" class="button red">Watched Webinars</a>               
+                 <a href="postedJob.php" class="button red">Job Board</a> 
+                  <a href="AppliedPostedJob.php" class="button red">My Jobs</a> 
+                <a href="studentInbox.php" class="button red">My Inbox</a> 
+                <a href="student-profile.php" class="button red">My Profile</a> 
+                <a href="studentAccount.php" class="button red"> My Account</a>
                 <a href="logout.php" class="button red">Logout</a></span>
             </div>        
         </div>        
@@ -120,38 +120,25 @@ include "config.php";
                         </div>  
                          <!-- details -->
                        </div></div> 
-					 
+
+				<div class="title"><h4>Industry</h4></div>	 
 				 <ul class="sidebar">                        
-                    <li><a href="#">High Tech/Internet/Software</a></li>
-                    <li><a href="#">Financial Service</a></li>
-                    <li><a href="#">Retail</a></li>
-                    <li><a href="#">Public Sector</a></li>
-                    <li><a href="#">Social Sector</a></li>	
-                    <li><a href="#">Healthcare</a></li>
+                    <li><a href="#">Mobile Development</a></li>
+                    <li><a href="#">Consulting</a></li>
+                    <li><a href="#">Software</a></li>
                 </ul>
 				
 				<div class="title"><h4>Positions</h4></div>
 				 <ul class="sidebar">                        
                     <li><a href="#">Full time</a></li>
                     <li><a href="#">Co-op</a></li>
-                    <li><a href="#">Professional Experience Year </a></li>
-                    <li><a href="#">Summer Internship</a></li>
-                    <li><a href="#">Contractor</a></li>
-                    <li><a href="#">Volunteers</a></li>
-                </ul>
-				
-				<div class="title"><h4>Location</h4></div>
-				 <ul class="sidebar">                        
-                    <li><a href="#">City</a></li>
-                    <li><a href="#">Province</a></li>
-                </ul>
-                            
+                    <li><a href="#">PEY</a></li>
+                </ul> 
                             
         <div class="clear"></div> 
 
             </div><!-- end grid_4 -->
         </div><!-- end side bar -->    
-
 
 		<!-- posts -->
 		<div class="section">
@@ -283,18 +270,7 @@ include "config.php";
                             </div>
 							<div class="padding10 float-left"><p>Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu cm non stibulum no. Aliquam vulputate, pede vel vehicula. rutrum erat, eu cm non stibulum no. Aliquam vulputate, pede vel vehicula Aliquam vulputate, pede vel vehicula Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu cm non stibulum no. vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu cm non stibulum no. Aliquam vulputate, pede vel vehicula. rutrum erat, eu cm non stibulum no. Aliquam vulputate, pede vel vehicula Aliquam vulputate, pede vel vehicula Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu cm non stibulum no. vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu cm non stibulum no. Aliquam vulputate, pede vel vehicula. rutrum erat, eu cm non stibulum no. Aliquam vulputate, pede vel vehicula Aliquam vulputate, pede vel vehicula Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu cm non stibulum no.<br><a href="StudentRegisterConfirmation.php?regid=1473681284795160576">Register</a></p></div>
 				 </div>  -->
-							
-							
-				
-					
-					   
-					
-					 
-					   
-					    
-			
-              
-
+						
         </div><!-- end grid_12 --> 
         </div><!-- end recent posts --> 
 
