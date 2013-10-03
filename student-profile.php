@@ -865,6 +865,15 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
                   </label>
                   <input type="hidden" name="hdn_sessionid" id="hdn_sessionid" value="<?php print $session; ?>">
                 </div>
+                 <?php
+				
+				if($Profile_Image!="")
+				{
+				?>
+                <a href="removeStudentImage.php?sid=<?php print $s_uid; ?>" > Remove Image </a>
+                <?php
+				}
+				?>
                 
                 <div style="float:left;color:#F00; font-weight:400; padding-top:2px; display:none; padding-left:5px;" id="error5"></div>
                 </td>
@@ -879,7 +888,7 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
                 <div style="float:left; display:none" id="divedit">
                   <select name="txtSchool" id="txtSchool">
                     <option value="">Select University</option>
-                    <option value="University of toronto" <?php if($schoolName1=='University of toronto'){?> selected='selected' <?php  } ?>>University of toronto</option>
+                    <option value="University of Toronto" <?php if($schoolName1=='University of Toronto'){?> selected='selected' <?php  } ?>>University of Toronto</option>
                     <option value="University of Waterloo" <?php if($schoolName1=='University of Waterloo'){?> selected='selected' <?php  } ?>>University of Waterloo</option>
                     <option value="Ryerson University" <?php if($schoolName1=='Ryerson University'){?> selected='selected' <?php  } ?>>Ryerson University</option>
                     <option value="York University" <?php if($schoolName1=='York University'){?> selected='selected' <?php  } ?>>York University</option>
@@ -1201,7 +1210,7 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
            <div style="height: 180px;Serif;overflow:auto;">
           <table width="420" border="1"  style="margin:20px; border:1px solid #666666; padding:10px;">
             <tr>
-              <th scope="col">Application</th>
+              <th scope="col">Company</th>
               <th scope="col">Status</th>
             </tr>
                <?php
@@ -1214,12 +1223,17 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
 							{
 								
 								$JobId=$res3["JobId"];
-								$description=$res3["description"];
+								$apply_status=$res3["apply_status"];
+								
+								$sqlget31="Select Company_name  from recruiter_jopposting where id=".$JobId;							
+							    $ses_result31=mysql_query($sqlget31);
+								$res31=mysql_fetch_array($ses_result31);
+								$cmny=$res31['Company_name'];
 								
 						?>
             <tr>
-              <td><?php print $JobId; ?></td>
-              <td>Due in 2 days</td>
+              <td><?php print $cmny; ?></td>
+              <td><?php print $apply_status; ?></td>
             </tr>
            
             <?php

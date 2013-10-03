@@ -18,28 +18,6 @@ $message_mail = str_replace("'","''",$_POST["message_mail"]);
 $explodeit = explode(",", $to_mail);   
 
 
-//  Restrict the duplicate Email
-$totarr=count($explodeit)-1;
-
-for($i=0;$i<=$totarr/2;$i++)
-{
-	
-	for($j=$i+1;$j<=$totarr;$j++)
-	{
-		
-       if(isset($explodeit[$i],$explodeit[$j]))
-	   {
-		if(trim($explodeit[$i])==trim($explodeit[$j]))
-		{
-			
-			unset($explodeit[$j]);
-		}
-	   }
-	}
-	
-}
-
-
 // here $explodeit act as an array
 
 foreach ($explodeit as $value) 

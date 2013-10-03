@@ -130,6 +130,7 @@ function filterjob()
                  }                 
 				 ?>
                  <a href="StudentRegisteredWebinar.php" class="button red">Registered Webinar</a>
+                  <a href="StudentWatchedWebinar.php" class="button red">Watched Webinar</a>       
                 <a href="postedJob.php" class="button red">JobApplication</a> 
                  <a href="AppliedPostedJob.php" class="button red">Applied Job</a> 
                 <a href="studentInbox.php" class="button red">Inbox</a> 
@@ -339,6 +340,7 @@ function filterjob()
 		{
 		while($res=mysql_fetch_array($ses_result))
 		{
+			$id=$res["id"];
 			$Job_title=$res["Job_title"];
 			$Job_id=$res["Job_id"];
 			$Job_Dept=$res["Job_Dept"];
@@ -350,21 +352,21 @@ function filterjob()
 			
 			
 			
-		$sqlget2="Select *  from student_jobapplication where stuID='".$s_uid."' AND JobId='".$Job_id."'";
-						
+		$sqlget2="Select *  from student_jobapplication where stuID='".$s_uid."' AND JobId='".$id."'";
+			//print $sqlget2;			
 		$ses_result2=mysql_query($sqlget2);
 		$rowcount2= mysql_num_rows($ses_result2);
 				
 		
-		//if($rowcount2=='0')
-		//{		
+		if($rowcount2=='0')
+		{		
 		
 			
 ?>
 		 <!-- post 4 -->
        <div class="job-post">     
 		<div class="titl">
-        <span class="date"><a href="studentJobApplication.php?recid=<?php print $recruiter_id; ?>&Jobid=<?php print $Job_id; ?>&Jobtitle=<?php print $Job_title; ?>&Cmpny=<?php print $Company_Name; ?>" class="button red">Apply</a></span>
+        <span class="date"><a href="studentJobApplication.php?recid=<?php print $recruiter_id; ?>&Jobid=<?php print $id; ?>&Jobtitle=<?php print $Job_title; ?>&Cmpny=<?php print $Company_Name; ?>" class="button red">Apply</a></span>
         <h4><?php print $Job_title; ?></h4>
        <table width="450" border="0" cellpadding="10px;">
          <tr>
@@ -403,7 +405,7 @@ function filterjob()
 		 </div>
 		
 		<?php
-		//}
+		}
 		}
 		}
 		?>

@@ -383,7 +383,7 @@ xmlhttp.send();
             </tr>
             <tr>
               <td>
-                  <input type="checkbox" name="session_chk_1" id="session_chk_1" value="University of Toronto">
+                  <input type="checkbox" name="session_chk_1" id="session_chk_1" value="University of toronto">
                   University of toronto<br>
                   <input type="checkbox" name="session_chk_2" id="session_chk_2" value="University of Waterloo">
                   University of Waterloo<br>

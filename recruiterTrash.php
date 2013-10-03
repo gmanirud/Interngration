@@ -68,6 +68,7 @@ header("location:recruiter-login.php");
                 <h1>Recruiter Trash</h1><span style="margin:0px 30px 10px 0px; float:right;">
                   <a href="https://login.citrixonline.com/login?service=https%3A%2F%2Fglobal.gotomeeting.com%2Fmeeting%2Fj_spring_cas_security_check" target="_blank" class="button red">Schedule your Webinar</a>                
                 <a href="RecruiterUpcomingWebinar.php" class="button red">Scheduled Webinar</a>
+                 <a href="RecruiterWatchedWebinar.php" class="button red">Past Webinar</a>
                 <a href="recruiterInbox.php" class="button red">Inbox</a>
                 <a href="jobPosting.php" class="button red">Job Posting</a>
                 <a href="recruiterAccount.php" class="button red">Account</a>
@@ -158,7 +159,7 @@ header("location:recruiter-login.php");
 			$to_mail=$res["to_mail"];
 			$subject=$res["subject"];
 			$flg_read=$res["flg_read"];
-			$message=limit_words($res["message"],25); 
+			$message=limit_words($res["message"],10); 
 			$SendDate=$res["SendDate"];			
 			$dtmonth = date('M',strtotime($SendDate));
 			$dtdate = date('d',strtotime($SendDate));
@@ -201,8 +202,7 @@ header("location:recruiter-login.php");
 		
 		
 		
-			if($flg_read=="1")
-			{
+			
 			?>
                 <div class="post-out-message">     
 					    <div class="header-message">
@@ -212,19 +212,8 @@ header("location:recruiter-login.php");
                                 <p class="post-subtitle"><?php print $message; ?> ...</p> </a>
 							</div></div>
                             <?php
-			}
-			else
-			{
-				?>
-				 <div class="post-out-message">     
-					    <div class="header-message" style="background-color:#B4B4B4">
-                     
-                                <div class="date" style="color:#000"><?php print $SendDate; ?></div>
-         <input name="chkbx<?php print $i; ?>" id="chkbx[]" type="checkbox" value="<?php print $eid; ?>" style="float:left; margin:10px 10px 50px 10px;"><h4><a href="recruiterTrashView.php?eid=<?php print $eid; ?>"><?php print $sendername; ?>-<?php print $subject; ?> </h4>
-                                <p class="post-subtitle"><?php print $message; ?> ...</p> </a>
-							</div></div>
-		<?php		
-			}
+			
+			
 							}
 		 }
 							?>

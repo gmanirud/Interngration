@@ -41,10 +41,13 @@ header("location:recruiter-login.php");
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   <script>
   $(function() {
-   /* $( "#dt_post" ).datepicker();
+	  var currentDate = new Date(); 
+	  $( "#dt_post" ).datepicker({ minDate: 0, maxDate: "+1Y +1M +1D" });
+	  $("#dt_post").datepicker().datepicker("setDate", currentDate);
+   // $( "#dt_post" ).datepicker();
     $( "#dt_post" ).datepicker( "option", "dateFormat","yy-mm-dd" );
-	$( "#dt_post" ).datepicker({ minDate: -20, maxDate: "+1M +10D" });*/
-	$( "#dead_line" ).datepicker({ minDate: -0, maxDate: "+1Y +1M +1D" });
+	
+	$( "#dead_line" ).datepicker({ minDate: 0, maxDate: "+1Y +1M +1D" });
     $( "#dead_line" ).datepicker();
 	$( "#dead_line" ).datepicker( "option", "dateFormat","yy-mm-dd" );
 	
@@ -70,13 +73,13 @@ function chkval()
 		document.getElementById("job_title").focus();
 		return false;
 	}
-	if(document.getElementById("job_id").value=="")
+	/*if(document.getElementById("job_id").value=="")
 	{
 		document.getElementById("error2").style.display='block';
 		document.getElementById("error2").innerHTML='Please Enter the Job Id!';
 		document.getElementById("job_id").focus();
 		return false;
-	}
+	}*/
 	if(document.getElementById("jbdept").value=="")
 	{
 		document.getElementById("error2").style.display='block';
@@ -91,6 +94,13 @@ function chkval()
 		document.getElementById("jbdetails").focus();
 		return false;
 	}
+	if(document.getElementById("dt_post").value=="")
+	{
+		document.getElementById("error2").style.display='block';
+		document.getElementById("error2").innerHTML='Please Enter the Date Post!';
+		document.getElementById("dt_post").focus();
+		return false;
+	}
 	if(document.getElementById("dead_line").value=="")
 	{
 		document.getElementById("error2").style.display='block';
@@ -98,6 +108,7 @@ function chkval()
 		document.getElementById("dead_line").focus();
 		return false;
 	}
+	
 	
 	return true;
 }
@@ -133,6 +144,7 @@ function chkval()
                 <h1>Job Posting</h1><span style="margin:0px 30px 10px 0px; float:right;">
                   <a href="https://login.citrixonline.com/login?service=https%3A%2F%2Fglobal.gotomeeting.com%2Fmeeting%2Fj_spring_cas_security_check" target="_blank" class="button red">Schedule your Webinar</a>                
                 <a href="RecruiterUpcomingWebinar.php" class="button red">Scheduled Webinar</a>
+                 <a href="RecruiterWatchedWebinar.php" class="button red">Past Webinar</a>
                 <a href="recruiterInbox.php" class="button red">Inbox</a>
                 <a href="jobPosting.php" class="button red">Job Posting</a>
                 <a href="recruiterAccount.php" class="button red">Account</a>
@@ -151,6 +163,11 @@ function chkval()
      <div style="float:left;color:#390; font-weight:400;" id="stats">Job Posted Successfully</div>
      <?php
 	 }
+	 ?>
+     
+     <?php
+	 date_default_timezone_set('GMT-4.30');
+	 $todaydate = date('Y-m-d');
 	 ?>
 		<!-- grid columns -->
 		<div class="section">
@@ -180,6 +197,10 @@ function chkval()
   <tr>
     <td>Job Details</td>
     <td><textarea name="jbdetails" id="jbdetails"  cols="27"></textarea></td>
+  </tr>
+  <tr>
+    <td>Date Posted</td>
+    <td><input type="text" size="30" name="dt_post" id="dt_post" ></td>
   </tr>
   <tr>
     <td>Deadline</td>

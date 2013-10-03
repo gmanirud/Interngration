@@ -66,14 +66,17 @@ header("location:student-login.php");
             <div class="pageheader-title">
              <span class="mailno"><?php include "StudentUnreadMail.php"; ?></span>
                 <h1>My Dashboard</h1><span style="margin:0px 30px 0px 0px; float:right;"> 
-                <a href="StudentRegisteredWebinar.php" class="button red">My Webinars</a>   
-                 <a href="StudentWatchedWebinar.php" class="button red">Watched Webinars</a>               
-                 <a href="postedJob.php" class="button red">Job Board</a> 
-                  <a href="AppliedPostedJob.php" class="button red">My Jobs</a> 
+                
+                <a href="StudentRegisteredWebinar.php" class="button red">My Webinars</a>
+                <a href= "student-homepage.php" class="button red">My Dashboard</a>
+                <a href="StudentWatchedWebinar.php" class="button red">Watched Webinars</a>               
+                <a href="postedJob.php" class="button red">Job Board</a> 
+                <a href="AppliedPostedJob.php" class="button red">My Jobs</a> 
                 <a href="studentInbox.php" class="button red">My Inbox</a> 
                 <a href="student-profile.php" class="button red">My Profile</a> 
                 <a href="studentAccount.php" class="button red"> My Account</a>
                 <a href="logout.php" class="button red">Logout</a></span>
+
             </div>        
         </div>        
                           
@@ -119,21 +122,9 @@ include "config.php";
             </div>  
                         </div>  
                          <!-- details -->
-                       </div></div> 
 
-				<div class="title"><h4>Industry</h4></div>	 
-				 <ul class="sidebar">                        
-                    <li><a href="#">Mobile Development</a></li>
-                    <li><a href="#">Consulting</a></li>
-                    <li><a href="#">Software</a></li>
-                </ul>
-				
-				<div class="title"><h4>Positions</h4></div>
-				 <ul class="sidebar">                        
-                    <li><a href="#">Full time</a></li>
-                    <li><a href="#">Co-op</a></li>
-                    <li><a href="#">PEY</a></li>
-                </ul> 
+                    </div>
+                </div> 
                             
         <div class="clear"></div> 
 
@@ -166,7 +157,8 @@ include "config.php";
             </div>  
                         </div>  
                          <!-- details -->
-                       </div></div>                    
+                    </div>
+                </div>                    
                     
 				<!-- post 2 -->
                 <div class="post-out-wrapper">
@@ -202,7 +194,8 @@ include "config.php";
             </div>  
                         </div>  
                          <!-- details -->
-                       </div></div> 
+                    </div>
+                </div> 
                       
 					   <?php
 					     include "config.php";

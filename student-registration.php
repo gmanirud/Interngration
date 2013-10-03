@@ -190,7 +190,7 @@ function check()
 	if(document.getElementById("Company").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Enter the Affiliated University...!';
+		document.getElementById("error").innerHTML='Select Affiliated University...!';
 		document.getElementById("Company").focus();
 		return false;
 	}
@@ -312,7 +312,11 @@ function check()
                 <div class="one-half"><h4>Basic Information</h4>
 <div style="margin-top:20px;">First Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="30"  name="FirstName" id="FirstName" placeholder="Enter First Name"><br><br>
 Last Name &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="30"  name="LastName" id="LastName" placeholder="Enter Last Name"><br><br>
-Affiliated University &nbsp; &nbsp; &nbsp;<input type="text" name="Company" id="Company" size="30" placeholder="Enter Affiliated University" ><br><br>
+Affiliated University &nbsp; &nbsp; &nbsp; <select name="Company" id="Company" style="width:230px;">
+              <option value="">Select University</option>
+              <option value="University of Toronto" >University of Toronto</option>
+              <option value="University of Waterloo">University of Waterloo</option>
+              </select><br><br>
 City &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Address" id="Address" size="30" placeholder="Enter City" ><br><br>
 Country &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Country" id="Country" size="30" placeholder="Enter Country" ><br><br>
 </div>
