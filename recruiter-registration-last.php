@@ -15,7 +15,7 @@ header("location:recruiter-registration.php");
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Recruiter Profile</title>
+<title>Recruiter Registration - Interngration</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 
@@ -185,14 +185,14 @@ function updaterecruiterprofile()
 	if(document.getElementById("txtcompany").value=="")
 	{
 		document.getElementById("error2").style.display='block';
-		document.getElementById("error2").innerHTML='Please Enter the Company!';
+		document.getElementById("error2").innerHTML='Please enter your Company name.';
 		document.getElementById("txtcompany").focus();
 		return false;
 	}
 	if(document.getElementById("txthr").value=="")
 	{
 		document.getElementById("error2").style.display='block';
-		document.getElementById("error2").innerHTML='Please Enter HR Lead!';
+		document.getElementById("error2").innerHTML='Please enter your name.';
 		document.getElementById("txthr").focus();
 		return false;
 	}
@@ -264,7 +264,7 @@ xmlhttp.send();
     <!-- page header -->
     <div id="pageheader-background"><!-- area with alternate background -->
       <div class="pageheader-title">
-        <h1>Recruiter Register</h1>
+        <h1>Recruiter Registration</h1>
       </div>
     </div>
     
@@ -316,8 +316,8 @@ xmlhttp.send();
               <td valign="top">
                <div style="float:left;" id="divupdate"> <br/>
                     <li>Company Name: <?php print $companyName; ?></li>
-                    <li>HR lead: <?php print $hrLead; ?></li>
-                    <li>Contact: <?php print $Email; ?></li>
+                    <li>Recruiter Name: <?php print $hrLead; ?></li>
+                    <li>E-mail: <?php print $Email; ?></li>
                   </div>
                
               <div style="float:left; display:none" id="divedit">
@@ -337,7 +337,7 @@ xmlhttp.send();
         <div class="grid_8" style="min-height:228px">
           <div>
             <div style="float:left;">
-              <h4 style="margin:20px;">About Me</h4>
+              <h4 style="margin:20px;">About My Company</h4>
             </div>
             <div style="float:right; padding-right:20px; padding-top:10px;">
               <input type="button" value="Edit" onClick="editrecruiterabout()" name="about_edit" id="about_edit" style="width:60px;cursor:pointer">
@@ -357,8 +357,8 @@ xmlhttp.send();
         </div>
         <form id="frmRegister" name="frmRegister" method="post" action="RecruiterActivationMail.php">
         <div class="grid_17">
-          <h4 style="margin:20px 0px 10px 20px;">What are you looking for</h4>
-          <p style="margin:0px 0px 0px 20px;">Include the following Students as potential candidates.</p>
+          <h4 style="margin:20px 0px 10px 20px;">Who are you looking for</h4>
+          <p style="margin:0px 0px 0px 20px;">Filter students by: </p>
          
           <table width="280" border="0" height="160" style="margin:0px 10px 20px 20px; border:1px solid #666666; padding:10px; float:left;">
             <tr>
@@ -367,24 +367,32 @@ xmlhttp.send();
             <tr>
               <td>
                   <input type="checkbox" name="academic_1" id="academic_1" value="Engineering">
-                  Engineering<br>
+                  Engineering
+                  <br>
                   <input type="checkbox" name="academic_2" id="academic_2" value="Business/Economics">
-                  Business/Economics<br>
+                  Computer Science
+                  <br>
+                  <!-- Exclude these faculties for now. Re-enable when we expand.
                   <input type="checkbox" name="academic_3" id="academic_3" value="Art/Graphic Designs">
-                  Art/Graphic Designs<br>
+                  Art/Graphic Designs
+                  <br>
                   <input type="checkbox" name="academic_4" id="academic_4" value="Science">
-                  Science<br>
+                  Science
+                  <br>
+                  -->
                 </td>
             </tr>
           </table>
           <table width="280" border="0" height="160" style="margin:0px 10px 0px 10px; border:1px solid #666666; padding:10px; float:left;">
             <tr>
-              <th scope="col">Session</th>
+              <th scope="col">University</th>
             </tr>
             <tr>
               <td>
                   <input type="checkbox" name="session_chk_1" id="session_chk_1" value="University of Toronto">
-                  University of toronto<br>
+                  University of Toronto<br>
+                  <h6> More universities to come soon.</h6>
+                  <!-- Exclude these schools for now. Re-enable when we expand.
                   <input type="checkbox" name="session_chk_2" id="session_chk_2" value="University of Waterloo">
                   University of Waterloo<br>
                   <input type="checkbox" name="session_chk_3" id="session_chk_3" value="Ryerson University">
@@ -392,24 +400,24 @@ xmlhttp.send();
                   <input type="checkbox" name="session_chk_4" id="session_chk_4" value="York University">
                   York University<br>
                   <input type="checkbox" name="session_chk_5" id="session_chk_5" value="University of British Columbia">
-                  University of British Columbia <br>
+                  University of British Columbia <br>-->
                 </td>
             </tr>
           </table>
           <table width="280" border="0" height="160" style="margin:0px 0px 0px 10px; border:1px solid #666666; padding:10px; float:left;">
             <tr>
-              <th scope="col">Session</th>
+              <th scope="col">Position Type</th>
             </tr>
             <tr>
               <td>
-                  <input type="checkbox" name="session_chk_6" id="session_chk_6" value="Full time">
-                  Full time<br>
+                  <input type="checkbox" name="session_chk_6" id="session_chk_6" value="PEY">
+                  PEY<br>
                   <input type="checkbox" name="session_chk_7" id="session_chk_7" value="Co-op">
                   Co-op<br>
-                  <input type="checkbox" name="session_chk_8" id="session_chk_8" value="Professional Experience Year">
-                  Professional Experience Year<br>
-                  <input type="checkbox" name="session_chk_9" id="session_chk_9" value="Summer Internship">
-                  Summer Internship<br>
+                  <input type="checkbox" name="session_chk_8" id="session_chk_8" value="Full Time">
+                  Full-Time<br>
+                  <input type="checkbox" name="session_chk_9" id="session_chk_9" value="Summer Intern">
+                  Summer Intern<br>
                   <input type="checkbox" name="session_chk_10" id="session_chk_10" value="Contractor">
                   Contractor<br>
                   <input type="checkbox" name="session_chk_11" id="session_chk_11" value="Volunteers">

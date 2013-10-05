@@ -136,7 +136,7 @@ function checkuser(usr)
 			if(resText == 1)
 			{
 				document.getElementById("error").style.display='block';
-		         document.getElementById("error").innerHTML='User Name is Already Exist!';
+		         document.getElementById("error").innerHTML='Username already exists. Try another one!';
 				document.getElementById('UserName').value="";
 				document.getElementById('UserName').focus();
 				
@@ -168,35 +168,35 @@ function check()
 	if(document.getElementById("FirstName").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Enter the First Name...!';
+		document.getElementById("error").innerHTML='Please enter your first name';
 		document.getElementById("FirstName").focus();
 		return false;
 	}
 	if(document.getElementById("LastName").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Enter the Last Name...!';
+		document.getElementById("error").innerHTML='Please enter your last name';
 		document.getElementById("LastName").focus();
 		return false;
 	}
 	if(document.getElementById("Company").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Enter the Company  Name...!';
+		document.getElementById("error").innerHTML='Please enter your Company name';
 		document.getElementById("Company").focus();
 		return false;
 	}
 	if(document.getElementById("Address").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Enter the City...!';
+		document.getElementById("error").innerHTML='Where is your company located?';
 		document.getElementById("Address").focus();
 		return false;
 	}
 	if(document.getElementById("Email").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Enter the Email...!';
+		document.getElementById("error").innerHTML='Please enter your e-mail address';
 		document.getElementById("Email").focus();
 		return false;
 	}
@@ -208,7 +208,7 @@ function check()
 		if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
 		{
 			document.getElementById("error").style.display="block";
-			document.getElementById("error").innerHTML='Not a valid e-mail Address';
+			document.getElementById("error").innerHTML='Not a valid e-mail address';
 			document.getElementById("Email").focus();
 			   return false;
 		  }
@@ -216,28 +216,28 @@ function check()
 	if(document.getElementById("UserName").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Enter the User Name...!';
+		document.getElementById("error").innerHTML='Choose a username for yourself';
 		document.getElementById("UserName").focus();
 		return false;
 	}
 	if(document.getElementById("password1").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Enter the Password...!';
+		document.getElementById("error").innerHTML='Please enter a password';
 		document.getElementById("password1").focus();
 		return false;
 	}
 	if(document.getElementById("password2").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Enter the Confirm Password...!';
+		document.getElementById("error").innerHTML='Please confirm your password';
 		document.getElementById("password2").focus();
 		return false;
 	}
 	if(document.getElementById("password2").value!=document.getElementById("password1").value)
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Confirm Password is not incorrect...!';
+		document.getElementById("error").innerHTML='The entered passwords do not match. Please try again';
 		document.getElementById("password2").focus();
 		return false;
 	}
@@ -298,11 +298,11 @@ City &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<input ty
                 
                 <div class="one-half-last"><h4>Account Information</h4>
 <div style="margin-top:20px;">
-Email &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a class="tooltip"><input type="text" size="30" placeholder="Enter Email"  name="Email" id="Email" onChange="checkaval(this.value)"><span>
-        Email can not be change
+E-mail &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a class="tooltip"><input type="text" size="30" placeholder="Enter Email"  name="Email" id="Email" onChange="checkaval(this.value)"><span>
+        Your e-mail cannot be changed.
     </span></a><br><br>
-User Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a class="tooltip"> <input type="text" size="30"  name="UserName" id="UserName" placeholder="Enter User Name" onChange="checkuser(this.value)"><span>
-        User Name Cannot be change
+Username &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a class="tooltip"> <input type="text" size="30"  name="UserName" id="UserName" placeholder="Enter User Name" onChange="checkuser(this.value)"><span>
+        Username cannot be changed.
     </span></a><br><br>
 Password &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="password" size="30" placeholder="Enter Password"  name="password1" id="password1"><br><br>
 Confirm Password &nbsp; &nbsp;<input type="password" size="30"  name="password2" id="password2" placeholder="Enter Confirm Password"><br><br>
@@ -311,7 +311,7 @@ Confirm Password &nbsp; &nbsp;<input type="password" size="30"  name="password2"
  <div class="grid_4">
   <input type='submit' name="Next" value="Next" class="button-big red" />
 
- <br><br><br>(No blank fields)  </div>   
+ <br><br><br> All fields are mandatory.  </div>   
    </form>    
             </div>
             <!-- end one-half -->                
