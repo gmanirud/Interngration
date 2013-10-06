@@ -293,19 +293,19 @@ function check()
 <div style="margin-top:20px;">First Name &nbsp;  &nbsp;<input type="text" size="30"  name="FirstName" id="FirstName" placeholder="First Name"><br><br>
 Last Name &nbsp; &nbsp;<input type="text" size="30"  name="LastName" id="LastName" placeholder="Last Name"><br><br>
 Company &nbsp; &nbsp; &nbsp;<input type="text" name="Company" id="Company" size="30" placeholder="Company" ><br><br>
-City &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<input type="text" name="Address" id="Address" size="30" placeholder="City" ><br><br></div>
+City &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<input type="text" name="Address" id="Address" size="30" placeholder="City" ><br><br></div>
                 </div>
                 
                 <div class="one-half-last"><h4>Account Information</h4>
 <div style="margin-top:20px;">
-E-mail &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a class="tooltip"><input type="text" size="30" placeholder="e-mail"  name="Email" id="Email" onChange="checkaval(this.value)"><span>
+E-mail &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a class="tooltip"><input type="text" size="30" placeholder="E-mail"  name="Email" id="Email" onChange="checkaval(this.value)"><span>
         Your e-mail cannot be changed.
     </span></a><br><br>
-Username &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a class="tooltip"> <input type="text" size="30"  name="UserName" id="UserName" placeholder="Username" onChange="checkuser(this.value)"><span>
+Username &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a class="tooltip"> <input type="text" size="30"  name="UserName" id="UserName" placeholder="Username" onChange="checkuser(this.value)"><span>
         Username cannot be changed.
     </span></a><br><br>
 Password &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="password" size="30" placeholder="Password"  name="password1" id="password1"><br><br>
-Confirm Password &nbsp; &nbsp;<input type="password" size="30"  name="password2" id="password2" placeholder="Confirm Password"><br><br>
+Confirm Password &nbsp; &nbsp; &nbsp; &nbsp;<input type="password" size="30"  name="password2" id="password2" placeholder="Confirm Password"><br><br>
 </div>
                 </div>     
 <div class="grid_4">
