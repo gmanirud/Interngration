@@ -389,10 +389,15 @@ xmlhttp.send();
             </tr>
             <tr>
               <td>
+<<<<<<< HEAD
                   <input type="checkbox" name="session_chk_1" id="session_chk_1" value="University of Toronto">
                   University of Toronto<br>
                   <h6> More universities to come soon.</h6>
                   <!-- Exclude these schools for now. Re-enable when we expand.
+=======
+                  <input type="checkbox" name="session_chk_1" id="session_chk_1" value="University of toronto">
+                  University of toronto<br>
+>>>>>>> aae546c81f77218023b4472e9f752c21cd96217b
                   <input type="checkbox" name="session_chk_2" id="session_chk_2" value="University of Waterloo">
                   University of Waterloo<br>
                   <input type="checkbox" name="session_chk_3" id="session_chk_3" value="Ryerson University">

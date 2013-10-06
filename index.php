@@ -3,7 +3,8 @@
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Interngration - GMA Multimedia Platform to Connect Startups with Students</title>
+
+<title>Interngration - Multimedia Platform to Connect Startups with Students</title>
 
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
@@ -49,7 +50,7 @@ if (top.location!= self.location) {
         <!-- header nav menu -->        
         <div id="menu" class="menu"> 
         <ul>
-        <li><?php if(isset($_GET['coinsessid'])==""){ ?><a href="recruiter-login.php">Recruiter Login</a><?php }?></li>
+        <li><?php if($_GET['coinsessid']==""){ ?><a href="recruiter-login.php">Recruiter Login</a><?php }?></li>
         <li><a href="student-login.php">Student Login</a> </li>                    
         </ul>
         <br style="clear: left" />
@@ -62,6 +63,7 @@ if (top.location!= self.location) {
   	<div id="body-background"><!-- this is the main background color of the page -->
     <div id="header-buffer"></div><!-- hack for header overlap **DONT'TOUCH** -->
     
+    
         <!-- page header -->
         <div id="pageheader-background"><!-- area with alternate background -->
     
@@ -73,9 +75,7 @@ if (top.location!= self.location) {
                     
 				  <div class="slides_container">                            
 				  <!-- slide 1 -->
-                  <!--div class="slide"><a href="#" title="" target="_blank"><img src="" alt=""></a></div>  -->
-                  <div class="slide"><iframe width="930" height="315" src="//www.youtube.com/embed/am1TCdkxyl8" frameborder="0" allowfullscreen></iframe></div>  
-
+                  <div class="slide"><a href="#" title="" target="_blank"><img src="images/slide1.png" alt="Slide 1"></a></div>  
 				  <!-- slide 2 -->
                   </div><!-- end #slides_container --> 			
             	</div><!-- end #slides -->     

@@ -191,7 +191,7 @@ if(document.getElementById("to_mail").value=="")
 		<div style="margin:0px 0px 10px 10px;">Subject: <input name="subject_mail" id="subject_mail" type="text" value="RE:<?php print $subject;?>" style="margin:10px 0px 0px 10px;  width:250px;"></div>
                           </div></div>
 						<div style="float:left; border:1px #dad8d8 solid; padding:10px 20px 20px 5px; width:663px;">
-						<textarea cols="118" rows="10" style="float:left; margin:10px 10px 10px 10px;" id="message_mail" name="message_mail"><?php print $message;?></textarea>
+						<textarea cols="118" rows="10" style="float:left; margin:10px 10px 10px 10px;" id="message_mail" name="message_mail"></textarea>
 				        </div>	
 					</div>
 					   

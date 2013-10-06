@@ -66,15 +66,23 @@ header("location:student-login.php");
             <div class="pageheader-title">
              <span class="mailno"><?php include "StudentUnreadMail.php"; ?></span>
                 <h1>My Dashboard</h1><span style="margin:0px 30px 0px 0px; float:right;"> 
+<<<<<<< HEAD
                 <a href= "student-homepage.php" class="button red">My Dashboard</a>
                 <a href="StudentRegisteredWebinar.php" class="button red">My Webinars</a>   
                 <a href="StudentWatchedWebinar.php" class="button red">Watched Webinars</a>              
+=======
+                
+                <a href="StudentRegisteredWebinar.php" class="button red">My Webinars</a>
+                <a href= "student-homepage.php" class="button red">My Dashboard</a>
+                <a href="StudentWatchedWebinar.php" class="button red">Watched Webinars</a>               
+>>>>>>> aae546c81f77218023b4472e9f752c21cd96217b
                 <a href="postedJob.php" class="button red">Job Board</a> 
                 <a href="AppliedPostedJob.php" class="button red">My Jobs</a> 
                 <a href="studentInbox.php" class="button red">My Inbox</a> 
                 <a href="student-profile.php" class="button red">My Profile</a> 
                 <a href="studentAccount.php" class="button red"> My Account</a>
                 <a href="logout.php" class="button red">Logout</a></span>
+
             </div>        
         </div>        
                           
@@ -120,6 +128,10 @@ include "config.php";
             </div>  
                         </div>  
                          <!-- details -->
+<<<<<<< HEAD
+=======
+
+>>>>>>> aae546c81f77218023b4472e9f752c21cd96217b
                     </div>
                 </div> 
                             

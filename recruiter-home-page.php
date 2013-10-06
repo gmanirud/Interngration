@@ -80,7 +80,7 @@ if(isset($_SESSION['ruid']))
 		if ($rowcount>0)
 		{
 			$res=mysql_fetch_array($ses_result);
-			
+			$rid=$res["id"];
 			$companyName=$res["companyName"];
 			$hrLead=$res["hrLead"];
 			$Email=$res["Email"];
@@ -284,6 +284,30 @@ xmlhttp.onreadystatechange=function()
 xmlhttp.open("GET","ajaxpage/ajaxRecruiterProfile.php?puId="+prf_uId+"&company="+txtcompany+"&hr="+txthr+"&upTable="+upTable,true);
 xmlhttp.send();
 }
+
+
+function chkimgvalidation()
+{
+	var fup = document.getElementById('txtFile');
+	var fileName = fup.value;
+	
+	var ext = fileName.substring(fileName.lastIndexOf('.') + 1);
+	
+	if(ext == "gif" || ext == "GIF" || ext == "JPEG" || ext == "jpeg" || ext == "jpg" || ext == "JPG" || ext == "doc")
+    {
+        document.getElementById("error5").style.display='block';
+		document.getElementById('frmProfile').submit();
+	}
+	else
+	{
+	    document.getElementById("error5").style.display='block';
+		document.getElementById("error5").innerHTML='Please Upload the image file';
+		document.getElementById("txtFile").focus();
+		return false;	
+	}
+	
+	
+}
 </script>
 
 
@@ -330,6 +354,7 @@ xmlhttp.send();
                 <h1>Recruiter Home</h1><span style="margin:0px 30px 10px 0px; float:right;">
                 <a href="https://login.citrixonline.com/login?service=https%3A%2F%2Fglobal.gotomeeting.com%2Fmeeting%2Fj_spring_cas_security_check" target="_blank" class="button red">Schedule your Webinar</a>
                 <a href="RecruiterUpcomingWebinar.php" class="button red">Scheduled Webinar</a>
+                <a href="RecruiterWatchedWebinar.php" class="button red">Past Webinar</a>
                 <a href="recruiterInbox.php" class="button red">Inbox</a>
                 <a href="jobPosting.php" class="button red">Job Posting</a>
                 <a href="recruiterAccount.php" class="button red">Account</a>
@@ -369,10 +394,11 @@ xmlhttp.send();
               <td rowspan="2" align="right" valign="top">
               <div style="float:right;">
               <label class="file-upload"> 
-                 <input type='file' id="txtFile" name="txtFile" onChange="document.getElementById('frmProfile').submit();" />
+                 <input type='file' id="txtFile" name="txtFile" onChange="chkimgvalidation();"/>
                  <?php
 				 if($Profile_Image!="")
 				 {
+					
 					 ?>
     			 <img src="uploads/Recruiter/<?php print $Profile_Image ?>" height="180" width="180"/>
                  <?php
@@ -383,6 +409,17 @@ xmlhttp.send();
                
                 
                 </div>
+                <?php
+				
+				if($Profile_Image!="")
+				{
+				?>
+                <a href="removeRecruiterImage.php?rid=<?php print $rid; ?>"> Remove Image </a>
+                <?php
+				}
+				?>
+                
+                    <div style="color:#F00; font-weight:400; padding-top:2px; display:none;" id="error5"></div>
                 </td>
             </tr>
             <tr>

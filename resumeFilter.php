@@ -169,7 +169,7 @@ header("location:recruiter-login.php");
 			
 			 <div class="" style="float:right; width:600px;">
                 <span style="margin:10px 0px 30px 0px; float:right;">
-                <input type="submit" class="button red" value="Apply">
+                <input type="submit" class="button red" value="Search">
                <!-- <a href="recruiter-home-page.html" class="button red">Apply</a>--></span>
 				
 			      
@@ -455,7 +455,14 @@ header("location:recruiter-login.php");
 			$schoolName=$res1["schoolName"];
 			$univ_Year=$res1["univ_Year"];
 			$Program=$res1["Program"];
-			$Profile_Image=$res1["Profile_Image"];				
+			$Profile_Image=$res1["Profile_Image"];		
+			
+			
+			$sqlget3="Select Email  from student_register where id='".$stuId."'";
+			
+			$ses_result3=mysql_query($sqlget3);
+			$res3=mysql_fetch_array($ses_result3);
+			$mailIds=$res3['Email'];		
 
  
   ?>
@@ -467,7 +474,10 @@ header("location:recruiter-login.php");
 			  <?php print $schoolName; ?><br/>
               <?php print $Program; ?><br/>
               <?php print $univ_Year; ?></td>
-			 <td><a href="uploads/Resume/<?php print $resume; ?>" title="Resume" target="_blank">See Resume</a></td>
+			 <td>
+             <a href="uploads/Resume/<?php print $resume; ?>" title="Resume" target="_blank">See Resume</a><br/>
+             <a href="studentprofileiewforrecruiter.php?stdmail=<?php print $mailIds; ?>&jbids=<?php print $jbid; ?>" title="Watch Student Profile"> View Profile</a>
+             </td>
     </tr>
 </table>
 <?php

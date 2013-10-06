@@ -64,6 +64,9 @@ header("location:recruiter-login.php");
             <div class="pageheader-title">
              <span class="mailno"><?php include "RecruiterUnreadMail.php"; ?></span>
                 <h1>Recruiter Inbox Message</h1><span style="margin:0px 30px 10px 0px; float:right;">
+               <a href="https://login.citrixonline.com/login?service=https%3A%2F%2Fglobal.gotomeeting.com%2Fmeeting%2Fj_spring_cas_security_check" target="_blank" class="button red">Schedule your Webinar</a>
+                <a href="RecruiterUpcomingWebinar.php" class="button red">Scheduled Webinar</a>
+                <a href="RecruiterWatchedWebinar.php" class="button red">Past Webinar</a>
                 <a href="recruiterInbox.php" class="button red">Inbox</a>
                 <a href="jobPosting.php" class="button red">Job Posting</a>
                 <a href="recruiterAccount.php" class="button red">Account</a>

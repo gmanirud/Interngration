@@ -2,7 +2,7 @@
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Student Login</title>
+<title>Student Login - Interngration</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 
@@ -43,14 +43,14 @@ function chklogin()
 	if(uname=="")
 	{
 		
-		document.getElementById("error").innerHTML='Please Enter the User Name';
+		document.getElementById("error").innerHTML='Please enter your username';
 		document.getElementById('uname').focus();
 		return false;
 	}
 	if(passwd=="")
 	{
 		
-		document.getElementById("error").innerHTML='Please Enter the Password';
+		document.getElementById("error").innerHTML='Please enter your password';
 		document.getElementById('pwd').focus();
 		return false;
 		
@@ -70,7 +70,7 @@ function chklogin()
 		if (xmlhttp.readyState==1 || xmlhttp.readyState==2 || xmlhttp.readyState==3)
 		{
 		
-		document.getElementById("error").innerHTML='Login Checking......';
+		document.getElementById("error").innerHTML='Checking your credentials';
 		
 		}
 	  if (xmlhttp.readyState==4 && xmlhttp.status==200)
@@ -82,7 +82,7 @@ function chklogin()
 		
 						if(resText == 1)
 			{
-				document.getElementById("error").innerHTML='User Name / Password Incorrect';
+				document.getElementById("error").innerHTML='Username and/or password incorrect';
 				document.getElementById('uname').value="";
 				document.getElementById('pwd').value="";
 				document.getElementById('uname').focus();
@@ -92,19 +92,18 @@ function chklogin()
 			if(resText == 2)
 			{
 				window.location="student-homepage.php";
-					
-				
+							
 			}
 			else
 			{
 			    document.getElementById("error").style.display='none';	
-			}
-			
+			}			
 		}
 	  }
 	xmlhttp.open("GET","ajaxpage/ajaxlogincheck.php?User="+uname+"&Pass="+passwd,true);
 	xmlhttp.send();
 }
+
 </script>
 </head>
 <body>
@@ -122,8 +121,11 @@ function chklogin()
                 <br style="clear: left" />
         </div>
         <!-- end header nav menu-->
- </div> </div> </div>
-    <!-- end header -->     
+    </div>
+    </div>
+    </div>
+    <!-- end header --> 
+
     <div id="body-background"><!-- this is the main background color of the page -->
     <div id="header-buffer"></div><!-- hack for header overlap **DONT'TOUCH** -->
     
@@ -132,19 +134,16 @@ function chklogin()
             <div class="pageheader-title">
                 <h1>Student Login</h1>
             </div>        
-        </div>        
-                          
+        </div>                          
     <!-- body -->
     <div id="body-wrapper" class="container_16">
     <div class="clear"></div>
 	
 		<!-- grid columns -->
 		<div class="section">
-           
+          
        		<!-- title -->
-            <div class="title grid_16">
-            
-             
+            <div class="title grid_16">          
             </div>                    
                 
           <!-- 4/16 -->                
@@ -203,7 +202,7 @@ function chklogin()
 		
 		                     
 		
-		$subject="Interngration - Account Confirmation Mail";
+		$subject="Interngration - Account Confirmation";
 		
 		
 		$headers  = 'MIME-Version: 1.0'."\n";
@@ -221,7 +220,7 @@ function chklogin()
                  <p id="error1" style="padding-top:5px; height:30px; color:#F00; font-weight:400;">
                  <?php
 				
-				echo "Your Account has been Activated Successfully Please Login with your login details";
+				    echo "Your account has been activated, welcome! Please login to your account and complete your student profile.";
 				?>
                 </p>
                 <?php
@@ -236,15 +235,13 @@ function chklogin()
 			if(isset($_GET['status']))
 			{
 				$stats=$_GET['status'];
-				
-
+		
 			?>
             <p id="error2" style="padding-top:5px; height:30px; color:#F00; font-weight:400; background-color:#CCC">
             <?php
 			            if($stats=='1')
-			{
-				
-			echo "Please Check Your Mail to activate Your Account";
+			{		
+			    echo "Please check your e-mail to activate your account.";
 			}
 			
 			?>
@@ -266,7 +263,7 @@ function chklogin()
 			            if($stats=='1')
 			{
 				
-			echo "Your login details has been sent to your Email Account. Please check your Mail";
+			echo "Your login details have been sent to your e-mail.";
 			}
 			
 			?>
@@ -276,11 +273,11 @@ function chklogin()
 			?>
                 <p>
                  <form action="" method="post" name="frm" id="frm" >
-User Name <input type="text" size="30" name="uname" id="uname" placeholder="Enter User Name"><br><br>
-Password &nbsp; &nbsp;<input type="password" size="30" name="pwd" id="pwd" placeholder="Enter the Password"><br><br>
+Usename <input type="text" size="30" name="uname" id="uname" placeholder="Username"><br><br>
+Password &nbsp; &nbsp;<input type="password" size="30" name="pwd" id="pwd" placeholder="Password"><br><br>
 <span style="margin:0px 30px 0px 0px; float:right;"><a href="student-registration.php" class="button red">Register</a> 
 <a onClick="chklogin();" class="button red">Login</a></span><br><br>
-<span style="margin:0px 0px 0px 130px;"><a href="student-forget-password.php">Forgot Password ?</a></span></p>   
+<span style="margin:0px 0px 0px 130px;"><a href="student-forget-password.php">Forgot Your Password?</a></span></p>   
 </form>                 
             </div>                    
           

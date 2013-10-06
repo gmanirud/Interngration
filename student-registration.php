@@ -190,7 +190,11 @@ function check()
 	if(document.getElementById("Company").value=="")
 	{
 		document.getElementById("error").style.display='block';
+<<<<<<< HEAD
 		document.getElementById("error").innerHTML='Which school do you go to? Select one!';
+=======
+		document.getElementById("error").innerHTML='Select Affiliated University...!';
+>>>>>>> aae546c81f77218023b4472e9f752c21cd96217b
 		document.getElementById("Company").focus();
 		return false;
 	}
@@ -312,7 +316,11 @@ function check()
                 <div class="one-half"><h4>Basic Information</h4>
 <div style="margin-top:20px;">First Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="30"  name="FirstName" id="FirstName" placeholder="Enter First Name"><br><br>
 Last Name &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="30"  name="LastName" id="LastName" placeholder="Enter Last Name"><br><br>
+<<<<<<< HEAD
 University &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;<select name="Company" id="Company" style="width:230px;">
+=======
+Affiliated University &nbsp; &nbsp; &nbsp; <select name="Company" id="Company" style="width:230px;">
+>>>>>>> aae546c81f77218023b4472e9f752c21cd96217b
               <option value="">Select University</option>
               <option value="University of Toronto" >University of Toronto</option>
               <option value="University of Waterloo">University of Waterloo</option>

@@ -73,12 +73,12 @@ if(document.getElementById("to_mail").value=="")
     <div class="fixposition">
     <div id="header-wrapper">
     <div id="header-content">
-        <div id="logo"><a href="index.html"><img src="images/logo.png" alt="interngration" width="400" height="80" /></a></div>
+        <div id="logo"><a href="student-homepage.php"><img src="images/logo.png" alt="interngration" width="400" height="80" /></a></div>
          <!-- header nav menu -->        
         <div id="menu" class="menu"> 
                <ul>
                 <li><a href="">Welcome&nbsp; :&nbsp; <?php print $username; ?></a></li>
-               <li><a href="index.html">Home</a></li></ul>
+               <li><a href="student-homepage.php">Home</a></li></ul>
                 <br style="clear: left" />
         </div>
         <!-- end header nav menu-->
@@ -190,7 +190,7 @@ if(document.getElementById("to_mail").value=="")
 		<div style="margin:0px 0px 10px 10px;">Subject: <input name="subject_mail" id="subject_mail" type="text" value="RE:<?php print $subject;?>" style="margin:10px 0px 0px 10px;  width:250px;"></div>
                           </div></div>
 						<div style="float:left; border:1px #dad8d8 solid; padding:10px 20px 20px 5px; width:663px;">
-						<textarea cols="118" rows="10" style="float:left; margin:10px 10px 10px 10px;" id="message_mail" name="message_mail"><?php print $message;?></textarea>
+						<textarea cols="118" rows="10" style="float:left; margin:10px 10px 10px 10px;" id="message_mail" name="message_mail"></textarea>
 				        </div>	
 					</div>
 					   

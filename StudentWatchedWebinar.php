@@ -205,7 +205,7 @@ if(!$organizer_key)
                       <p class="post-subtitle" style="font-size:12px;">Start Time: <?php print $stdt." To ".$stte; ?></p> <p class="post-subtitle" style="font-size:12px;">End Time : <?php print $endt." To ".$ente; ?></p> 
                             </div>                          
 							<div class="padding10 float-left" align="justify"><p><?php print $desc; ?><br>
-                            
+                             <div style="padding-left:750px;"><a href="WebinarQuestion.php?webId=<?php print $webinar_id; ?>" title="View Video" class="button-big red"  >Q & A Forum</a></div>
                             </p></div>
                                                        
 				 </div>

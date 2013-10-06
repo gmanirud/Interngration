@@ -57,7 +57,7 @@ if(isset($_GET['nextid']))
 			
 			if(($schoolName=="")&&($Program=="")&&($Contact==""))
 			{
-				$schoolName="Enter Your School";
+				$schoolName="Enter Your University";
 			    $Program="Enter Program";
 			    $Contact="xxx@school.com";
 				$schoolName1="";

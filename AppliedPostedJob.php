@@ -89,7 +89,8 @@ function filterjob()
         <div id="menu" class="menu"> 
                <ul>
                <li><a href="">Welcome&nbsp; :&nbsp; <?php print $username; ?></a></li>
-               <li><a href="student-homepage.php">Home</a></li></ul>
+               <li><a href="student-homepage.php">Home</a></li>
+               </ul>
                 <br style="clear: left" />
         </div>
         <!-- end header nav menu-->
@@ -113,6 +114,7 @@ function filterjob()
                  }                 
 				 ?>
                  <a href="StudentRegisteredWebinar.php" class="button red">Registered Webinar</a>
+                  <a href="StudentWatchedWebinar.php" class="button red">Watched Webinar</a>       
                 <a href="postedJob.php" class="button red">JobApplication</a>
                  <a href="AppliedPostedJob.php" class="button red">Applied Job</a>  
                 <a href="studentInbox.php" class="button red">Inbox</a> 
@@ -157,29 +159,70 @@ function filterjob()
 			$JobId=$res["JobId"];
 			$RecuId=$res["RecuId"];
 			
-			$sqlrecjob="Select *  from recruiter_jopposting where Job_id='".$JobId."' AND recruiter_id='".$RecuId."'";
+			$sqlrecjob="Select *  from recruiter_jopposting where id='".$JobId."' AND recruiter_id='".$RecuId."'";
 			$ses_result1=mysql_query($sqlrecjob);
 			$res1=mysql_fetch_array($ses_result1);
+			$rowcount1= mysql_num_rows($ses_result1);		
+			
+			
 			$Job_title=$res1["Job_title"];
 			$Job_id=$res1["Job_id"];
+			$Job_Dept=$res1["Job_Dept"];
+			$Job_Detail=$res1["Job_Detail"];
 			$Date_Post=$res1["Date_Post"];
-			$Dead_line=$res1["Dead_line"];
-			$Company_name=$res1["Company_name"];
-			$recruiter_id=$res1["recruiter_id"];		
+			$Dead_line=$res1["Dead_line"];			
+			$recruiter_id=$res1["recruiter_id"];	
+			$Company_Name=$res1["Company_Name"];
+			if($rowcount1!='0')		
+			{
 ?>
 		 <!-- post 4 -->
        <div class="job-post">     
 		<div class="titl">
        
         <h4><?php print $Job_title; ?></h4>
-        <p>Job Id: <?php print $Job_id; ?></p>
-		<p>Date Posted: <?php print $Date_Post; ?></p>
-		<p>Deadline: <?php print $Dead_line; ?></p>
-		<p>Company Name: <?php print $Company_name; ?></p>
+       <table width="450" border="0" cellpadding="10px;">
+         <tr>
+    <td width="70">Company Name</td>
+    <td width="5">:</td>
+    <td width="200"><?php print $Company_Name; ?></td>
+  </tr>
+  <tr>
+    <td>Job Id</td>
+    <td>:</td>
+    <td><?php print $Job_id; ?></td>
+  </tr>
+  <tr>
+    <td>Job Department</td>
+    <td>:</td>
+    <td><?php print $Job_Dept; ?></td>
+  </tr>
+  <tr height="10px;" valign="top">
+    <td>Job Detail</td>
+    <td>:</td>
+    <td style="Serif;overflow:auto;" align="justify" ><?php print $Job_Detail; ?></td>
+  </tr>
+  <tr>
+    <td>Date Posted</td>
+    <td>:</td>
+    <td><?php print $Date_Post; ?></td>
+  </tr>
+  <tr>
+    <td>Dead Line</td>
+    <td>:</td>
+    <td><?php print $Dead_line; ?></td>
+  </tr>
+ 
+</table>
 		</div>
 		 </div>
 		
 		<?php
+			}
+			else
+			{
+				print "No Records Found";
+			}
 		}
 		}
 		?>

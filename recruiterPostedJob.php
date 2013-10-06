@@ -81,6 +81,7 @@ $startpoint = ($page * $limit) - $limit;
         <h1>Recruiter Posted Job</h1><span style="margin:0px 30px 0px 0px; float:right;">
           <a href="https://login.citrixonline.com/login?service=https%3A%2F%2Fglobal.gotomeeting.com%2Fmeeting%2Fj_spring_cas_security_check" target="_blank" class="button red">Schedule your Webinar</a>                
                 <a href="RecruiterUpcomingWebinar.php" class="button red">Scheduled Webinar</a>
+                 <a href="RecruiterWatchedWebinar.php" class="button red">Past Webinar</a>
         <a href="recruiterInbox.php" class="button red">Inbox</a>
                 <a href="jobPosting.php" class="button red">Job Posting</a>
                 <a href="recruiterAccount.php" class="button red">Account</a>
@@ -134,12 +135,12 @@ $startpoint = ($page * $limit) - $limit;
 			$recruiter_id=$res["recruiter_id"];	
 			$Company_Name=$res["Company_Name"];		
 ?>
-       <div class="job-posted">     
+       <div class="job-posted" style="width:450px;">     
 		<div class="titl">
         <h4><?php print $Job_title; ?></h4>
-       <table width="380" border="0" cellpadding="10px;">
+       <table width="400" border="0" cellpadding="10px;">
          <tr>
-    <td width="70">Company Name</td>
+    <td width="70">Company </td>
     <td width="5">:</td>
     <td width="200"><?php print $Company_Name; ?></td>
   </tr>
@@ -149,7 +150,7 @@ $startpoint = ($page * $limit) - $limit;
     <td><?php print $Job_id; ?></td>
   </tr>
   <tr>
-    <td>Job Department</td>
+    <td>Department</td>
     <td>:</td>
     <td><?php print $Job_Dept; ?></td>
   </tr>

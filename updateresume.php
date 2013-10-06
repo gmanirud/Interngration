@@ -62,12 +62,24 @@ $chkbx=$_POST['chkbx'];
    
             $to_mail=$_SESSION["mail_id"];
 			$subjectcnt= "Successfully applied to ".$jobtitle;
-			$bodycnt="You’ve successfully applied to for the ".$jobtitle." position at ".$cmpny.". All the best!<br/>Cheers,<br/>The Interngration Team.";
+			$bodycnt="You have successfully applied to for the ".$jobtitle." position at ".$cmpny.". All the best!<br/>Cheers,<br/>The Interngration Team.";
 						
 			
 			
 			$sqlInsert1 = "insert into student_mailbox (from_mail,to_mail,subject,message,SendDate) values ('$fmmail','$to_mail','$subjectcnt','$bodycnt',NOW())";
         $result1=mysql_db_query($dbname,$sqlInsert1,$link);
+		
+		
+		// Mail Sending for Recruiter
+		
+		$subjectforrecruiter="You have one New Job Application for ".$jobtitle;
+		$boducntforrecruiter="You have got one job application for ".$jobtitle.". Please check your Resume received page.<br/>Cheers,<br/>The Interngration Team.";
+		
+		$sqlInsert2 = "insert into student_mailbox (from_mail,to_mail,subject,message,SendDate) values ('$to_mail','$fmmail','$subjectforrecruiter','$boducntforrecruiter',NOW())";
+		//print $sqlInsert2;
+        $result1=mysql_db_query($dbname,$sqlInsert2,$link);
+		
+		
 		
 		
 		

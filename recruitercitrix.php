@@ -192,7 +192,7 @@ class Citrix
 		{
 			throw new Exception('Please set citrix_api_key.');
 		}
-		return 'https://api.citrixonline.com/oauth/authorize?client_id=' . $this->citrix_api_key . '&redirect_uri=http://www.interngration/student-homepage.php';
+		return 'https://api.citrixonline.com/oauth/authorize?client_id=' . $this->citrix_api_key . '&redirect_uri=http://www.interngration.com/student-homepage.php';
 		
 		
 		//$params[CURLOPT_HTTPHEADER] = array('Accept: application/json', 'Content-Type: application/json', 'Authorization: OAuth oauth_token='.$this->access_token);
