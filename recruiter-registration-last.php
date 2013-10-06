@@ -69,7 +69,7 @@ if(isset($_GET['nextrid']))
 			}
 			if($AboutMe=="")
 			{
-			    $AboutMe="Enter a short blurb about your company, so that students will know how awesome it is.";
+			    $AboutMe="Enter a short blurb about your company.";
 				$AboutMe1="";
 			}
 			
@@ -353,7 +353,7 @@ xmlhttp.send();
           </p>
 
          
-          <textarea id="aboutme"  name="aboutme" style="width:400px; height:175px; display:none; margin:20px;" placeholder="Enter About Me" ><?php print $AboutMe1; ?></textarea>
+          <textarea id="aboutme"  name="aboutme" style="width:400px; height:175px; display:none; margin:20px;" placeholder="Enter a short blurb about your company, so that students will know how awesome it is." ><?php print $AboutMe1; ?></textarea>
         </div>
         <form id="frmRegister" name="frmRegister" method="post" action="RecruiterActivationMail.php">
         <div class="grid_17">
