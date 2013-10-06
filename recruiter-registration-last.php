@@ -185,7 +185,7 @@ function updaterecruiterprofile()
 	if(document.getElementById("txtcompany").value=="")
 	{
 		document.getElementById("error2").style.display='block';
-		document.getElementById("error2").innerHTML='Please enter your Company name.';
+		document.getElementById("error2").innerHTML='Please enter your company name.';
 		document.getElementById("txtcompany").focus();
 		return false;
 	}

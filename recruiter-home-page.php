@@ -17,7 +17,7 @@ header("location:recruiter-login.php");
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Recruiter Home Page</title>
+<title>Recruiter Profile - Interngration</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 
@@ -329,14 +329,16 @@ function chkimgvalidation()
          <!-- header nav menu -->        
         <div id="menu" class="menu"> 
                <ul>
-               <li><a href="">Welcome&nbsp; :&nbsp; <?php print $username; ?></a></li>
+               <li><a href="">Welcome:&nbsp; <?php print $username; ?></a></li>
                <li><a href="recruiter-home-page.php">Home</a></li></ul>
               
                 <br style="clear: left" />
                 
         </div>
         <!-- end header nav menu-->
-</div></div></div>
+    </div>
+    </div>
+    </div>
 
             
             
