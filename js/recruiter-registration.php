@@ -2,7 +2,7 @@
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Student Register</title>
+<title>Recruiter Registration - Interngration</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 
@@ -17,7 +17,6 @@
 
 <!--[if IE 8]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen"/><![endif]-->
 <!--[if IE 7]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen"/><![endif]-->
-
 
 <!--  Tool Tip  -->
 <style>
@@ -49,16 +48,15 @@ a.tooltip span
 
 <!-- Tool Tip  -->
 
+
+
 <!-- Load Jquery/Modernizr Javascript -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/modernizr.js"></script>
 
-
-<!--  Validate Engine  -->
 <script type="text/javascript">
 function checkaval(usr)
 {
-	
 	//alert(usr);
 	if (window.XMLHttpRequest)
 	  {
@@ -84,14 +82,14 @@ function checkaval(usr)
 			if(resText == 1)
 			{
 				document.getElementById("error").style.display='block';
-		        document.getElementById("error").innerHTML='E-mail address already exists';
+		         document.getElementById("error").innerHTML='Email id is Already Exist!';
 				document.getElementById('Email').value="";
 				document.getElementById('Email').focus();
 			}
 			else if(resText == 2)
 			{
 				document.getElementById("error").style.display='block';
-		        document.getElementById("error").innerHTML='This e-mail address has already been registered as a recruiter!';
+		         document.getElementById("error").innerHTML='This Email Id Already Register in Student Login!';
 				document.getElementById('Email').value="";
 				document.getElementById('Email').focus();
 			}
@@ -104,7 +102,7 @@ function checkaval(usr)
 		
 		}
 	  }
-	xmlhttp.open("GET","ajaxpage/ajaxCheckEmail.php?userName="+usr,true);
+	xmlhttp.open("GET","ajaxpage/ajaxCheckEmailRecruiter.php?userName="+usr,true);
 	xmlhttp.send();
 }
 
@@ -138,7 +136,7 @@ function checkuser(usr)
 			if(resText == 1)
 			{
 				document.getElementById("error").style.display='block';
-		         document.getElementById("error").innerHTML='Username already exists';
+		         document.getElementById("error").innerHTML='User Name is Already Exist!';
 				document.getElementById('UserName').value="";
 				document.getElementById('UserName').focus();
 				
@@ -155,20 +153,14 @@ function checkuser(usr)
 		
 		}
 	  }
-	xmlhttp.open("GET","ajaxpage/ajaxCheckEmail.php?User="+usr,true);
+	xmlhttp.open("GET","ajaxpage/ajaxCheckEmailRecruiter.php?User="+usr,true);
 	xmlhttp.send();
 }
 
 
 
 </script>
-
-
 <script type="text/javascript">
-function trim(str) 
-{
-        return str.replace(/^\s+|\s+$/g,"");
-}
 
 function check()
 {
@@ -176,66 +168,47 @@ function check()
 	if(document.getElementById("FirstName").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='You have a first name, right?';
+		document.getElementById("error").innerHTML='Enter the First Name...!';
 		document.getElementById("FirstName").focus();
 		return false;
 	}
 	if(document.getElementById("LastName").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='You also have a last name, right?';
+		document.getElementById("error").innerHTML='Enter the Last Name...!';
 		document.getElementById("LastName").focus();
 		return false;
 	}
 	if(document.getElementById("Company").value=="")
 	{
 		document.getElementById("error").style.display='block';
-<<<<<<< HEAD
-<<<<<<< HEAD
-		document.getElementById("error").innerHTML='Which school do you go to? Select one!';
-=======
-		document.getElementById("error").innerHTML='Select Affiliated University...!';
->>>>>>> aae546c81f77218023b4472e9f752c21cd96217b
-=======
-		document.getElementById("error").innerHTML='Which school do you go to? Select one!';
->>>>>>> a96fab4a4a58303d297a342d06fc4b500fe2373a
+		document.getElementById("error").innerHTML='Enter the Company  Name...!';
 		document.getElementById("Company").focus();
 		return false;
 	}
 	if(document.getElementById("Address").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Where do you live? Enter your city!';
+		document.getElementById("error").innerHTML='Enter the City...!';
 		document.getElementById("Address").focus();
-		return false;
-	}
-	if(document.getElementById("Country").value=="")
-	{
-		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Which country do you live in? Enter your country!';
-		document.getElementById("Country").focus();
 		return false;
 	}
 	if(document.getElementById("Email").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Please enter your e-mail address';
+		document.getElementById("error").innerHTML='Enter the Email...!';
 		document.getElementById("Email").focus();
 		return false;
 	}
 	if(document.getElementById("Email").value!="")
 	{
 		var x=document.getElementById("Email").value;
-		var n=x.split("@");
-		var clsub=trim(n[1]);
-		var s2="mail.utoronto.ca";
-        var s3="utoronto.ca";
-		
-		if ( (clsub.toString() != s2.toString()) &&  (clsub.toString() != s3.toString()))
+		var atpos=x.indexOf("@");
+		var dotpos=x.lastIndexOf(".");
+		if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
 		{
-			
 			document.getElementById("error").style.display="block";
-			document.getElementById("error").innerHTML='Please use your UTOR email address. (@mail.utoronto.ca or @utoronto.ca). Registration is only open to UofT students for now, sorry!';
+			document.getElementById("error").innerHTML='Not a valid e-mail Address';
 			document.getElementById("Email").focus();
 			   return false;
 		  }
@@ -243,28 +216,28 @@ function check()
 	if(document.getElementById("UserName").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Please enter a username';
+		document.getElementById("error").innerHTML='Enter the User Name...!';
 		document.getElementById("UserName").focus();
 		return false;
 	}
 	if(document.getElementById("password1").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Please enter a password';
+		document.getElementById("error").innerHTML='Enter the Password...!';
 		document.getElementById("password1").focus();
 		return false;
 	}
 	if(document.getElementById("password2").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Please confirm the password you\'ve chosen';
+		document.getElementById("error").innerHTML='Enter the Confirm Password...!';
 		document.getElementById("password2").focus();
 		return false;
 	}
 	if(document.getElementById("password2").value!=document.getElementById("password1").value)
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='The entered passwords do not match. Put the booze down and please try again';
+		document.getElementById("error").innerHTML='Confirm Password is not incorrect...!';
 		document.getElementById("password2").focus();
 		return false;
 	}
@@ -272,8 +245,6 @@ function check()
 	return true;
 }
 </script>
-
-<!--  Validate Engine  -->
 
 </head>
 <body>
@@ -299,7 +270,7 @@ function check()
     <!-- page header -->
         <div id="pageheader-background"><!-- area with alternate background -->
             <div class="pageheader-title">
-                <h1>Student Registration</h1>
+                <h1>Recruiter Registration</h1>
             </div>        
         </div>        
                           
@@ -313,53 +284,35 @@ function check()
        		<!-- title -->
             <div class="title grid_16"></div>                    
 			<!-- one half-->
-            
             <div class="grid_16">
-                <form action="savestudentregister.php" method="post" name="frm" id="frm" onSubmit="return check();">
+                <form action="saverecruiterregister.php" method="post" name="frm" id="frm" onSubmit="return check();">
                 <p id="error" style="padding-left:60px; display:none; padding-top:5px; height:30px; color:#F00; font-weight:400; background-color:##CCC;"></p>
+				
+				
                 <div class="one-half"><h4>Basic Information</h4>
-<div style="margin-top:20px;">First Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="30"  name="FirstName" id="FirstName" placeholder="Enter First Name"><br><br>
-Last Name &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="30"  name="LastName" id="LastName" placeholder="Enter Last Name"><br><br>
-<<<<<<< HEAD
-<<<<<<< HEAD
-University &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;<select name="Company" id="Company" style="width:230px;">
-=======
-Affiliated University &nbsp; &nbsp; &nbsp; <select name="Company" id="Company" style="width:230px;">
->>>>>>> aae546c81f77218023b4472e9f752c21cd96217b
-=======
-University &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;<select name="Company" id="Company" style="width:230px;">
->>>>>>> a96fab4a4a58303d297a342d06fc4b500fe2373a
-              <option value="">Select University</option>
-              <option value="University of Toronto" >University of Toronto</option>
-              <option value="University of Waterloo">University of Waterloo</option>
-              </select><br><br>
-City &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Address" id="Address" size="30" placeholder="Enter City" ><br><br>
-Country &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Country" id="Country" size="30" placeholder="Enter Country" ><br><br>
-</div>
+<div style="margin-top:20px;">First Name &nbsp;  &nbsp;<input type="text" size="30"  name="FirstName" id="FirstName" placeholder="Enter First Name"><br><br>
+Last Name &nbsp; &nbsp;<input type="text" size="30"  name="LastName" id="LastName" placeholder="Enter Last Name"><br><br>
+Company &nbsp; &nbsp; &nbsp;<input type="text" name="Company" id="Company" size="30" placeholder="Enter Company" ><br><br>
+City &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<input type="text" name="Address" id="Address" size="30" placeholder="Enter City" ><br><br></div>
                 </div>
                 
                 <div class="one-half-last"><h4>Account Information</h4>
 <div style="margin-top:20px;">
- 
- E-mail &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a class="tooltip"><input type="text" size="30" placeholder="Enter Email"  name="Email" id="Email" onChange="checkaval(this.value)"><span>
-        E-mail address cannot be changed
+E-mail &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a class="tooltip"><input type="text" size="30" placeholder="Enter Email"  name="Email" id="Email" onChange="checkaval(this.value)"><span>
+        Your e-mail cannot be changed
     </span></a><br><br>
-    
-User Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a class="tooltip"><input type="text" size="30" placeholder="Enter User Name"   name="UserName" id="UserName" onchange="checkuser(this.value)"><span>
+Username &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a class="tooltip"> <input type="text" size="30"  name="UserName" id="UserName" placeholder="Enter User Name" onChange="checkuser(this.value)"><span>
         Username cannot be changed
-    </span></a>
-<br><br>
+    </span></a><br><br>
 Password &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="password" size="30" placeholder="Enter Password"  name="password1" id="password1"><br><br>
-Confirm Password &nbsp; &nbsp;<input type="password" size="30"  name="password2" id="password2" placeholder="Confirm password"><br><br>
+Confirm Password &nbsp; &nbsp;<input type="password" size="30"  name="password2" id="password2" placeholder="Enter Confirm Password"><br><br>
 </div>
                 </div>     
  <div class="grid_4">
-
- 
   <input type='submit' name="Next" value="Next" class="button-big red" />
 
- <br><br><br>All fields are mandatory.  </div>   
-   </form>
+ <br><br><br> All fields are mandatory.  </div>   
+   </form>    
             </div>
             <!-- end one-half -->                
         </div><!-- end grid columns -->

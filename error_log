@@ -515,3 +515,4 @@ Stack trace:
 [27-Sep-2013 23:55:13] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home7/interngr/public_html/student-profile.php on line 1230
 [27-Sep-2013 23:55:23] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home7/interngr/public_html/student-profile.php on line 1230
 [27-Sep-2013 23:55:35] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home7/interngr/public_html/student-profile.php on line 1230
+[03-Oct-2013 12:03:04] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home7/interngr/public_html/student-profile.php on line 1231

@@ -108,6 +108,45 @@ function chkval()
 		document.getElementById("dead_line").focus();
 		return false;
 	}
+	if((document.getElementById("dt_post").value!="")&&(document.getElementById("dead_line").value!=""))
+	{
+		var dt_pst=document.getElementById("dt_post").value;
+		var dt_lne=document.getElementById("dead_line").value;
+		var sp_pst=dt_pst.split("-");
+		var sp_lne=dt_lne.split("-");
+		var pst_y=sp_pst[0];
+		var pst_m=sp_pst[1];
+		var pst_d=sp_pst[2];
+		var lne_y=sp_lne[0];
+		var lne_m=sp_lne[1];
+		var lne_d=sp_lne[2];
+		if(pst_y<lne_y)
+		{
+			if(pst_m<lne_m)
+			{
+				
+				document.getElementById("error2").style.display='block';
+				document.getElementById("error2").innerHTML='Please Enter the Dead Line from date posted with in One Year!';
+				document.getElementById("dead_line").focus();
+				return false;
+				
+			}
+			if(pst_m==lne_m)
+			{
+				if(pst_d<lne_d)
+				{
+					
+					document.getElementById("error2").style.display='block';
+					document.getElementById("error2").innerHTML='Please Enter the Dead Line from date posted with in One Year!';
+					document.getElementById("dead_line").focus();
+					return false;
+				}				
+			}
+			
+		}
+		
+	}
+	
 	
 	
 	return true;
@@ -181,9 +220,9 @@ function chkval()
                 <div class="one-half">
 <div style="margin-top:20px;">
 
-<table width="334" height="300" border="0" cellpadding="10">
+<table width="360" height="300" border="0" cellpadding="10">
   <tr>
-    <td width="120">Job Title </td>
+    <td width="120">Job Title<b style="color:#F00">*</b> </td>
     <td width="180"><input type="text" name="job_title" id="job_title" size="30"></td>
   </tr>
   <tr>
@@ -191,19 +230,19 @@ function chkval()
     <td><input type="text" size="30" name="job_id" id="job_id"></td>
   </tr>
   <tr>
-    <td valign="top" style="padding-top:20px;">Job Department</td>
+    <td valign="top" style="padding-top:20px;">Job Department<b style="color:#F00">*</b> </td>
     <td> <input type="text" size="30" name="jbdept" id="jbdept"></td>
   </tr>
   <tr>
-    <td>Job Details</td>
+    <td>Job Details<b style="color:#F00">*</b> </td>
     <td><textarea name="jbdetails" id="jbdetails"  cols="27"></textarea></td>
   </tr>
   <tr>
-    <td>Date Posted</td>
+    <td>Date Posted<b style="color:#F00">*</b> </td>
     <td><input type="text" size="30" name="dt_post" id="dt_post" ></td>
   </tr>
   <tr>
-    <td>Deadline</td>
+    <td>Deadline<b style="color:#F00">*</b> </td>
     <td><input type="text" size="30" name="dead_line" id="dead_line"></td>
   </tr>
 </table>

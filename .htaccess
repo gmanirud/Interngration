@@ -1,0 +1,8 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^interngration\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.interngration\.com$
+RewriteRule ^/?$ "http\:\/\/signup\.interngration\.com\/" [R=301,L]
+
+RewriteOptions inherit
+

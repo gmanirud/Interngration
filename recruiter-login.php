@@ -43,14 +43,14 @@ function chklogin()
 	if(uname=="")
 	{
 		
-		document.getElementById("error").innerHTML='Please Enter the User Name';
+		document.getElementById("error").innerHTML='Please enter your username';
 		document.getElementById('uname').focus();
 		return false;
 	}
 	if(passwd=="")
 	{
 		
-		document.getElementById("error").innerHTML='Please Enter the Password';
+		document.getElementById("error").innerHTML='Please enter your password';
 		document.getElementById('pwd').focus();
 		return false;
 		
@@ -278,10 +278,10 @@ function chklogin()
             
             
                 <p>
-User Name <input type="text" size="30" name="uname" id="uname" placeholder="Enter Your Name"><br><br>
-Password &nbsp; &nbsp;<input type="password" size="30" name="pwd" id="pwd" placeholder="Enter the Password"><br><br>
+User Name <input type="text" size="30" name="uname" id="uname" placeholder="Username"><br><br>
+Password &nbsp; &nbsp;<input type="password" size="30" name="pwd" id="pwd" placeholder="Password"><br><br>
 <span style="margin:0px 30px 0px 0px; float:right;"><a href="recruiter-registration.php" class="button red">Register</a> <a onClick="return chklogin();" class="button red">Login</a></span><br><br>
-<span style="margin:0px 0px 0px 130px;"><a href="recruiter-forget-password.php">Forgot Password ?</a></span></p>                    
+<span style="margin:0px 0px 0px 130px;"><a href="recruiter-forget-password.php">Forgot Your Password?</a></span></p>                    
             </div>                    
           
         </div><!-- end grid columns -->

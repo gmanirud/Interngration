@@ -904,6 +904,7 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
                   <br/>
                   <select name="txtyear" id="txtyear">
                     <option value="">Select Year</option>
+                     <option value="New Grad" <?php if($univ_Year=='New Grad'){?> selected='selected' <?php  } ?>>New Grad</option>
                     <option value="1st Year" <?php if($univ_Year=='1st Year'){?> selected='selected' <?php  } ?>>1st Year</option>
                     <option value="2nd Year" <?php if($univ_Year=='2nd Year'){?> selected='selected' <?php  } ?>>2nd Year</option>
                     <option value="3rd Year" <?php if($univ_Year=='3rd Year'){?> selected='selected' <?php  } ?>>3rd Year</option>
