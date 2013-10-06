@@ -182,7 +182,7 @@ function check()
 	if(document.getElementById("Company").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Please enter your Company name';
+		document.getElementById("error").innerHTML='Please enter your company name';
 		document.getElementById("Company").focus();
 		return false;
 	}
@@ -290,28 +290,30 @@ function check()
 				
 				
                 <div class="one-half"><h4>Basic Information</h4>
-<div style="margin-top:20px;">First Name &nbsp;  &nbsp;<input type="text" size="30"  name="FirstName" id="FirstName" placeholder="Enter First Name"><br><br>
-Last Name &nbsp; &nbsp;<input type="text" size="30"  name="LastName" id="LastName" placeholder="Enter Last Name"><br><br>
-Company &nbsp; &nbsp; &nbsp;<input type="text" name="Company" id="Company" size="30" placeholder="Enter Company" ><br><br>
-City &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<input type="text" name="Address" id="Address" size="30" placeholder="Enter City" ><br><br></div>
+<div style="margin-top:20px;">First Name &nbsp;  &nbsp;<input type="text" size="30"  name="FirstName" id="FirstName" placeholder="First Name"><br><br>
+Last Name &nbsp; &nbsp;<input type="text" size="30"  name="LastName" id="LastName" placeholder="Last Name"><br><br>
+Company &nbsp; &nbsp; &nbsp;<input type="text" name="Company" id="Company" size="30" placeholder="Company" ><br><br>
+City &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<input type="text" name="Address" id="Address" size="30" placeholder="City" ><br><br></div>
                 </div>
                 
                 <div class="one-half-last"><h4>Account Information</h4>
 <div style="margin-top:20px;">
-E-mail &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a class="tooltip"><input type="text" size="30" placeholder="Enter Email"  name="Email" id="Email" onChange="checkaval(this.value)"><span>
+E-mail &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a class="tooltip"><input type="text" size="30" placeholder="e-mail"  name="Email" id="Email" onChange="checkaval(this.value)"><span>
         Your e-mail cannot be changed.
     </span></a><br><br>
-Username &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a class="tooltip"> <input type="text" size="30"  name="UserName" id="UserName" placeholder="Enter User Name" onChange="checkuser(this.value)"><span>
+Username &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a class="tooltip"> <input type="text" size="30"  name="UserName" id="UserName" placeholder="Username" onChange="checkuser(this.value)"><span>
         Username cannot be changed.
     </span></a><br><br>
-Password &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="password" size="30" placeholder="Enter Password"  name="password1" id="password1"><br><br>
-Confirm Password &nbsp; &nbsp;<input type="password" size="30"  name="password2" id="password2" placeholder="Enter Confirm Password"><br><br>
+Password &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="password" size="30" placeholder="Password"  name="password1" id="password1"><br><br>
+Confirm Password &nbsp; &nbsp;<input type="password" size="30"  name="password2" id="password2" placeholder="Confirm Password"><br><br>
 </div>
                 </div>     
- <div class="grid_4">
+<div class="grid_4">
   <input type='submit' name="Next" value="Next" class="button-big red" />
 
- <br><br><br> All fields are mandatory.  </div>   
+ <br><br><br> All fields are mandatory. 
+
+</div>   
    </form>    
             </div>
             <!-- end one-half -->                
