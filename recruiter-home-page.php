@@ -331,8 +331,8 @@ function chkimgvalidation()
             <ul>
                <li><a href="">Welcome:&nbsp; <?php print $username; ?></a></li>
                <li><a href="recruiter-home-page.php">Home</a></li>
-               <li><a href="logout.php">Logout</a></span></li>
                <li><a href="recruiterAccount.php">Account</a></li>
+               <li><a href="logout.php">Logout</a></span></li>              
            </ul>
               
                 <br style="clear: left" />
@@ -494,7 +494,7 @@ function chkimgvalidation()
 </table></div>
 			
 			 <div class="grid_8" style="">
-            	<h4 style="margin:20px;">Resume Tracking</h4>
+            	<h4 style="margin:20px;">Applicant Tracking</h4>
                 <p style="margin:20px; border:1px solid #666666; padding:10px; height:140px;width:395px;border:1px solid #ccc;Serif;overflow:auto;">
                 <?php /*?><?php
 		include "config.php"; 	
@@ -511,7 +511,6 @@ function chkimgvalidation()
 		}
 		?><?php */?>
          <a href="resumesReceived.php" title="Student Resume">My Received Resumes</a>
-             </p> 
 			 </div>
 	
    <!-- end grid columns -->
