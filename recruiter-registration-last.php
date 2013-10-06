@@ -60,16 +60,16 @@ if(isset($_GET['nextrid']))
 			$Profile_Image=$res["Profile_Image"];
 			if(($companyName=="")&&($hrLead=="")&&($Contact==""))
 			{
-				$companyName="Enter Company Name";
-			    $hrLead="Enter HR lead Name";
-			    $Contact="Enter Email";
+				$companyName="Company Name";
+			    $hrLead="Your Name";
+			    $Contact="your e-mail address";
 				$companyName1="";
 			    $hrLead1="";
 			    $Contact1="";
 			}
 			if($AboutMe=="")
 			{
-			    $AboutMe="Hello Recruiter, please enter full information about yourself.";
+			    $AboutMe="Enter a short blurb about your company, so that students will know how awesome it is.";
 				$AboutMe1="";
 			}
 			
@@ -122,7 +122,7 @@ function updaterecruiterabout()
 	if(document.getElementById("aboutme").value=="")
 	{
 		document.getElementById("error1").style.display='block';
-		document.getElementById("error1").innerHTML='Please Enter About Your Self!';
+		document.getElementById("error1").innerHTML='We\'re sure your company is not that boring! Tell us a little bit about it.';
 		document.getElementById("aboutme").focus();
 		return false;
 	}
@@ -357,9 +357,8 @@ xmlhttp.send();
         </div>
         <form id="frmRegister" name="frmRegister" method="post" action="RecruiterActivationMail.php">
         <div class="grid_17">
-          <h4 style="margin:20px 0px 10px 20px;">Who are you looking for</h4>
-          <p style="margin:0px 0px 0px 20px;">Filter students by: </p>
-         
+          <h4 style="margin:20px 0px 10px 20px;">Filter students by:</h4>
+        
           <table width="280" border="0" height="160" style="margin:0px 10px 20px 20px; border:1px solid #666666; padding:10px; float:left;">
             <tr>
               <th scope="col">Academic Background</th>
@@ -390,7 +389,7 @@ xmlhttp.send();
             <tr>
               <td>
                   <input type="checkbox" name="session_chk_1" id="session_chk_1" value="University of Toronto">
-                  University of Toronto<br>
+                  University of Toronto<br><br><br>
                   <h6> More universities to come soon.</h6>
                   <!-- Exclude these schools for now. Re-enable when we expand.
                   <input type="checkbox" name="session_chk_1" id="session_chk_1" value="University of toronto">
@@ -429,15 +428,15 @@ xmlhttp.send();
           </table>
          
         </div>
-        <div class="" style="float:right; width:600px;"> <span style="margin:10px 0px 0px 0px; float:right;">
-       
-        
-         <input type='submit' name="Finish" value="Finish" class="button red" />
-         <input type="hidden" name="academic_chk" id="academic_chk" value="<?php print "4"; ?>"/>
-         <input type="hidden" name="session_chk" id="session_chk" value="<?php print "11"; ?>"/>
-         <input type="hidden" name="hdn_sId" id="hdn_sId" value="<?php print $sessionid; ?>"/>
-       </span> </div>
-         </form>
+        <div class="" style="float:right; width:600px;"> 
+          <span style="margin:10px 0px 0px 0px; float:right;">
+            <input type='submit' name="Finish" value="Finish" class="button red" />
+            <input type="hidden" name="academic_chk" id="academic_chk" value="<?php print "4"; ?>"/>
+            <input type="hidden" name="session_chk" id="session_chk" value="<?php print "11"; ?>"/>
+            <input type="hidden" name="hdn_sId" id="hdn_sId" value="<?php print $sessionid; ?>"/>
+          </span> 
+        </div>
+        </form>
         
         
         <div class="clear"></div>
