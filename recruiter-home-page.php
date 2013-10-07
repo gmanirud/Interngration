@@ -362,8 +362,7 @@ function chkimgvalidation()
                 <a href="RecruiterWatchedWebinar.php" class="button red">Past Webinars</a>
                 <a href="recruiterInbox.php" class="button red">Inbox</a>
                 <a href="jobPosting.php" class="button red">Post a Job</a>           
-            </div>    
-                 
+            </div>                
         </div>        
             
                    
