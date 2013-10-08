@@ -102,10 +102,11 @@ if(!$organizer_key)
          <!-- header nav menu -->        
         <div id="menu" class="menu"> 
                <ul>
-                <li><a href="recruiterAccount.php">Welcome:&nbsp; <?php print $username; ?></a></li>
-               <li><a href="recruiter-home-page.php">Home</a></li></ul>
-               <li><a href="recruiterAccount.php">Account</a></li>
-               <li><a href="logout.php">Logout</a></span></li> 
+               		<li><a href="recruiterAccount.php">Welcome:&nbsp; <?php print $username; ?></a></li>
+               		<li><a href="recruiter-home-page.php">Home</a></li>
+               		<li><a href="recruiterAccount.php">Account</a></li>
+               		<li><a href="logout.php">Logout</a></span></li> 
+               </ul>
                <br style="clear: left" />
         </div>
         <!-- end header nav menu-->
