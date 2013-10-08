@@ -61,34 +61,26 @@ if (top.location!= self.location) {
     
   	<div id="body-background"><!-- this is the main background color of the page -->
     <div id="header-buffer"></div><!-- hack for header overlap **DONT'TOUCH** -->
-    
-    
+        
         <!-- page header -->
         <div id="pageheader-background"><!-- area with alternate background -->
-    
+     		 <center>
+			 	<iframe width="800" height="491" src="http://www.powtoon.com/embed/cwkDutApQpX/" frameborder="0" allowfullscreen></iframe>
+             </center>
             <!-- slider -->
-            <div id="slides-wrapper">       
-				<div id="slides"> 
-                    <a href="#" class="prev"></a><!-- left arrow -->
-                    <a href="#" class="next"></a><!-- right arrow -->
-                    
-				  <div class="slides_container">                            
-				  <!-- slide 1 -->
-                  <div class="slide"><a href="#" title="" target="_blank"><img src="images/slide1.png" alt="Slide 1"></a></div>  
-				  <!-- slide 2 -->
-                  </div><!-- end #slides_container --> 			
-            	</div><!-- end #slides -->     
-            </div><!-- end #slides-wrapper -->
+      
            </div><!-- end #pageheader-background-->		
      
 	 <!-- body -->
     <div id="body-wrapper" class="container_16">
     <div class="clear"></div>
                     <!-- title -->
-        <div class="grid_16 title"><img src="images/icon1.png" width="20" height="20" alt=""/><h4>Title Comes Here</h4></div>        <div class="clear"></div>            
+        <div class="grid_16 title"><img src="images/icon1.png" width="20" height="20" alt=""/><h4>Why Join Interngration?</h4></div>        <div class="clear"></div>            
 
 		 <!-- big quote -->
-        <div class="big-quote white-text"><p class="font-opensans">Some text comes here, can replace with orginal text. Some text comes here, can replace with orginal text. Some text comes here, can replace with orginal text. Some text comes here, can replace with orginal text. Some text comes here, can replace with orginal text. Some text comes here, can replace with orginal text. Some text comes here, can replace with orginal text. Some text comes here, can replace with orginal text. Some text comes here, can replace with orginal text. Some text comes here, can replace with orginal text. Some text comes here, can replace with orginal text. Some text comes here, can replace with orginal text. Some text comes here, can replace with orginal text.</p></div>
+        <div class="big-quote white-text"><p class="font-opensans">
+        	Our webinar sessions allows students to understand stories of the uprising startups and apply for jobs that can shape the companies' futures. Our recruiting platform provides a hassle free environment for both recruiters and students to avoid the trouble brought by traditional career fairs and tedious job application process. In addition, students will receive exclusive professional development workshops to sharpen their skills. <br><br> What are you still waiting for? The registration only takes 2 minutes.
+        </p></div>
         <!-- end big quote -->
 <div class="clear"></div>            
 </div><!-- end body-wrapper -->
