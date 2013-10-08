@@ -415,7 +415,8 @@ function chkimgvalidation()
 				if($Profile_Image!="")
 				{
 				?>
-                <a href="removeRecruiterImage.php?rid=<?php print $rid; ?>"> Remove Image </a>
+                <a href="removeRecruiterImage.php?rid=<?php print $rid; ?>"><span id= "remove_pic_link" > Remove Image</span></a>
+
                 <?php
 				}
 				?>
