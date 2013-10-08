@@ -17,7 +17,7 @@ header("location:student-login.php");
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Recruiter Account details</title>
+<title>Recruiter Account Settings - Interngration</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 
@@ -136,28 +136,28 @@ function updatestudentaccount()
 	if(FirstName=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Enter the First Name...!';
+		document.getElementById("error").innerHTML='Please enter your first name';
 		document.getElementById("FirstName").focus();
 		return false;
 	}
 	if(LastName=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Enter the Last Name...!';
+		document.getElementById("error").innerHTML='Please enter your last name';
 		document.getElementById("LastName").focus();
 		return false;
 	}
 	if(Company=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Enter the Company  Name...!';
+		document.getElementById("error").innerHTML='Please enter your company name';
 		document.getElementById("Company").focus();
 		return false;
 	}
 	if(Address=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Enter the City...!';
+		document.getElementById("error").innerHTML='Where is your company located?';
 		document.getElementById("Address").focus();
 		return false;
 	}
@@ -167,7 +167,7 @@ function updatestudentaccount()
 	if(document.getElementById("oldpassword").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Enter the Old Password...!';
+		document.getElementById("error").innerHTML='Please enter your old password';
 		document.getElementById("oldpassword").focus();
 		return false;
 	}
@@ -175,21 +175,21 @@ function updatestudentaccount()
 	if(document.getElementById("password1").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Enter the New Password...!';
+		document.getElementById("error").innerHTML='Please enter a new password';
 		document.getElementById("password1").focus();
 		return false;
 	}
 	if(document.getElementById("password2").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Enter the Confirm Password...!';
+		document.getElementById("error").innerHTML='Please confirm your new password';
 		document.getElementById("password2").focus();
 		return false;
 	}
 	if(document.getElementById("password2").value!=document.getElementById("password1").value)
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='New Password and Confirm Password is not incorrect...!';
+		document.getElementById("error").innerHTML='The entered passwords do not match. Please try again';
 		document.getElementById("password2").focus();
 		return false;
 	}
@@ -258,9 +258,12 @@ function editstudentaccount()
         <div id="logo"><a href="recruiter-home-page.php"><img src="images/logo.png" alt="interngration" width="400" height="80" /></a></div>
          <!-- header nav menu -->        
         <div id="menu" class="menu"> 
-               <ul>
-                <li><a href="recruiterAccount.php">Welcome&nbsp; :&nbsp; <?php print $username; ?></a></li>
-               <li><a href="recruiter-home-page.php">Home</a></li></ul>
+            <ul>
+            	<li><a href="recruiterAccount.php">Welcome:&nbsp; <?php print $username; ?></a></li>
+                <li><a href="recruiter-home-page.php">Home</a></li>
+                <a href="recruiterAccount.php" class="button red">Account</a>
+                <a href="logout.php" class="button red">Logout</a></span>
+            </ul>
                 <br style="clear: left" />
         </div>
         <!-- end header nav menu-->
@@ -274,13 +277,11 @@ function editstudentaccount()
             <div class="pageheader-title">
              <span class="mailno"><?php include "RecruiterUnreadMail.php"; ?></span>
                 <h1>Recruiter Account Setting</h1><span style="margin:0px 30px 10px 0px; float:right;">
-                  <a href="https://login.citrixonline.com/login?service=https%3A%2F%2Fglobal.gotomeeting.com%2Fmeeting%2Fj_spring_cas_security_check" target="_blank" class="button red">Schedule your Webinar</a>                
-                <a href="RecruiterUpcomingWebinar.php" class="button red">Scheduled Webinar</a>
-                 <a href="RecruiterWatchedWebinar.php" class="button red">Past Webinar</a>
+                  <a href="https://login.citrixonline.com/login?service=https%3A%2F%2Fglobal.gotomeeting.com%2Fmeeting%2Fj_spring_cas_security_check" target="_blank" class="button red">Schedule a Webinar</a>                
+                <a href="RecruiterUpcomingWebinar.php" class="button red">My Webinars</a>
+                 <a href="RecruiterWatchedWebinar.php" class="button red">Past Webinars</a>
                  <a href="recruiterInbox.php" class="button red">Inbox</a>
-                <a href="jobPosting.php" class="button red">Job Posting</a>
-                <a href="recruiterAccount.php" class="button red">Account</a>
-                <a href="logout.php" class="button red">Logout</a></span>
+                <a href="jobPosting.php" class="button red">Post a Job</a>
             </div>        
         </div>    
         
@@ -310,8 +311,8 @@ City &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; : &nbsp;
                 
                 <div class="one-half-last"><h4>Account Information</h4>
 <div style="margin-top:20px;">
-Email &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: &nbsp;&nbsp;<?php print $Email; ?><br><br>
-User Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : &nbsp;&nbsp;<?php print $UserName; ?>
+E-mail &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: &nbsp;&nbsp;<?php print $Email; ?><br><br>
+Username &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : &nbsp;&nbsp;<?php print $UserName; ?>
 </div>
                 </div>     
  <div class="grid_4">
@@ -334,7 +335,7 @@ User Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : &nbsp;&nbsp;
 <div style="margin-top:20px;">First Name &nbsp;  &nbsp;<input type="text" size="30"  name="FirstName" id="FirstName" value="<?php print $FirstName; ?>"><br><br>
 Last Name &nbsp; &nbsp;<input type="text" size="30"  name="LastName" id="LastName" value="<?php print $LastName; ?>"><br><br>
 Company &nbsp; &nbsp; &nbsp;<input type="text" name="Company" id="Company" size="30" value="<?php print $Company; ?>" ><br><br>
-City &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<input type="text" name="Address" id="Address" size="30" value="<?php print $Address; ?>" ><br><br></div>
+City &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" name="Address" id="Address" size="30" value="<?php print $Address; ?>" ><br><br></div>
                 </div>
                 
                 <div class="one-half-last"><h4>Account Information</h4>
@@ -343,7 +344,7 @@ Email &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbs
 User Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;: &nbsp;&nbsp;<?php print $UserName; ?> <br><br>
 Old Password &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" size="30"  name="oldpassword" id="oldpassword" onChange="chkoldpass(this.value);"><br><br>
 New Password &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="30"  name="password1" id="password1"><br><br>
-Confirm Password &nbsp; &nbsp;<input type="text" size="30"  name="password2" id="password2"><br><br>
+Confirm Password &nbsp; &nbsp;&nbsp; &nbsp;<input type="text" size="30"  name="password2" id="password2"><br><br>
 </div>
                 </div>     
  <div class="grid_4">

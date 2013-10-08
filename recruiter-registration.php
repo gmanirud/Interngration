@@ -82,14 +82,14 @@ function checkaval(usr)
 			if(resText == 1)
 			{
 				document.getElementById("error").style.display='block';
-		         document.getElementById("error").innerHTML='Email id is Already Exist!';
+		         document.getElementById("error").innerHTML='This e-mail address already';
 				document.getElementById('Email').value="";
 				document.getElementById('Email').focus();
 			}
 			else if(resText == 2)
 			{
 				document.getElementById("error").style.display='block';
-		         document.getElementById("error").innerHTML='This Email Id Already Register in Student Login!';
+		         document.getElementById("error").innerHTML='This e-mail is already registered with a student account';
 				document.getElementById('Email').value="";
 				document.getElementById('Email').focus();
 			}
