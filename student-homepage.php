@@ -66,10 +66,8 @@ header("location:student-login.php");
             <div class="pageheader-title">
              <span class="mailno"><?php include "StudentUnreadMail.php"; ?></span>
                 <h1>My Dashboard</h1><span style="margin:0px 30px 0px 0px; float:right;"> 
-                
-                <a href="StudentRegisteredWebinar.php" class="button red">My Webinars</a>
-                <a href= "student-homepage.php" class="button red">My Dashboard</a>
-                <a href="StudentWatchedWebinar.php" class="button red">Watched Webinars</a>               
+                <a href="StudentRegisteredWebinar.php" class="button red">Upcoming Webinars</a>   
+                <a href="StudentWatchedWebinar.php" class="button red">Watched Webinars</a>              
                 <a href="postedJob.php" class="button red">Job Board</a> 
                 <a href="AppliedPostedJob.php" class="button red">My Jobs</a> 
                 <a href="studentInbox.php" class="button red">My Inbox</a> 

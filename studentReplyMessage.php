@@ -175,7 +175,8 @@ if(document.getElementById("to_mail").value=="")
                 
                 <div class="" style="float:left; margin:0px 0px 20px 0px; width:700px;">
                 <input type='submit' name="Send" value="Send" class="button white" style="width:70"  />
-                     <input type='reset' name="Cancel" value="Cancel" class="button white" style="width:70"  />
+                   <!--  <input type='reset' name="Cancel" value="Cancel" class="button white" style="width:70"  />-->
+                 <a href="studentInbox.php"><input type="button" name="cancel" value="Cancel" class="button white" style="width:70" /></a>
                 <div style="float:left;color:#F00; font-weight:400; padding-top:2px; display:none" id="error2"></div>  
                 </div><!-- end .tabs-wrapper -->
     		</div><!-- end grid_8-->         
@@ -196,7 +197,8 @@ if(document.getElementById("to_mail").value=="")
 					   
 					<div class="" style="float:left; margin:0px 0px 20px 0px; width:700px;">
                      <input type='submit' name="Send" value="Send" class="button white" style="width:70"  />
-                     <input type='reset' name="Cancel" value="Cancel" class="button white" style="width:70"  />
+                     <a href="studentInbox.php"><input type="button" name="cancel" value="Cancel" class="button white" style="width:70" /></a>
+                   <!--  <input type='reset' name="Cancel" value="Cancel" class="button white" style="width:70"  /> -->
                    
 					 
 			</form>		   
