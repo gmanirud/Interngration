@@ -17,7 +17,7 @@ header("location:student-login.php");
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Student Registered Webinar</title>
+<title>Upcoming Webinars</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 
@@ -63,20 +63,21 @@ header("location:student-login.php");
 
 			
 ?>
+
 <?php
-include "citrix.php";
+  include "citrix.php";
 
-$citrix = new Citrix('2a3328f6717227aa1262eb368d013a47');
-$organizer_key = $citrix->get_organizer_key();
-//$organizer_key="1866916119511197701";
-//$citrix->pr($organizer_key);
+  $citrix = new Citrix('2a3328f6717227aa1262eb368d013a47');
+  $organizer_key = $citrix->get_organizer_key();
+  //$organizer_key="1866916119511197701";
+  //$citrix->pr($organizer_key);
 
-if(!$organizer_key)
-{
-	$url = $citrix->auth_citrixonline();
-	echo "<script type='text/javascript'>top.location.href = '$url';</script>";
-	exit;
-}
+  if(!$organizer_key)
+    {
+      $url = $citrix->auth_citrixonline();
+      echo "<script type='text/javascript'>top.location.href = '$url';</script>";
+      exit;
+    }
 ?>
 
 
@@ -114,21 +115,21 @@ if(!$organizer_key)
       <!-- page header -->
         <div id="pageheader-background"><!-- area with alternate background -->
             <div class="pageheader-title">
-            <span class="mailno"><?php include "StudentUnreadMail.php"; ?></span>
-                <h1>Registered Webinar</h1><span style="margin:0px 30px 0px 0px; float:right;">
-                 <a href="StudentRegisteredWebinar.php" class="button red">Registered Webinar</a>
-                   <a href="StudentWatchedWebinar.php" class="button red">Watched Webinar</a>    
-                <a href="studentJobApplication.php" class="button red">JobApplication</a> 
-                 <a href="AppliedPostedJob.php" class="button red">Applied Job</a> 
+              <span class="mailno"><?php include "StudentUnreadMail.php"; ?></span>
+              <h1>Upcoming Webinars</h1>
+              <span style="margin:0px 30px 0px 0px; float:right;">
+                <a href="StudentRegisteredWebinar.php" class="button red">Upcoming Webinars</a>
+                <a href="StudentWatchedWebinar.php" class="button red">Watched Webinar</a>    
+                <a href="studentJobApplication.php" class="button red">Job Application</a> 
+                <a href="AppliedPostedJob.php" class="button red">Applied Job</a> 
                 <a href="studentInbox.php" class="button red">Inbox</a>
-                 <a href="student-profile.php" class="button red">Profile</a> 
+                <a href="student-profile.php" class="button red">Profile</a> 
                 <a href="studentAccount.php" class="button red">Account</a>
-                <a href="logout.php" class="button red">Logout</a></span>
-            </div>        
+                <a href="logout.php" class="button red">Logout</a>
+              </span>
+            </div>
         </div>
-        
-    
-        
+
                           
     <!-- body -->
     <div id="body-wrapper" class="container_16">

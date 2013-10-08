@@ -810,14 +810,14 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
       <span class="mailno"><?php include "StudentUnreadMail.php"; ?></span>
         <h1>Student Profile</h1>
         <span style="margin:0px 30px 0px 0px; float:right;">
-        <a href="StudentRegisteredWebinar.php" class="button red">Registered Webinar</a>
+          <a href="StudentRegisteredWebinar.php" class="button red">Upcoming Webinars</a>
           <a href="StudentWatchedWebinar.php" class="button red">Watched Webinar</a>    
-        <a href="studentJobApplication.php" class="button red">JobApplication</a> 
-         <a href="AppliedPostedJob.php" class="button red">Applied Job</a> 
-                <a href="studentInbox.php" class="button red">Inbox</a>
-                 <a href="student-profile.php" class="button red">Profile</a> 
-                <a href="studentAccount.php" class="button red">Account</a>
-                <a href="logout.php" class="button red">Logout</a></span>
+          <a href="studentJobApplication.php" class="button red">Job Application</a> 
+          <a href="AppliedPostedJob.php" class="button red">Applied Job</a> 
+          <a href="studentInbox.php" class="button red">Inbox</a>
+          <a href="student-profile.php" class="button red">Profile</a> 
+          <a href="studentAccount.php" class="button red">Account</a>
+          <a href="logout.php" class="button red">Logout</a></span>
          </div>
     </div>
     

@@ -129,7 +129,7 @@ function filterjob()
         <?php
                  }                 
 				 ?>
-                 <a href="StudentRegisteredWebinar.php" class="button red">Registered Webinar</a>
+                 <a href="StudentRegisteredWebinar.php" class="button red">Upcoming Webinars</a>
                   <a href="StudentWatchedWebinar.php" class="button red">Watched Webinar</a>       
                 <a href="postedJob.php" class="button red">JobApplication</a> 
                  <a href="AppliedPostedJob.php" class="button red">Applied Job</a> 

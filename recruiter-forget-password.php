@@ -2,7 +2,7 @@
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Recruiter Forget Password</title>
+<title>Recruiter Password Reset - Interngration</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 
@@ -34,7 +34,7 @@ function chkpassword()
 	if(rec_Email=="")
 	{
 		
-		document.getElementById("error").innerHTML='Please Enter the Email';
+		document.getElementById("error").innerHTML='Please enter an e-mail address';
 		return false;
 	}
 	if(document.getElementById("rec_Email").value!="")
@@ -45,7 +45,7 @@ function chkpassword()
 		if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
 		{
 			document.getElementById("error").style.display="block";
-			document.getElementById("error").innerHTML='Not a valid e-mail Address';
+			document.getElementById("error").innerHTML='The e-mail address you\'ve entered is not valid!';
 			document.getElementById("rec_Email").focus();
 			   return false;
 		  }
@@ -66,7 +66,7 @@ function chkpassword()
 		if (xmlhttp.readyState==1 || xmlhttp.readyState==2 || xmlhttp.readyState==3)
 		{
 		
-		document.getElementById("error").innerHTML='Checking......';
+		document.getElementById("error").innerHTML='Checking..';
 		
 		}
 	  if (xmlhttp.readyState==4 && xmlhttp.status==200)
@@ -87,7 +87,7 @@ function chkpassword()
 			if(resText == 2)
 			{
 				document.getElementById("error").innerHTML='block';
-				document.getElementById("error").innerHTML='Invalid Email Id, This Email Id Not Register';
+				document.getElementById("error").innerHTML='This e-mail address is not registered!';
 				document.getElementById('rec_Email').value="";
 			}
 			
@@ -118,7 +118,9 @@ function chkpassword()
                 <br style="clear: left" />
         </div>
         <!-- end header nav menu-->
- </div> </div> </div>
+    </div>
+    </div> 
+    </div>
     <!-- end header -->     
     <div id="body-background"><!-- this is the main background color of the page -->
     <div id="header-buffer"></div><!-- hack for header overlap **DONT'TOUCH** -->
@@ -126,7 +128,7 @@ function chkpassword()
     <!-- page header -->
         <div id="pageheader-background"><!-- area with alternate background -->
             <div class="pageheader-title">
-                <h1>Recruiter Forget Password</h1>
+                <h1>Forgot your password?</h1>
             </div>        
         </div>        
                           
@@ -144,8 +146,8 @@ function chkpassword()
             <div class="grid_12">
             <p id="error" style="padding-left:60px; padding-top:5px; height:30px; color:#F00; font-weight:400; background-color:##CCC;"></p>
                 <p>
-Enter Email <input type="text" size="30" name="rec_Email" id="rec_Email" placeholder="Please Enter Email"><br><br>
-<span style="margin:0px 30px 0px 0px; float:right;"><a onClick="chkpassword();" class="button red">Send</a></span><br><br></p>                    
+Enter your e-mail address <input type="text" size="30" name="rec_Email" id="rec_Email" placeholder="e-mail"><br><br>
+<span style="margin:0px 30px 0px 0px; float:right;"><a onClick="chkpassword();" class="button red">Submit</a></span><br><br></p>                    
             </div>                    
           
         </div><!-- end grid columns -->
