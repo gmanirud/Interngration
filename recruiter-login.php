@@ -218,7 +218,7 @@ function chklogin()
                  <p id="error1" style="padding-top:5px; height:30px; color:#F00; font-weight:400; background-color:##CCC;">
                  <?php
 				
-				echo "Your Account has been Activated Successfully Please Login with your login details";
+				echo "Your account has been successfully activated, welcome!";
 				?>
                 </p>
                 <?php
@@ -243,7 +243,7 @@ function chklogin()
 			            if($stats=='1')
 			{
 				
-			echo "Please Check Your Mail to activate Your Account";
+			echo "Please check your e-mail for the activation link.";
 			}
 			
 			?>
