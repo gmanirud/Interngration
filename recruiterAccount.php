@@ -261,8 +261,8 @@ function editstudentaccount()
             <ul>
             	<li><a href="recruiterAccount.php">Welcome:&nbsp; <?php print $username; ?></a></li>
                 <li><a href="recruiter-home-page.php">Home</a></li>
-                <a href="recruiterAccount.php" class="button red">Account</a>
-                <a href="logout.php" class="button red">Logout</a></span>
+                <a href="recruiterAccount.php">Account</a>
+                <a href="logout.php">Logout</a></span>
             </ul>
                 <br style="clear: left" />
         </div>
