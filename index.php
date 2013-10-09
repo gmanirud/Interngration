@@ -65,8 +65,7 @@ if (top.location!= self.location) {
         <!-- page header -->
         <div id="pageheader-background"><!-- area with alternate background -->
      		 <center>
-			 	<iframe width="800" height="491" src="http://www.powtoon.com/embed/cwkDutApQpX/" frameborder="0" allowfullscreen></iframe>
-             </center>
+			 	<iframe src="//player.vimeo.com/video/76490050" width="800" height="491" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
             <!-- slider -->
       
            </div><!-- end #pageheader-background-->		
