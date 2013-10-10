@@ -173,8 +173,8 @@ $startpoint = ($page * $limit) - $limit;
 			 $startpoint=$startpoint+1;
 		while($res=mysql_fetch_array($ses_result))
 		{	
-		 $i++;
-    		$eid=$res["id"];
+		  $i++;
+    	$eid=$res["id"];
 			$fm_mail=$res["from_mail"];	
 			$to_mail=$res["to_mail"];
 			$subject=$res["subject"];
@@ -187,45 +187,71 @@ $startpoint = ($page * $limit) - $limit;
 			//  To Get Sender's Name from student and Recruiter Table
 			
 			$sql2="Select *  from student_register where Email='".$fm_mail."'";
-		$ses_ses=mysql_query($sql2);
-		$rowcount1= mysql_num_rows($ses_ses);
-		if($rowcount1>0)
-		{
-			$res1=mysql_fetch_array($ses_ses);
-			$FirstName=ucfirst(strtolower($res1['FirstName']));
-    		$LastName=ucfirst(strtolower($res1['LastName']));
-			$sendername=$FirstName." ".$LastName;
-		}
-		
-		$sql3="Select *  from recruiter_register where Email='".$fm_mail."'";
-		$ses_ses1=mysql_query($sql3);
-		$rowcount2= mysql_num_rows($ses_ses1);
-		if($rowcount2>0)
-		{
-			$res2=mysql_fetch_array($ses_ses1);
-			$FirstName=ucfirst(strtolower($res2['FirstName']));
-    		$LastName=ucfirst(strtolower($res2['LastName']));
-			$sendername=$FirstName." ".$LastName;
-		}
+      $ses_ses=mysql_query($sql2);
+      $rowcount1= mysql_num_rows($ses_ses);
+      if($rowcount1>0)
+       {  
+          $res1=mysql_fetch_array($ses_ses);
+          $FirstName=ucfirst(strtolower($res1['FirstName']));
+          $LastName=ucfirst(strtolower($res1['LastName']));
+          $sender_image1 = $res1['Profile_Image'];
+          $sendername=$FirstName." ".$LastName;
+
+        }
+      
+      $sql3="Select *  from recruiter_register where Email='".$fm_mail."'";
+      $ses_ses1=mysql_query($sql3);
+      $rowcount2= mysql_num_rows($ses_ses1);
+      if($rowcount2>0)
+        { 
+          $res2=mysql_fetch_array($ses_ses1);
+          $FirstName=ucfirst(strtolower($res2['FirstName']));
+          $LastName=ucfirst(strtolower($res2['LastName']));
+          $sender_image2 = $res2['Profile_Image'];
+          $sendername=$FirstName." ".$LastName;
+        }
 		
 		
 		
 			?>
-            
-			
-                <div class="post-out-message">     
-					  <div class="header-message" <?php if($flg_read=="0") { ?> style="background-color:#B4B4B4" <?php } ?>>
-                     
-                                <div class="date"  <?php if($flg_read=="0") { ?>  style="color:#000" <?php } ?>><?php print $SendDate ?></div>
-       <input name="chkbx<?php print $i; ?>" id="chkbx[]" type="checkbox" value="<?php print $eid; ?>" style="float:left; margin:10px 10px 50px 10px;">  <h5><a href="studentInboxView.php?eid=<?php print $eid; ?>"><?php print $sendername; ?> - <?php print $subject; ?></a> </h5>
-                                <p class="post-subtitle"><?php print $message; ?> ...</p> 
-							</div></div>
+
+			<div class="post-out-message">     
+			  <div class="header-message" <?php if($flg_read=="0") { ?> style="background-color:#B4B4B4" <?php } ?>>
+          <div class="date"  <?php if($flg_read=="0") { ?>  style="color:#000" <?php } ?>><?php print $SendDate ?></div>
+          <input name="chkbx<?php print $i; ?>" id="chkbx[]" type="checkbox" value="<?php print $eid; ?>" style="float:left; margin:10px 10px 50px 10px;">
+            <h5><a href="studentInboxView.php?eid=<?php print $eid; ?>">
+              <?php
+                if($sender_image1 != "")
+				          {
+					    ?>
+                    <img src="uploads/StudentImage/<?php echo $sender_image1 ?> " style ="height:20px; width:20px;" />
+              <?php
+                    $sender_image1 = ""; 
+                  }
+              ?>
+               <?php
+                if($sender_image2 != "")
+				          {
+					    ?>
+                    <img src="uploads/Recruiter/<?php echo $sender_image2 ?> " style ="height:20px; width:20px;" />
+              <?php
+                    $sender_image2 = ""; 
+                   }
+              ?>
+
+              <?php print $sendername; ?>
+              <?php print $subject; ?></a> </h5>
+          <p class="post-subtitle"><?php print $message; ?> ...</p> 
+				</div>
+      </div>
                  
 				
 		<?php		
 				
 			
-			?>
+?>
+
+
              <input type="hidden" name="chk" id="chk" value="<?php print $i; ?>" />
              <?php
 			

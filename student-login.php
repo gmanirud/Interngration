@@ -272,7 +272,6 @@ function chklogin()
 			}
 			?>
                 <p>
-<<<<<<< HEAD
                   <form action="" method="post" name="frm" id="frm" >
                     Username <input type="text" size="30" name="uname" id="uname" placeholder="Username"><br><br>
                     Password <input type="password" size="30" name="pwd" id="pwd" placeholder="Password"><br><br>
@@ -280,15 +279,6 @@ function chklogin()
                       <a onClick="chklogin();" class="button red">Login</a></span><br><br>
                     <span style="margin:0px 0px 0px 130px;"><a href="student-forget-password.php">Forgot Your Password ?</a></span></p>   
                   </form>                 
-=======
-                 <form action="" method="post" name="frm" id="frm" >
-Usename <input type="text" size="30" name="uname" id="uname" placeholder="Username"><br><br>
-Password &nbsp; &nbsp;<input type="password" size="30" name="pwd" id="pwd" placeholder="Password"><br><br>
-<span style="margin:0px 30px 0px 0px; float:right;"><a href="student-registration.php" class="button red">Register</a> 
-<a onClick="chklogin();" class="button red">Login</a></span><br><br>
-<span style="margin:0px 0px 0px 130px;"><a href="student-forget-password.php">Forgot Your Password?</a></span></p>   
-</form>                 
->>>>>>> 2f7d2ab09b92309691a53057dcee2af01735bcd8
             </div>                    
           
         </div><!-- end grid columns -->
