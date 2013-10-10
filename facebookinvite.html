@@ -1,0 +1,34 @@
+<html>
+   <head>
+   <title>My Great Canvas app</title>
+   </head>
+   <body>
+   <div id="fb-root"></div>
+   <script src="http://connect.facebook.net/en_US/all.js">
+   </script>
+  <script type='text/javascript'>
+		if (top.location!= self.location) {
+			top.location = self.location
+		}
+
+FB.init({
+appId:'516156771770986',
+cookie:true,
+status:true,
+xfbml:true
+});
+
+function FacebookInviteFriends()
+{
+FB.ui({
+method: 'apprequests',
+message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
+});
+}
+</script>
+   
+   
+   
+<a href='#' onclick='FacebookInviteFriends();' rel='nofollow' title='Invite Your Facebook Friends'> Facebook Invite Friends</a>
+   </body>
+ </html>
