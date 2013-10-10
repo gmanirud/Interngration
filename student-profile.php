@@ -395,37 +395,33 @@ xmlhttp.send();
 
 function ckhimage()
 {
-	
-	
-	
-	
 	var photoname=document.getElementById("uploadfile").value;
 
 	alert(photoname);
 	
-if (window.XMLHttpRequest)
-  {
-  xmlhttp=new XMLHttpRequest();
-  }
-else
-  {// code for IE6, IE5
-  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
-xmlhttp.onreadystatechange=function()
-  {
-	if (xmlhttp.readyState==1 || xmlhttp.readyState==2 || xmlhttp.readyState==3)
+  if (window.XMLHttpRequest)
     {
-   document.getElementById("upd").innerHTML="<img src='ïmages/fbloading.gif'>" ;
-	
-	
+      xmlhttp=new XMLHttpRequest();
     }
-  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+  else
+    { 
+      xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+  
+  xmlhttp.onreadystatechange=function()
+  
     {
-		var resp=xmlhttp.responseText;
-		      alert(resp);
-	
+      if (xmlhttp.readyState==1 || xmlhttp.readyState==2 || xmlhttp.readyState==3)
+        {
+          document.getElementById("upd").innerHTML="<img src='ïmages/fbloading.gif'>" ;
+        }
+      
+      if (xmlhttp.readyState==4 && xmlhttp.status==200)
+        {
+          var resp=xmlhttp.responseText;
+          alert(resp);
+        }
     }
-  }
 
 xmlhttp.open("GET","ajaxpage/ajaxDemo.php?session="+session+"&photopath="+chkimg,true);
 xmlhttp.send();
