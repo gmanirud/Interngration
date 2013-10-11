@@ -211,8 +211,6 @@ $startpoint = ($page * $limit) - $limit;
           $sendername=$FirstName." ".$LastName;
         }
 		
-		
-		
 			?>
 
 			<div class="post-out-message">     
