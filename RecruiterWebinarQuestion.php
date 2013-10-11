@@ -17,7 +17,7 @@ header("location:recruiter-login.php");
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Recruiter Q & A Forum</title>
+<title>Recruiter Q&A Forum - Interngration</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 
@@ -134,12 +134,17 @@ function chkval()
          <!-- header nav menu -->        
         <div id="menu" class="menu"> 
                <ul>
-                <li><a href="recruiterAccount.php">Welcome&nbsp; :&nbsp; <?php print $username; ?></a></li>
-               <li><a href="recruiter-home-page.php">Home</a></li></ul>
+                <li><a href="recruiterAccount.php">Welcome:&nbsp; <?php print $username; ?></a></li>
+                <li><a href="recruiter-home-page.php">Home</a></li>
+                <li><a href="recruiterAccount.php">Account</a></li>
+               <li><a href="logout.php">Logout</a></span></li>     
+           </ul>
                 <br style="clear: left" />
         </div>
         <!-- end header nav menu-->
- </div> </div> </div>
+    </div> 
+    </div> 
+    </div>
     <!-- end header -->     
     <div id="body-background"><!-- this is the main background color of the page -->
     <div id="header-buffer"></div><!-- hack for header overlap **DONT'TOUCH** -->
@@ -148,14 +153,13 @@ function chkval()
         <div id="pageheader-background"><!-- area with alternate background -->
             <div class="pageheader-title">
              <span class="mailno"><?php include "RecruiterUnreadMail.php"; ?></span>
-                <h1>Upcoming Webinar</h1><span style="margin:0px 30px 10px 0px; float:right;">
-                <a href="https://login.citrixonline.com/login?service=https%3A%2F%2Fglobal.gotomeeting.com%2Fmeeting%2Fj_spring_cas_security_check" target="_blank" class="button red">Schedule your Webinar</a>                
-                <a href="RecruiterUpcomingWebinar.php" class="button red">Scheduled Webinar</a>
-                 <a href="RecruiterWatchedWebinar.php" class="button red">Past Webinar</a>
-                 <a href="recruiterInbox.php" class="button red">Inbox</a>
-                <a href="jobPosting.php" class="button red">Job Posting</a>
-                <a href="recruiterAccount.php" class="button red">Account</a>
-                <a href="logout.php" class="button red">Logout</a></span>
+                <h1>Q&A Forum</h1><span style="margin:0px 30px 10px 0px; float:right;">
+                <a href="https://login.citrixonline.com/login?service=https%3A%2F%2Fglobal.gotomeeting.com%2Fmeeting%2Fj_spring_cas_security_check" target="_blank" class="button red">Schedule a Webinar</a>                
+                <a href="RecruiterUpcomingWebinar.php" class="button red">My Webinars</a>
+                <a href="RecruiterWatchedWebinar.php" class="button red">Past Webinars</a>
+                <a href="recruiterInbox.php" class="button red">Inbox</a>
+                <a href="jobPosting.php" class="button red">Post a Job</a>    
+
             </div>        
         </div>    
         
@@ -171,7 +175,7 @@ function chkval()
 	if(isset($_GET['status']))
 	{
 		?>
-        <p style="padding-left:60px;  height:30px; color:#F00; font-weight:400; background-color:##CCC;"> Posted Successfully...!</p>
+        <p style="padding-left:60px;  height:30px; color:#F00; font-weight:400; background-color:##CCC;"> Post Successful</p>
         <?php
 		
 	}
@@ -202,27 +206,27 @@ function chkval()
 <div style="margin-top:20px;">
 <table width="500" border="0">
   <tr>
-    <td width="101" >Title</td>
+    <td width="101" >Title<b style="color:#F00">*</b</td>
     <td width="209"><input type="text" size="30"  name="title" id="title" ></td>
   </tr>
   <tr>
   <td>&nbsp;</td>
   </tr>
   <tr>
-    <td>Description</td>
+    <td>Text<b style="color:#F00">*</b</td>
     <td><textarea name="descript" id="descript" rows="5" cols="50"></textarea></td>
   </tr>
 </table>
 
 </div>
-                </div>
+</div>
                 
                      
  <div class="grid_4">
      <input type="hidden" name="web_id" id="web_id" value="<?php print $webId ?>" />
       <input type="hidden" name="post_by" id="post_by" value="<?php print $fullname ?>" />
  
-  <input type='submit' name="Update" value="POST" class="button-big red"  />
+  <input type='submit' name="Update" value="Submit" class="button-big red"  />
 
   </div>   
   
@@ -232,12 +236,12 @@ function chkval()
             <br/>
             <table width="100%" border="1" bgcolor="#000000" cellpadding="10" cellspacing="10">
               <tr bgcolor="#e53f3f">
-                <td height="29" style="color:#FFF">S.NO</td>
+                <!--<td height="29" style="color:#FFF">S.NO</td>-->
                 <td style="color:#FFF">Title</td>
                 <td style="color:#FFF">Posted By</td>
                 <td style="color:#FFF">Replies</td>
                 <td style="color:#FFF">Last Reply</td>
-                 <td style="color:#FFF">View</td>
+                 <td style="color:#FFF">View Thread</td>
               </tr>
                <?php
 					     

@@ -451,7 +451,7 @@ function chkimgvalidation()
             <div class="grid_8" style="">
           <div>
             <div style="float:left;">
-              <h4 style="margin:20px;">About Me</h4>
+              <h4 style="margin:20px;">About <?php print $companyName; ?></h4>
             </div>
             <div style="float:right; padding-right:20px; padding-top:10px;">
               <input type="button" value="Edit" onClick="editrecruiterabout()" name="about_edit" id="about_edit" style="width:60px; cursor:pointer">
