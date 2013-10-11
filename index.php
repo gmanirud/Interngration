@@ -72,17 +72,34 @@ if (top.location!= self.location) {
      
 	 <!-- body -->
     <div id="body-wrapper" class="container_16">
-    <div class="clear"></div>
-                    <!-- title -->
-        <div class="grid_16 title"><img src="images/icon1.png" width="20" height="20" alt=""/><h4>Why Join Interngration?</h4></div>        <div class="clear"></div>            
+    
+        <!-- title -->
+    <div class="grid_16 center-text"><h2>Why Join Interngration?</h2> <div class="clear"></div>            
 
-		 <!-- big quote -->
-        <div class="big-quote white-text"><p class="font-opensans">
-        	Our webinar sessions allows students to understand stories of the uprising startups and apply for jobs that can shape the companies' futures. Our recruiting platform provides a hassle free environment for both recruiters and students to avoid the trouble brought by traditional career fairs and tedious job application process. In addition, students will receive exclusive professional development workshops to sharpen their skills. <br><br> What are you still waiting for? The registration only takes 2 minutes.
-        </p></div>
+		 <!-- Why join Interngration -->
+         <div class ="grid_8_orig light-type grey" style = "float:left; text-align: justify;">
+         <h4 class ="center-text">Students</h4>
+             <p>Our webinar sessions allows students to understand stories of the uprising startups and apply 
+            for jobs that can shape the companies' futures. Our recruiting platform provides a hassle free environment 
+            for both recruiters and students to avoid the trouble brought by traditional career fairs and tedious job 
+            application process. In addition, students will receive exclusive professional development workshops 
+            to sharpen their skills.</p>
+        
+        </div>
+
+        <div class ="grid_8_orig light-type grey" style = "float:right; text-align: justify;" >
+        <h4 class ="center-text">Recruiters</h4>
+        <p>Our webinar sessions allows students to understand stories of the uprising startups and apply 
+            for jobs that can shape the companies' futures. Our recruiting platform provides a hassle free environment 
+            for both recruiters and students to avoid the trouble brought by traditional career fairs and tedious job 
+            application process. In addition, students will receive exclusive professional development workshops 
+            to sharpen their skills.</p>
+        </div> 
+    </div>
+
         <!-- end big quote -->
-<div class="clear"></div>            
-</div><!-- end body-wrapper -->
+    <div class="clear"></div>            
+    </div><!-- end body-wrapper -->
     </div><!-- end body-background -->
 
     <!-- footer -->

@@ -35,10 +35,10 @@ CSS overview:
 	
 ----------------------------------------------------------------------------------------------------*/
 
-
 /*----------------------------------------------------------------------------------------------------
-	1. RESET
+	0. Custom CSS
 ----------------------------------------------------------------------------------------------------*/
+
 
 #remove_pic_link {
   color: #E53F3F;
@@ -47,6 +47,17 @@ CSS overview:
   font-weight: 800;
 }
 
+.center-text {
+	text-align: center;
+}
+
+.no-text-styling{
+	text-align: none;
+}
+
+/*----------------------------------------------------------------------------------------------------
+	1. RESET
+----------------------------------------------------------------------------------------------------*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite,  del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, td {
 	margin:0px; 
 	padding:0px;
@@ -155,6 +166,8 @@ img, iframe {max-width:100%;}
 .container_16 .grid_15 { width: 880px; }
 .container_16 .grid_16 { width: 940px; }
 
+.container_16 .grid_8_orig {width: 460px;}
+
 .grid_8 { width: 456px; border:1px solid #999999; }
 .grid_17 { width: 933px; border:1px solid #999999; }
 .grid_18 { width: 700px; margin:0px 0px 20px 120px; }
@@ -188,7 +201,7 @@ img, iframe {max-width:100%;}
 .one-third, .one-half, .one-fourth {float: left;}
 .one-half{width:400px;padding-right:2%; margin:0px 0px 0px 60px;}
 .one-half-last{width:350px; float:right; padding-right:2%; margin:0px 0px 0px 60px;}
-.one-third {width:28.9%;margin-right:3%; padding:15px 0px 50px 50px; border:1px #838383 solid;}
+.one-third {width:31.3333333%; padding-right: 2%;}
 .one-fourth {width:23%;padding-right:2%;}
 
 /*-- global attributes --*/
@@ -2115,6 +2128,18 @@ hr.two {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+.light-type
+{
+	font-weight: 100;
+	font-size: 12px;
+	line-height: 1.5em;	
+}
+
+.grey
+{
+	color: #54524d
+}
+
 
 /*----------------------------------------------------------------------------------------------------
 	28. Tabs (Coda-Slider 2.0)
@@ -2906,9 +2931,6 @@ margin:0px 0px 0px 50px;
 padding:10px 0px 0px 0px;
 color:#666666 !important;
 }
-
-
-
 
 .job-posted {
 	float: left;
