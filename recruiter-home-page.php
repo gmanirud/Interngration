@@ -101,7 +101,7 @@ if(isset($_SESSION['ruid']))
 			}
 			if($AboutMe=="")
 			{
-			    $AboutMe="Hello Recruiter, please enter full information about yourself.";
+			    $AboutMe="Hello Recruiter, please tell us about yourself.";
 				$AboutMe1="";
 			}
 		}
@@ -176,7 +176,7 @@ function updaterecruiterabout()
 	if(document.getElementById("aboutme").value=="")
 	{
 		document.getElementById("error1").style.display='block';
-		document.getElementById("error1").innerHTML='Please Enter About Your Self!';
+		document.getElementById("error1").innerHTML='Please enter a little something about yourself! You\'re not that boring.';
 		document.getElementById("aboutme").focus();
 		return false;
 	}
@@ -311,15 +311,9 @@ function chkimgvalidation()
 </script>
 
 
-
-
-
 </head>
 <body>
 <div id="wrapper">
-
-
-
 
     <!-- header -->
     <div class="fixposition">
@@ -355,7 +349,7 @@ function chkimgvalidation()
         <div id="pageheader-background"><!-- area with alternate background -->
        
             <div class="pageheader-title">       
-               <span class="mailno"><?php include "RecruiterUnreadMail.php"; ?></span>  
+                <span class="mailno"><?php include "RecruiterUnreadMail.php"; ?></span>  
                 <h1>Recruiter Home</h1><span style="margin:0px 30px 10px 0px; float:right;">
                 <a href="https://login.citrixonline.com/login?service=https%3A%2F%2Fglobal.gotomeeting.com%2Fmeeting%2Fj_spring_cas_security_check" target="_blank" class="button red">Schedule a Webinar</a>
                 <a href="RecruiterUpcomingWebinar.php" class="button red">My Webinars</a>

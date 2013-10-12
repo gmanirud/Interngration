@@ -152,7 +152,7 @@ if(document.getElementById("to_mail").value=="")
 					</div>
 					   
 					<div class="" style="float:left; margin:0px 0px 20px 0px; width:700px;">
-                     <input type='s' name="Send" value="Send" class="button white" style="width:70"  />
+                     <input type='submit' name="Send" value="Send" class="button white" style="width:70"  />
                   <input type='button' onclick="window.location.href='studentInbox.php'" name="Cancel" value="Cancel" class="button white" style="width:70"  />
                    
 					 
