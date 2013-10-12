@@ -57,7 +57,9 @@ header("location:recruiter-login.php");
                 <br style="clear: left" />
         </div>
         <!-- end header nav menu-->
- </div> </div> </div>
+    </div>
+    </div>
+    </div>
     <!-- end header -->     
     <div id="body-background"><!-- this is the main background color of the page -->
     <div id="header-buffer"></div><!-- hack for header overlap **DONT'TOUCH** -->

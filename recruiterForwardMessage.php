@@ -18,7 +18,7 @@ include "studentToEmail.php"; ?>
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Forward Compose Message</title>
+<title>Messages - Interngration</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 
@@ -44,21 +44,21 @@ function chkvalid()
 if(document.getElementById("to_mail").value=="")
 	{
 		document.getElementById("error2").style.display='block';
-		document.getElementById("error2").innerHTML='Please Enter the To Mail!';
+		document.getElementById("error2").innerHTML='Please enter the recepient\'s name';
 		document.getElementById("to_mail").focus();
 		return false;
 	}
 	if(document.getElementById("subject_mail").value=="")
 	{
 		document.getElementById("error2").style.display='block';
-		document.getElementById("error2").innerHTML='Please Enter the Subject!';
+		document.getElementById("error2").innerHTML='Please add a subject';
 		document.getElementById("subject_mail").focus();
 		return false;
 	}
 	if(document.getElementById("message_mail").value=="")
 	{
 		document.getElementById("error2").style.display='block';
-		document.getElementById("error2").innerHTML='Please Enter the Message!';
+		document.getElementById("error2").innerHTML='The message field is empty';
 		document.getElementById("message_mail").focus();
 		return false;
 	}
@@ -77,13 +77,18 @@ if(document.getElementById("to_mail").value=="")
         <div id="logo"><a href="recruiter-home-page.php"><img src="images/logo.png" alt="interngration" width="400" height="80" /></a></div>
          <!-- header nav menu -->        
         <div id="menu" class="menu"> 
-               <ul>
-               <li><a href="">Welcome&nbsp; :&nbsp; <?php print $username; ?></a></li>
-               <li><a href="recruiter-home-page.php">Home</a></li></ul>
+                        <ul>
+               <li><a href="">Welcome:&nbsp; <?php print $username; ?></a></li>
+               <li><a href="recruiter-home-page.php">Home</a></li>
+               <li><a href="recruiterAccount.php">Account</a></li>
+               <li><a href="logout.php">Logout</a></span></li>              
+            </ul>
                 <br style="clear: left" />
         </div>
         <!-- end header nav menu-->
- </div> </div> </div>
+    </div>
+    </div>
+    </div>
     <!-- end header -->     
     <div id="body-background"><!-- this is the main background color of the page -->
     <div id="header-buffer"></div><!-- hack for header overlap **DONT'TOUCH** -->
@@ -91,10 +96,7 @@ if(document.getElementById("to_mail").value=="")
     <!-- page header -->
        <div id="pageheader-background"><!-- area with alternate background -->
             <div class="pageheader-title">
-                <h1>Forward Compose Message</h1><span style="margin:0px 30px 10px 0px; float:right;">
-                <a href="recruiterInbox.php" class="button red">Inbox</a>
-                <a href="recruiterAccount.php" class="button red">Account</a>
-                <a href="logout.php" class="button red">Logout</a></span>
+                <h1>Forward Message</h1><span style="margin:0px 30px 10px 0px; float:right;">
             </div>        
         </div>         
                           
