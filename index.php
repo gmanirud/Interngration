@@ -77,8 +77,9 @@ if (top.location!= self.location) {
     <div class="grid_16 center-text"><h2>Why Join Interngration?</h2> <div class="clear"></div>            
 
 		 <!-- Why join Interngration -->
-         <div class ="grid_8_orig light-type grey" style = "float:left; text-align: justify;">
-         <h4 class ="center-text">Students</h4>
+        <div class ="grid_8_orig light-type grey" style = "float:left; text-align: justify;">
+        <img src="images/student.png" alt ="recruiter picture" class = "center">
+        <h4 class ="center-text">Students</h4>
              <p>Our webinar sessions allows students to understand stories of the uprising startups and apply 
             for jobs that can shape the companies' futures. Our recruiting platform provides a hassle free environment 
             for both recruiters and students to avoid the trouble brought by traditional career fairs and tedious job 
@@ -88,6 +89,7 @@ if (top.location!= self.location) {
         </div>
 
         <div class ="grid_8_orig light-type grey" style = "float:right; text-align: justify;" >
+        <img src="images/recruiter.png" alt ="recruiter picture" class = "center">
         <h4 class ="center-text">Recruiters</h4>
         <p>Our webinar sessions allows students to understand stories of the uprising startups and apply 
             for jobs that can shape the companies' futures. Our recruiting platform provides a hassle free environment 
