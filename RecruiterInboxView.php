@@ -16,7 +16,7 @@ header("location:recruiter-login.php");
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Recruiter Inbox View</title>
+<title>Recruiter Inbox - Interngration</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 
@@ -48,13 +48,18 @@ header("location:recruiter-login.php");
         <div id="logo"><a href="index.php"><img src="images/logo.png" alt="interngration" width="400" height="80" /></a></div>
          <!-- header nav menu -->        
         <div id="menu" class="menu"> 
-               <ul>
-                <li><a href="">Welcome&nbsp; :&nbsp; <?php print $username; ?></a></li>
-               <li><a href="recruiter-home-page.php">Home</a></li></ul>
+            <ul>
+               <li><a href="">Welcome:&nbsp; <?php print $username; ?></a></li>
+               <li><a href="recruiter-home-page.php">Home</a></li>
+               <li><a href="recruiterAccount.php">Account</a></li>
+               <li><a href="logout.php">Logout</a></span></li>              
+            </ul>
                 <br style="clear: left" />
         </div>
         <!-- end header nav menu-->
- </div> </div> </div>
+    </div> 
+    </div> 
+    </div>
     <!-- end header -->     
     <div id="body-background"><!-- this is the main background color of the page -->
     <div id="header-buffer"></div><!-- hack for header overlap **DONT'TOUCH** -->
@@ -63,14 +68,12 @@ header("location:recruiter-login.php");
        <div id="pageheader-background"><!-- area with alternate background -->
             <div class="pageheader-title">
              <span class="mailno"><?php include "RecruiterUnreadMail.php"; ?></span>
-                <h1>Recruiter Inbox Message</h1><span style="margin:0px 30px 10px 0px; float:right;">
-               <a href="https://login.citrixonline.com/login?service=https%3A%2F%2Fglobal.gotomeeting.com%2Fmeeting%2Fj_spring_cas_security_check" target="_blank" class="button red">Schedule your Webinar</a>
-                <a href="RecruiterUpcomingWebinar.php" class="button red">Scheduled Webinar</a>
-                <a href="RecruiterWatchedWebinar.php" class="button red">Past Webinar</a>
+                <span style="margin:0px 30px 10px 0px; float:right;">
+                <a href="https://login.citrixonline.com/login?service=https%3A%2F%2Fglobal.gotomeeting.com%2Fmeeting%2Fj_spring_cas_security_check" target="_blank" class="button red">Schedule a Webinar</a>
+                <a href="RecruiterUpcomingWebinar.php" class="button red">My Webinars</a>
+                <a href="RecruiterWatchedWebinar.php" class="button red">Past Webinars</a>
                 <a href="recruiterInbox.php" class="button red">Inbox</a>
-                <a href="jobPosting.php" class="button red">Job Posting</a>
-                <a href="recruiterAccount.php" class="button red">Account</a>
-                <a href="logout.php" class="button red">Logout</a></span>
+                <a href="jobPosting.php" class="button red">Post a Job</a>      
             </div>        
         </div>      
                           
