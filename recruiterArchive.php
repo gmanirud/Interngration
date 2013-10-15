@@ -49,7 +49,7 @@ header("location:recruiter-login.php");
          <!-- header nav menu -->        
         <div id="menu" class="menu"> 
             <ul>
-               <li><a href="">Welcome:&nbsp; <?php print $username; ?></a></li>
+               
                <li><a href="recruiter-home-page.php">Home</a></li>
                <li><a href="recruiterAccount.php">Account</a></li>
                <li><a href="logout.php">Logout</a></span></li>              
