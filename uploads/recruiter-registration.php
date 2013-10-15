@@ -255,7 +255,7 @@ function check()
     <div class="fixposition">
     <div id="header-wrapper">
     <div id="header-content">
-        <div id="logo"><a href="index.php"><img src="images/logo.png" alt="interngration" width="400" height="80" /></a></div>
+        <div id="logo"><a href="index.php"><img src="images/logo.png" alt="interngration" width="400" height="64" /></a></div>
          <!-- header nav menu -->        
         <div id="menu" class="menu"> 
                <ul><li><a href="index.php">Home</a></li></ul>
