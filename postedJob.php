@@ -104,10 +104,12 @@ function filterjob()
         <div id="logo"><a href="student-homepage.php"><img src="images/logo.png" alt="interngration" width="400" height="80" /></a></div>
          <!-- header nav menu -->        
         <div id="menu" class="menu"> 
-               <ul>
-               <li><a href="">Welcome&nbsp; :&nbsp; <?php print $username; ?></a></li>
-               <li><a href="student-homepage.php">Home</a></li></ul>
-                <br style="clear: left" />
+          <ul>
+            <!-- <li><a href="">Welcome&nbsp; :&nbsp; <?php print $username; ?></a></li> -->
+            <li><a href="student-homepage.php">Home</a></li>
+            <li><a href="studentAccount.php"> My Account</a></li>
+            <li><a href="logout.php" >Logout</a></li></ul>
+        <br style="clear: left" />
         </div>
         <!-- end header nav menu-->
  </div> </div> </div>
@@ -130,13 +132,11 @@ function filterjob()
                  }                 
 				 ?>
                  <a href="StudentRegisteredWebinar.php" class="button red">Upcoming Webinars</a>
-                  <a href="StudentWatchedWebinar.php" class="button red">Watched Webinar</a>       
-                <a href="postedJob.php" class="button red">JobApplication</a> 
+                 <a href="StudentWatchedWebinar.php" class="button red">Watched Webinar</a>       
+                 <a href="postedJob.php" class="button red">JobApplication</a> 
                  <a href="AppliedPostedJob.php" class="button red">Applied Job</a> 
-                <a href="studentInbox.php" class="button red">Inbox</a> 
-                <a href="student-profile.php" class="button red">Profile</a> 
-                <a href="studentAccount.php" class="button red">Account</a>
-                <a href="logout.php" class="button red">Logout</a></span>
+                 <a href="studentInbox.php" class="button red">Inbox</a> 
+                 <a href="student-profile.php" class="button red">Profile</a></span> 
             </div>        
         </div>      
                           
