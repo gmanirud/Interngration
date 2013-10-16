@@ -133,9 +133,7 @@ include "config.php";
 
             
            		<!-- title -->
-                <div class="title">
-                	     
-                </div>                
+                <div class="title"><h4>Coming soon</h4></div>                
 
                
                 <!-- post 1 -->
