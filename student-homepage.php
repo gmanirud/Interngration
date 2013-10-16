@@ -103,7 +103,7 @@ include "config.php";
             <div class="grid_20"> 
               
                 <!-- sidebar nav -->
-                <div class="title"><h4>Featured Employer Sessions</h4></div>
+                <div class="title"><h4>Featured Webinars</h4></div>
                 <!-- post 6 -->
                 <div class="post-out-wrapper">
 
