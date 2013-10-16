@@ -114,7 +114,7 @@ include "config.php";
                         <div class="hover">                
                             <!-- job 4 -->
             <div class="recent-job">                    
-            <div class="hover"><a href="http://www.youtube.com/watch?v=oY59wZdCDo0" data-rel="prettyPhoto" title="Enter Title Here" >
+            <div class="hover"><a href="#" data-rel="prettyPhoto" title="Enter Title Here" >
             <span class="play"></span><img src="images/job1.jpg" width="220" height="175" alt=""/></a></div>
             </div>  
                         </div>  
@@ -148,7 +148,7 @@ include "config.php";
                         <div class="hover">                
                             <!-- job 4 -->
             <div class="recent-job">                    
-            <div class="hover"><a href="http://www.youtube.com/watch?v=oY59wZdCDo0" data-rel="prettyPhoto" title="Enter Title Here" >
+            <div class="hover"><a href="#" data-rel="prettyPhoto" title="Enter Title Here" >
             <span class="play"></span><img src="images/job1.jpg" width="220" height="175" alt=""/></a></div>
             </div>  
                         </div>  
@@ -166,7 +166,7 @@ include "config.php";
                         <div class="hover">                
                             <!-- job 4 -->
             <div class="recent-job">                    
-            <div class="hover"><a href="http://www.youtube.com/watch?v=oY59wZdCDo0" data-rel="prettyPhoto" title="Enter Title Here" >
+            <div class="hover"><a href="#" data-rel="prettyPhoto" title="Enter Title Here" >
             <span class="play"></span><img src="images/job1.jpg" width="220" height="175" alt=""/></a></div>
             </div>  
                         </div>  
@@ -185,7 +185,7 @@ include "config.php";
                         <div class="hover">                
                             <!-- job 4 -->
             <div class="recent-job">                    
-            <div class="hover"><a href="http://www.youtube.com/watch?v=oY59wZdCDo0" data-rel="prettyPhoto" title="Enter Title Here" >
+            <div class="hover"><a href="#" data-rel="prettyPhoto" title="Enter Title Here" >
             <span class="play"></span><img src="images/job1.jpg" width="220" height="175" alt=""/></a></div>
             </div>  
                         </div>  
