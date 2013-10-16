@@ -148,7 +148,7 @@ function filterjob()
 		$rowcount= mysql_num_rows($ses_result);	
 		if($rowcount=='0')
 		{
-			print "No Records Found";
+			print "You haven't applied for any jobs!";
 			
 		}
 		else

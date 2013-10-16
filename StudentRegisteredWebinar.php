@@ -160,7 +160,7 @@ header("location:student-login.php");
                             </tr>
                             <tr align="center">
                             <td style="color:#F00; font-size:14px;">
-                            No Registration Found
+                            There are no webinars coming up. Check back in a couple of days, there are always great new companies joining us!
                             </td>
                             </tr>
                             </table>
