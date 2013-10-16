@@ -2,7 +2,7 @@
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Student Register</title>
+<title>Student Registration - Interngration</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 
@@ -222,12 +222,13 @@ function check()
 		var clsub=trim(n[1]);
 		var s2="mail.utoronto.ca";
         var s3="utoronto.ca";
+        var s4="eecg.toronto.edu";
 		
-		if ( (clsub.toString() != s2.toString()) &&  (clsub.toString() != s3.toString()))
+		if ( (clsub.toString() != s2.toString()) &&  (clsub.toString() != s3.toString()) && (clsub.toString() != s4.toString()))
 		{
 			
 			document.getElementById("error").style.display="block";
-			document.getElementById("error").innerHTML='Please use your UTOR email address. (@mail.utoronto.ca or @utoronto.ca). Registration is only open to UofT students for now, sorry!';
+			document.getElementById("error").innerHTML='Please use your UTOR email address. (@mail.utoronto.ca, @utoronto.ca or eecg.toronto.edu). Registration is only open to UofT students for now, sorry!';
 			document.getElementById("Email").focus();
 			   return false;
 		  }
@@ -312,29 +313,29 @@ function check()
                 <div class="one-half"><h4>Basic Information</h4>
 <div style="margin-top:20px;">First Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="30"  name="FirstName" id="FirstName" placeholder="Enter First Name"><br><br>
 Last Name &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="30"  name="LastName" id="LastName" placeholder="Enter Last Name"><br><br>
-University &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;<select name="Company" id="Company" style="width:230px;">
+University &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select name="Company" id="Company" style="width:230px;">
               <option value="">Select University</option>
               <option value="University of Toronto" >University of Toronto</option>
               <option value="University of Waterloo">University of Waterloo</option>
               </select><br><br>
-City &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Address" id="Address" size="30" placeholder="Enter City" ><br><br>
-Country &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Country" id="Country" size="30" placeholder="Enter Country" ><br><br>
+City &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Address" id="Address" size="30" placeholder="Enter City" ><br><br>
+Country &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Country" id="Country" size="30" placeholder="Enter Country" ><br><br>
 </div>
                 </div>
                 
                 <div class="one-half-last"><h4>Account Information</h4>
 <div style="margin-top:20px;">
  
- E-mail &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a class="tooltip"><input type="text" size="30" placeholder="Enter Email"  name="Email" id="Email" onChange="checkaval(this.value)"><span>
+ E-mail &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a class="tooltip"><input type="text" size="30" placeholder="Enter Email"  name="Email" id="Email" onChange="checkaval(this.value)"><span>
         E-mail address cannot be changed
     </span></a><br><br>
     
-User Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a class="tooltip"><input type="text" size="30" placeholder="Enter User Name"   name="UserName" id="UserName" onchange="checkuser(this.value)"><span>
+Username &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a class="tooltip"><input type="text" size="30" placeholder="Enter User Name"   name="UserName" id="UserName" onchange="checkuser(this.value)"><span>
         Username cannot be changed
     </span></a>
 <br><br>
-Password &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="password" size="30" placeholder="Enter Password"  name="password1" id="password1"><br><br>
-Confirm Password &nbsp; &nbsp;<input type="password" size="30"  name="password2" id="password2" placeholder="Confirm password"><br><br>
+Password  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<input type="password" size="30" placeholder="Enter Password"  name="password1" id="password1"><br><br>
+Confirm Password &nbsp;&nbsp;&nbsp;<input type="password" size="30"  name="password2" id="password2" placeholder="Confirm password"><br><br>
 </div>
                 </div>     
  <div class="grid_4">
