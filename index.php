@@ -3,7 +3,7 @@
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Interngration</title>
+<title>Interngration - Multimedia platform to connect startups with students</title>
 
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
@@ -80,22 +80,20 @@ if (top.location!= self.location) {
         <div class ="grid_8_orig light-type grey" style = "float:left; text-align: justify;">
         <img src="images/student.png" alt ="recruiter picture" class = "center">
         <h4 class ="center-text">Students</h4>
-             <p>Our webinar sessions allows students to understand stories of the uprising startups and apply 
+             <p>Our webinars allows you to understand stories of the uprising startups and apply 
             for jobs that can shape the companies' futures. Our recruiting platform provides a hassle free environment 
-            for both recruiters and students to avoid the trouble brought by traditional career fairs and tedious job 
-            application process. In addition, students will receive exclusive professional development workshops 
-            to sharpen their skills.</p>
+            for both you to avoid the trouble brought by traditional career fairs and tedious job 
+            application process. You can now connect with potential employers from great companies, virtually - all for free</p>
         
         </div>
 
         <div class ="grid_8_orig light-type grey" style = "float:right; text-align: justify;" >
         <img src="images/recruiter.png" alt ="recruiter picture" class = "center">
         <h4 class ="center-text">Recruiters</h4>
-        <p>Our webinar sessions allows students to understand stories of the uprising startups and apply 
-            for jobs that can shape the companies' futures. Our recruiting platform provides a hassle free environment 
-            for both recruiters and students to avoid the trouble brought by traditional career fairs and tedious job 
-            application process. In addition, students will receive exclusive professional development workshops 
-            to sharpen their skills.</p>
+        <p> You can now reach out to pools of talented students, right from your office. You don't have to dedicate a whole day
+             to travel and setup a booth at a career fair. Moreover, geographic location is now a non-issue. Your company's located in Vancouver?
+             No worries, reach out to students in Toronto through a webinar! You also don't have to pay the exorbitant prices of registering for a 
+             campus event or career fair. <strong>Interngration will be free for use in the beta</strong>  </p>
         </div> 
     </div>
 
