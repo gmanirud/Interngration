@@ -333,7 +333,7 @@ function filterjob()
 		$rowcount= mysql_num_rows($ses_result);	
 		if($rowcount=='0')
 		{
-			print "No Records Found";
+			print "No jobs to apply for now. Check back later!";
 			
 		}
 		else

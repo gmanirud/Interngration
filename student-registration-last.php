@@ -2,7 +2,7 @@
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Student Register</title>
+<title>Student Registration - Interngration</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 
@@ -66,7 +66,7 @@ if(isset($_GET['nextid']))
 			}
 			if($AboutMe=="")
 			{
-			 $AboutMe="Tell About Your Self";
+			 $AboutMe="Tell us a little bit about yourself, your interests and passion. Remember, recruiters will be reading this!";
 			 $AboutMe1="";	
 			}
 			
@@ -559,11 +559,11 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
                 Invite Friends (+20 Coins/referral)
                 
                 <table width="100%" border="0">
-  <tr>
+  <!--<tr>
     <td width="25%"> <a href='#' onclick='FacebookInviteFriends();' rel='nofollow' title='Invite Your Facebook Friends'> <img src="images/facebook_invite.jpg" alt="Invite Friend" title="Face Book" width="100" /></a></td>
     <td width="40%"><input type="text" id="txtMail" name="txtMail" placeholder="Invite Friend" maxlength="100" /></td>
     <td width="35%"><a onClick="invitemail();" class="button red">Send Mail</a></td>
-  </tr>
+  </tr>-->
   <tr>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -574,7 +574,6 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
                
                 </p>                    
             </div>
-			<div style="width:490px; float:right; text-align:center; margin:0px 14px 0px 0px;">get more 2x coins by inviting more friends now</div>
 			<div style="width:490px; float:right; text-align:center; margin:0px 14px 0px 0px; display:none;color:#F00; font-weight:400;" id="error"></div>
             			 
 			  <div class="" style="float:right; width:600px;">
