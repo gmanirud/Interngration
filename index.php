@@ -49,8 +49,8 @@ if (top.location!= self.location) {
         <!-- header nav menu -->        
         <div id="menu" class="menu"> 
         <ul>
-        <li><?php if($_GET['coinsessid']==""){ ?><a href="recruiter-login.php">Recruiter Login</a><?php }?></li>
-        <li><a href="student-login.php">Student Login</a> </li>                    
+        <li><?php if($_GET['coinsessid']==""){ ?><a href="recruiter-login.php">Recruiter Register/Login</a><?php }?></li>
+        <li><a href="student-login.php">Student Register/Login</a> </li>                    
         </ul>
         <br style="clear: left" />
 		</div>
@@ -83,7 +83,7 @@ if (top.location!= self.location) {
              <p>Our webinars allows you to understand stories of the uprising startups and apply 
             for jobs that can shape the companies' futures. Our recruiting platform provides a hassle free environment 
             for both you to avoid the trouble brought by traditional career fairs and tedious job 
-            application process. You can now connect with potential employers from great companies, virtually - all for free</p>
+            application process. You can now connect with potential employers from great companies, virtually - <strong>all for free</strong></p>
         
         </div>
 
@@ -93,7 +93,9 @@ if (top.location!= self.location) {
         <p> You can now reach out to pools of talented students, right from your office. You don't have to dedicate a whole day
              to travel and setup a booth at a career fair. Moreover, geographic location is now a non-issue. Your company's located in Vancouver?
              No worries, reach out to students in Toronto through a webinar! You also don't have to pay the exorbitant prices of registering for a 
-             campus event or career fair. <strong>Interngration will be free for use in the beta</strong>  </p>
+             campus event or career fair.</p> 
+
+             <p> <strong>Interngration will be free for use in the alpha version.</strong>  </p>
         </div> 
     </div>
 
