@@ -80,7 +80,7 @@ function chklogin()
 			
 			//alert(resText);
 		
-						if(resText == 1)
+			if(resText == 1)
 			{
 				document.getElementById("error").innerHTML='Username and/or password incorrect';
 				document.getElementById('uname').value="";
@@ -91,7 +91,7 @@ function chklogin()
 			}
 			if(resText == 2)
 			{
-				window.location="student-homepage.php";
+				window.location="student-profile.php";
 							
 			}
 			else
