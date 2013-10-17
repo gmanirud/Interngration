@@ -17,7 +17,7 @@ header("location:student-login.php");
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Student Profile</title>
+<title>Student Profile - Interngration</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 
@@ -49,7 +49,7 @@ if(fileName=="")
 {
 
 	document.getElementById("error2").style.display='block';
-    document.getElementById("error2").innerHTML='Please Upload Resume!';
+    document.getElementById("error2").innerHTML='Please choose a file to upload';
 	fup.focus();
 	return false;
 }
@@ -57,7 +57,7 @@ if(fileName=="")
 if(ext != "DOC" && ext != "pdf" && ext != "PDF" && ext != "doc" && ext != "docx")
 {
 document.getElementById("error2").style.display='block';
-document.getElementById("error2").innerHTML='Upload Word or pdf!';
+document.getElementById("error2").innerHTML='Your resume needs to be in either .doc or .pdf format';
 fup.focus();
 return false;
 } 
@@ -86,7 +86,7 @@ function updateProjects()
 	if(Projects=="")
 	{
 	  document.getElementById("error4").style.display='block';
-		document.getElementById("error4").innerHTML='Please Fill the Projects!';
+		document.getElementById("error4").innerHTML='You did at least one project, right?';
 	   document.getElementById('Projects').focus();
 	   return false;
 	}
@@ -150,7 +150,7 @@ function updateworkexperience()
 	if(experience=="")
 	{
 	 document.getElementById("error3").style.display='block';
-		document.getElementById("error3").innerHTML='Please Fill the Work Experience!';
+		document.getElementById("error3").innerHTML='You cannnot leave this blank!';
 	  document.getElementById('experience').focus();
 	  return false;
 	}
@@ -211,7 +211,7 @@ function updatestudentabout()
 	if(document.getElementById("aboutme").value=="")
 	{
 		document.getElementById("error1").style.display='block';
-		document.getElementById("error1").innerHTML='Please Fill the About Me!';
+		document.getElementById("error1").innerHTML='You\'re not that boring, are you?';
 		document.getElementById("aboutme").focus();
 		return false;
 	}
@@ -333,26 +333,24 @@ function updatestudentprofile()
 	if(document.getElementById("txtSchool").value=="")
 	{
 		document.getElementById("error2").style.display='block';
-		document.getElementById("error2").innerHTML='Please Select University!';
+		document.getElementById("error2").innerHTML='Please select a school';
 		document.getElementById("txtSchool").focus();
 		return false;
 	}
 	if(document.getElementById("txtProgram").value=="")
 	{
 		document.getElementById("error2").style.display='block';
-		document.getElementById("error2").innerHTML='Please Select Program!';
+		document.getElementById("error2").innerHTML='Please select your program';
 		document.getElementById("txtProgram").focus();
 		return false;
 	}
 	if(document.getElementById("txtyear").value=="")
 	{
 		document.getElementById("error2").style.display='block';
-		document.getElementById("error2").innerHTML='Please Select Year!';
+		document.getElementById("error2").innerHTML='Please select your year of study';
 		document.getElementById("txtyear").focus();
 		return false;
 	}
-	
-	
 	
 	
 if (window.XMLHttpRequest)
@@ -661,7 +659,7 @@ function chkimgvalidation()
 </script>
 
 
-<!--  Face book  Invitation  -->
+<!--  Facebook  Invitation  -->
 <script src="http://connect.facebook.net/en_US/all.js">
    </script>
   <script type='text/javascript'>
@@ -680,7 +678,7 @@ function FacebookInviteFriends()
 {
 FB.ui({
 method: 'apprequests',
-message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
+message: 'Join Interngration - An online multimedia platform to connect SMEs/startups with students.'
 });
 }
 </script>
@@ -726,34 +724,34 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
 			$language_pref=$res["language_pref"];
 			if(($schoolName=="")&&($Program=="")&&($Contact==""))
 			{
-				$schoolName="University of toronto";
-			    $Program="Electrical Engineering";
-			    $Contact="xxx@school.com";
-				$univ_Year="Year of Studing";
+				$schoolName="University of Toronto";
+			    $Program="Engineering/CS";
+			    $Contact="yourname@mail.utoronto.ca";
+				$univ_Year="Year of study";
 				$schoolName1="";
 			    $Program1="";
 			    $Contact1="";
 			}
 			if($AboutMe=="")
 			{
-			 $AboutMe="Hello Student, please enter full information about yourself.";
+			 $AboutMe="Hello {$FirstName}, tell us a little something about yourself. It could be a fun fact about you or what you like to do outside of school. Anything to let the recruiters know about your fun side!";
 			 $AboutMe1="";	
 			}
 			if($univ_Year=="")
 			{
-			 $univ_Year="Year of Studing.";
+			 $univ_Year="Year of study";
 			}
 			if($skill_set=="")
 			{
-			 $skill_set="Please Enter Your skill.";
+			 $skill_set="Please select the technical skills you're proficient in.";
 			}
 			if($position_for=="")
 			{
-			 $position_for="Please Enter Position.";
+			 $position_for="What type of position are you looking for?";
 			}
 			if($language_pref=="")
 			{
-			 $language_pref="Please Enter Language Preference.";
+			 $language_pref="Select your language preference";
 			}
 			
 			
@@ -835,7 +833,7 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
         
         <!-- title -->
         <div class="title">
-          <h4> Coins : <font id="coinid"><?php print $Coins;?></font> </h4>
+          <!--<h4> Coins : <font id="coinid"><?php print $Coins;?></font> </h4>-->
         </div>
         
         <!-- 8/16 -->
@@ -879,7 +877,7 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
                   <li>University&nbsp;<b>:</b>&nbsp; <?php print $schoolName; ?></li>
                   <li>Program&nbsp;<b>:</b>&nbsp; <?php print $Program; ?></li>
                   <li>Year&nbsp;<b>:</b>&nbsp; <?php print $univ_Year; ?></li>
-                  <li>Contact&nbsp;<b>:</b>&nbsp; <?php print $Email; ?></li>
+                  <li>Email&nbsp;<b>:</b>&nbsp; <?php print $Email; ?></li>
                 </div>
                 <div style="float:left; display:none" id="divedit">
                   <select name="txtSchool" id="txtSchool">
@@ -896,6 +894,7 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
                     <option value="Computer Engineering" <?php if($Program1=='Computer Engineering'){?> selected='selected' <?php  } ?>>Computer Engineering</option>
                     <option value="Chemical Engineering" <?php if($Program1=='Chemical Engineering'){?> selected='selected' <?php  } ?>>Chemical Engineering</option>
                     <option value="Civil Engineering" <?php if($Program1=='Civil Engineering'){?> selected='selected' <?php  } ?>>Civil Engineering</option>
+                    <option value="Computer Science" <?php if($Program1=='Computer Science'){?> selected='selected' <?php  } ?>>Computer Science</option>
                   </select>
                   <br/>
                   <select name="txtyear" id="txtyear">
@@ -905,10 +904,11 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
                     <option value="2nd Year" <?php if($univ_Year=='2nd Year'){?> selected='selected' <?php  } ?>>2nd Year</option>
                     <option value="3rd Year" <?php if($univ_Year=='3rd Year'){?> selected='selected' <?php  } ?>>3rd Year</option>
                     <option value="4th Year" <?php if($univ_Year=='4th Year'){?> selected='selected' <?php  } ?>>4th Year</option>
+                    <option value="4th Year" <?php if($univ_Year=='Graduate Student'){?> selected='selected' <?php  } ?>>Graduate Student</option>
                   </select>
                   </br>
                   <ul>
-                    <li>Contact: <?php print $Email; ?></li>
+                    <li>Email <?php print $Email; ?></li>
                   </ul>
                   <!-- <input type="text" id="txtcontact" name="txtcontact" placeholder="Contact"maxlength="100" style="width:190px;" value="<?php print $Contact1; ?>"/>--> 
                 </div>
@@ -962,7 +962,7 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
         <div class="grid_8" style="min-height:310px;">
           <div>
             <div style="float:left;">
-              <h4 style="margin:20px;">Professional Skill</h4>
+              <h4 style="margin:20px;">My Technical Skills</h4>
             </div>
             <div style="float:right; padding-right:20px; padding-top:10px;">
               <input type="button" value="Edit" onClick="edittechskill();" name="skill_edit" id="skill_edit" style="width:60px;cursor:pointer">
@@ -1022,7 +1022,7 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
         <div class="grid_8" style="min-height:310px;">
           <div>
             <div style="float:left;">
-              <h4 style="margin:20px;">Required</h4>
+              <h4 style="margin:20px;">My Job Type and Language Preference</h4>
             </div>
             <div style="float:right; padding-right:20px; padding-top:10px;">
               <input type="button" value="Edit" onClick="editlanguage();" name="lan_edit" id="lan_edit" style="width:60px;cursor:pointer">
@@ -1034,7 +1034,7 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
           <br/>
           <div style="float:left;color:#F00; font-weight:400; padding-top:50px; display:none" id="error1"></div>
           <div align="justify" style=" margin:20px; border:1px solid #666666; padding:17px; height:180px;width:395px;border:1px solid #ccc; Serif;overflow:auto;" id="para_lan">
-            <h4 style="">Position For</h4>
+            <h4 style="">Job Type</h4>
             <br/>
             <?php
 		  $array1 = explode(',', $position_for);
@@ -1117,11 +1117,11 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
         <!-- Position For -->
         
         <div class="grid_8" >
-          <h4 style="margin:20px;">My RSVP</h4>
+          <h4 style="margin:20px;">My Upcoming Webinars</h4>
           <div style="height: 180px;Serif;overflow:auto;">
           <table width="400" border="1"  style="margin:20px; border:1px solid #666666; padding:10px;">
             <tr>
-              <th scope="col">Subject</th>
+              <th scope="col">Title</th>
               <th scope="col">Upcoming Session</th>
               <th scope="col">Status</th>
             </tr>
@@ -1178,7 +1178,7 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
         <div class="grid_8" style="min-height:200px;">
           <div>
             <div style="float:left;">
-              <h4 style="margin:20px;">Work Experience</h4>
+              <h4 style="margin:20px;">My Work Experience</h4>
             </div>
             <div style="float:right; padding-right:20px; padding-top:10px;">
               <input type="button" value="Edit" onClick="editworkexperience();" name="experience_edit" id="experience_edit" style="width:60px; cursor:pointer">
@@ -1190,7 +1190,7 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
 		  if($work_experience=="")
 		  {
 			  ?>
-            Please Enter Previous and current Work Experience
+            Enter your previous work experience. 
             <?php
 		  }
 		  else
@@ -1203,7 +1203,7 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
           <textarea id="experience"  name="experience" placeholder=" Please Enter Previous and current Work Experience" style="width:400px; height:140px; display:none; margin:20px;" ><?php print $work_experience; ?></textarea>
         </div>
         <div class="grid_8">
-          <h4 style="margin:20px;">My Application</h4>
+          <h4 style="margin:20px;">My Job Applications</h4>
            <div style="height: 180px;Serif;overflow:auto;">
           <table width="420" border="1"  style="margin:20px; border:1px solid #666666; padding:10px;">
             <tr>
@@ -1242,7 +1242,7 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
         <div class="grid_8" style="min-height:200px;">
           <div>
             <div style="float:left;">
-              <h4 style="margin:20px;">Projects</h4>
+              <h4 style="margin:20px;">My Projects</h4>
             </div>
             <div style="float:right; padding-right:20px; padding-top:10px;">
               <input type="button" value="Edit" onClick="editProjects();" name="Projects_edit" id="Projects_edit" style="width:60px; cursor:pointer">
@@ -1254,7 +1254,7 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
 		  if($projects=="")
 		  {
 			  ?>
-            Please Enter Your Project details
+            Enter all your relevant projects here. Be it a course mandated project, or a cool little app you built on the side.
             <?php
 		  }
 		  else
@@ -1270,34 +1270,32 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
         <!--   Face book invitation -->
         
         
-        <div class="grid_8" style="background-color:#333333; float:right; margin:0px 14px 0px 0px;">
-             <p style="color:#FFFFFF; font-weight:bold;">
+        <!--<div class="grid_8" style="background-color:#333333; float:right; margin:0px 14px 0px 0px;">
+            <p style="color:#FFFFFF; font-weight:bold;">
                 Invite Friends (+20 Coins/referral)
                 
-                <table width="100%" border="0">
-  <tr>
-    <td width="25%"> <a href='#' onclick='FacebookInviteFriends();' rel='nofollow' title='Invite Your Facebook Friends'> <img src="images/facebook_invite.jpg" alt="Invite Friend" title="Face Book" width="100" /></a></td>
-    <td width="40%"><input type="text" id="txtMail" name="txtMail" placeholder="Invite Friend" maxlength="100" /></td>
-    <td width="35%"><a onClick="invitemail();" class="button red">Send Mail</a></td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-</table>
+            <table width="100%" border="0">
+  			<tr>
+		 		<td width="25%"> <a href='#' onclick='FacebookInviteFriends();' rel='nofollow' title='Invite Your Facebook Friends'> <img src="images/facebook_invite.jpg" alt="Invite Friend" title="Face Book" width="100" /></a></td>
+		    	<td width="40%"><input type="text" id="txtMail" name="txtMail" placeholder="Invite Friend" maxlength="100" /></td>
+		    	<td width="35%"><a onClick="invitemail();" class="button red">Send Mail</a></td>
+		    </tr>
+		    <tr>
+		    	<td>&nbsp;</td>
+		    	<td>&nbsp;</td>
+			    <td>&nbsp;</td>
+	        </tr>
+		    </table>
+            </p>                    
+        </div>
 
-               
-                </p>                    
-            </div>
-			<div style="width:490px; float:right; text-align:center; margin:0px 14px 0px 0px;">get more 2x coins by inviting more friends now</div>
+			<div style="width:490px; float:right; text-align:center; margin:0px 14px 0px 0px;">get more 2x coins by inviting more friends now</div>-->
+
+
 			<div style="width:490px; float:right; text-align:center; margin:0px 14px 0px 0px; display:none;color:#F00; font-weight:400;" id="error"></div>
             
             <!-- Face book invitation -->
-            
-            
-            
-            
+   
         
         <!-- end grid columns -->
         
