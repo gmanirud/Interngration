@@ -17,7 +17,7 @@ header("location:student-login.php");
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Student Inbox - Interngration</title>
+<title>Received Messages - Interngration</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 
@@ -65,7 +65,6 @@ $startpoint = ($page * $limit) - $limit;
          <!-- header nav menu -->        
         <div id="menu" class="menu"> 
            <ul>
-            <!-- <li><a href="">Welcome&nbsp; :&nbsp; <?php print $username; ?></a></li> -->
             <li><a href="student-homepage.php">Home</a></li>
             <li><a href="studentAccount.php"> My Account</a></li>
             <li><a href="logout.php" >Logout</a></li></ul>

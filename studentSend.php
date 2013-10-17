@@ -16,7 +16,7 @@ header("location:student-login.php");
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Student Inbox</title>
+<title>Sent Messages - Interngration</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 
@@ -49,7 +49,6 @@ header("location:student-login.php");
          <!-- header nav menu -->        
         <div id="menu" class="menu"> 
                <ul>
-                <li><a href="">Welcome&nbsp; :&nbsp; <?php print $username; ?></a></li>
                <li><a href="student-homepage.php">Home</a></li></ul>
                 <br style="clear: left" />
         </div>
@@ -65,7 +64,6 @@ header("location:student-login.php");
        <div id="pageheader-background"><!-- area with alternate background -->
             <div class="pageheader-title">
              <span class="mailno"><?php include "StudentUnreadMail.php"; ?></span>
-                <h1>Interngration</h1><span style="margin:0px 30px 0px 0px; float:right;">
                 <a href="studentJobApplication.php" class="button red">Job Application</a> 
                 <a href="studentInbox.php" class="button red">Inbox</a>
                  <a href="student-profile.php" class="button red">Profile</a> 
