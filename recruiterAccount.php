@@ -276,7 +276,7 @@ function editstudentaccount()
         <div id="pageheader-background"><!-- area with alternate background -->
             <div class="pageheader-title">
              <span class="mailno"><?php include "RecruiterUnreadMail.php"; ?></span>
-                <h1>Recruiter Account Setting</h1><span style="margin:0px 30px 10px 0px; float:right;">
+                <h1>Account Settings</h1><span style="margin:0px 30px 10px 0px; float:right;">
                   <a href="https://login.citrixonline.com/login?service=https%3A%2F%2Fglobal.gotomeeting.com%2Fmeeting%2Fj_spring_cas_security_check" target="_blank" class="button red">Schedule a Webinar</a>                
                   <a href="RecruiterUpcomingWebinar.php" class="button red">My Webinars</a>
                   <a href="RecruiterWatchedWebinar.php" class="button red">Past Webinars</a>

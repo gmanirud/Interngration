@@ -17,7 +17,7 @@ header("location:student-login.php");
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Student Account</title>
+<title>My Account - Interngration</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 
@@ -138,35 +138,35 @@ function updatestudentaccount()
 	if(FirstName=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Enter the First Name...!';
+		document.getElementById("error").innerHTML='Please enter your first name';
 		document.getElementById("FirstName").focus();
 		return false;
 	}
 	if(LastName=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Enter the Last Name...!';
+		document.getElementById("error").innerHTML='Please enter your last name';
 		document.getElementById("LastName").focus();
 		return false;
 	}
 	if(Company=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Select Affiliated University...!';
+		document.getElementById("error").innerHTML='Please enter your school name';
 		document.getElementById("Company").focus();
 		return false;
 	}
 	if(Address=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Enter the City...!';
+		document.getElementById("error").innerHTML='Which city do you live in?';
 		document.getElementById("Address").focus();
 		return false;
 	}
 	if(Country=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Enter the Country...!';
+		document.getElementById("error").innerHTML='Which country do you live in?';
 		document.getElementById("Country").focus();
 		return false;
 	}
@@ -176,7 +176,7 @@ function updatestudentaccount()
 	if(document.getElementById("oldpassword").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Enter the Old Password...!';
+		document.getElementById("error").innerHTML='Please enter your old password';
 		document.getElementById("oldpassword").focus();
 		return false;
 	}
@@ -184,21 +184,21 @@ function updatestudentaccount()
 	if(document.getElementById("password1").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Enter the New Password...!';
+		document.getElementById("error").innerHTML='Please enter a new password';
 		document.getElementById("password1").focus();
 		return false;
 	}
 	if(document.getElementById("password2").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Enter the Confirm Password...!';
+		document.getElementById("error").innerHTML='Please confirm your new password';
 		document.getElementById("password2").focus();
 		return false;
 	}
 	if(document.getElementById("password2").value!=document.getElementById("password1").value)
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Confirm Password is not incorrect...!';
+		document.getElementById("error").innerHTML='The entered passwords do not match. Please try again';
 		document.getElementById("password2").focus();
 		return false;
 	}
@@ -284,7 +284,7 @@ function editstudentaccount()
         <div id="pageheader-background"><!-- area with alternate background -->
             <div class="pageheader-title">
             <span class="mailno"><?php include "StudentUnreadMail.php"; ?></span>
-                <h1>Student Account Setting</h1><span style="margin:0px 30px 0px 0px; float:right;">
+                <h1>Account Settings</h1><span style="margin:0px 30px 0px 0px; float:right;">
                 <a href="StudentRegisteredWebinar.php" class="button red">Upcoming Webinars</a>
                 <a href="StudentWatchedWebinar.php" class="button red">Watched Webinar</a>    
                 <a href="studentJobApplication.php" class="button red">Job Application</a> 
