@@ -18,7 +18,7 @@ header("location:student-login.php");
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Posted Job</title>
+<title>Job Applications  - Interngration</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 
@@ -205,7 +205,7 @@ function filterjob()
                 </ul>
 				 <div class="clear"></div> 
 				 
-				 <div class="title"><h4>Deadline</h4></div>
+				 <div class="title"><h4>Sort by deadline</h4></div>
                 <ul class="sidebar">                        
                 <?php
 				$deadlineToday="Dead_line*".$currentdate;
@@ -219,7 +219,7 @@ function filterjob()
                 </ul>
 				<div class="clear"></div> 
 				 
-				 <div class="title"><h4>Date Posted</h4></div>
+				 <div class="title"><h4>Sort by date posted</h4></div>
                 <ul class="sidebar">  
                  <?php
 				$datepostToday="Date_Post*".$currentdate;
@@ -370,7 +370,7 @@ function filterjob()
         <h4><?php print $Job_title; ?></h4>
        <table width="450" border="0" cellpadding="10px;">
          <tr>
-    <td width="70">Company Name</td>
+    <td width="70">Sory by company</td>
     <td width="5">:</td>
     <td width="200"><?php print $Company_Name; ?></td>
   </tr>

@@ -82,7 +82,7 @@ $startpoint = ($page * $limit) - $limit;
             <div class="pageheader-title">
              <span class="mailno"><?php include "RecruiterUnreadMail.php"; ?></span>
                 <h1>Interngration</h1><span style="margin:0px 30px 0px 0px; float:right;">
-                <a href="studentJobApplication.php" class="button red">JobApplication</a> 
+                <a href="studentJobApplication.php" class="button red">Job Application</a> 
                 <a href="studentInbox.php" class="button red">Inbox</a>
                  <a href="student-profile.php" class="button red">Profile</a> 
                 <a href="studentAccount.php" class="button red">Account</a>

@@ -17,7 +17,7 @@ header("location:student-login.php");
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Student Watched Webinar</title>
+<title>Watched Webinars - Interngration</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 
@@ -120,7 +120,7 @@ if(!$organizer_key)
                 <h1>Watched Webinars</h1><span style="margin:0px 30px 0px 0px; float:right;">
                  <a href="StudentRegisteredWebinar.php" class="button red">Upcoming Webinars</a>
                  <a href="StudentWatchedWebinar.php" class="button red">Watched Webinar</a>    
-                 <a href="studentJobApplication.php" class="button red">JobApplication</a> 
+                 <a href="studentJobApplication.php" class="button red">Job Application</a> 
                  <a href="AppliedPostedJob.php" class="button red">Applied Job</a> 
                  <a href="studentInbox.php" class="button red">Inbox</a>
                  <a href="student-profile.php" class="button red">Profile</a></span>
