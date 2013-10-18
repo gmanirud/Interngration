@@ -17,7 +17,7 @@ header("location:student-login.php");
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Upcoming Webinars - Interngration</title>
+<title> My Webinars - Interngration</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 
@@ -118,9 +118,9 @@ header("location:student-login.php");
         <div id="pageheader-background"><!-- area with alternate background -->
             <div class="pageheader-title">
               <span class="mailno"><?php include "StudentUnreadMail.php"; ?></span>
-              <h1>Upcoming Webinars</h1>
+              <h1> My Webinars</h1>
               <span style="margin:0px 30px 0px 0px; float:right;">
-                <a href="StudentRegisteredWebinar.php" class="button red">Upcoming Webinars</a>
+                <a href="StudentRegisteredWebinar.php" class="button red"> My Webinars</a>
                 <a href="StudentWatchedWebinar.php" class="button red">Watched Webinar</a>    
                 <a href="studentJobApplication.php" class="button red">Job Application</a> 
                 <a href="AppliedPostedJob.php" class="button red">Applied Job</a> 

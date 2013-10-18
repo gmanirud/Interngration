@@ -118,7 +118,7 @@ if(!$organizer_key)
             <div class="pageheader-title">
             <span class="mailno"><?php include "StudentUnreadMail.php"; ?></span>
                 <h1>Watched Webinars</h1><span style="margin:0px 30px 0px 0px; float:right;">
-                 <a href="StudentRegisteredWebinar.php" class="button red">Upcoming Webinars</a>
+                 <a href="StudentRegisteredWebinar.php" class="button red"> My Webinars</a>
                  <a href="StudentWatchedWebinar.php" class="button red">Watched Webinar</a>    
                  <a href="studentJobApplication.php" class="button red">Job Application</a> 
                  <a href="AppliedPostedJob.php" class="button red">Applied Job</a> 
@@ -159,7 +159,7 @@ if(!$organizer_key)
                             </tr>
                             <tr align="center">
                             <td style="color:#F00; font-size:14px;">
-                            You haven't watched any webinars? You're missing out, go RSVP for one under Upcoming Webinars now!
+                            You haven't watched any webinars? You're missing out, go RSVP for one now!
                             </td>
                             </tr>
                             </table>

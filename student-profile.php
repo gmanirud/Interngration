@@ -1117,7 +1117,7 @@ message: 'Join Interngration - An online multimedia platform to connect SMEs/sta
         <!-- Position For -->
         
         <div class="grid_8" >
-          <h4 style="margin:20px;">My Upcoming Webinars</h4>
+          <h4 style="margin:20px;">My  My Webinars</h4>
           <div style="height: 180px;Serif;overflow:auto;">
           <table width="400" border="1"  style="margin:20px; border:1px solid #666666; padding:10px;">
             <tr>
