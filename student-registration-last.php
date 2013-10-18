@@ -486,7 +486,7 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
               <td valign="top">
                <div style="float:left;" id="divupdate"> <br/>
                     <li>University: <?php print $schoolName; ?></li>
-                    <li>rogram: <?php print $Program; ?></li>
+                    <li>Program: <?php print $Program; ?></li>
                     <li>Contact: <?php print $Email; ?></li>
                   </div>
                
