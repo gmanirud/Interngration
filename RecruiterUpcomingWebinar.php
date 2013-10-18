@@ -102,7 +102,6 @@ if(!$organizer_key)
          <!-- header nav menu -->        
         <div id="menu" class="menu"> 
                <ul>
-                <li><a href="recruiterAccount.php">Welcome:&nbsp; <?php print $username; ?></a></li>
                <li><a href="recruiter-home-page.php">Home</a></li>
                <li><a href="recruiterAccount.php">Account</a></li>
                <li><a href="logout.php">Logout</a></span></li> 
@@ -187,7 +186,9 @@ if(!$organizer_key)
                
 					    <div class="post-out-text" style="min-width:950px;">     
 					    <div class="header-container" style="min-width:950px;">
-                                <div class="date" style="font-size:12px;"><ul><li>Total Registrants: <?php print $rowcount1; ?></li>
+                                <div class="date" style="font-size:12px;">
+                                <ul>
+                                	<li>Total Registrants: <?php print $rowcount1; ?></li>
                                  <?php if($status=='Cancelled') { ?>  
                                  <li>Cancelled</li>
                                  <?php
