@@ -1,0 +1,43 @@
+/* CSS Document */
+
+.file-upload {
+    background: url(../images/pics.png);
+    border: 1px solid #666666;
+	height:100px;
+    color:#333333;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    text-align:top-right
+    vertical-align: middle;
+}
+
+.file-upload.focus {
+    outline: 2px solid yellow;
+}
+.file-upload input {
+    font-size: 20px;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+}
+.file-upload strong {
+    font: bold 13px arial,sans-serif;
+	height:180px;
+}
+.file-upload span {
+    display: inline-block;
+    left: 0;
+    padding-top: 0.45em;
+    position: absolute;
+    top: 0;
+}
+.file-upload {
+    height: 180px;
+}
+.file-upload, .file-upload span {
+    width: 180px;
+}
+

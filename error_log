@@ -1,0 +1,544 @@
+[28-May-2013 07:24:45] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaka/public_html/interngration/RecruiterActivationMail.php on line 60
+[28-May-2013 07:24:45] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaka/public_html/interngration/RecruiterActivationMail.php on line 70
+[28-May-2013 07:24:45] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sumaka/public_html/interngration/RecruiterActivationMail.php:60) in /home/sumaka/public_html/interngration/RecruiterActivationMail.php on line 115
+[28-May-2013 07:26:20] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaka/public_html/interngration/RecruiterActivationMail.php on line 60
+[28-May-2013 07:26:20] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaka/public_html/interngration/RecruiterActivationMail.php on line 70
+[28-May-2013 07:26:20] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sumaka/public_html/interngration/RecruiterActivationMail.php:60) in /home/sumaka/public_html/interngration/RecruiterActivationMail.php on line 115
+[28-May-2013 07:41:13] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaka/public_html/interngration/RecruiterActivationMail.php on line 60
+[28-May-2013 07:41:13] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaka/public_html/interngration/RecruiterActivationMail.php on line 70
+[28-May-2013 07:41:13] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sumaka/public_html/interngration/RecruiterActivationMail.php:60) in /home/sumaka/public_html/interngration/RecruiterActivationMail.php on line 115
+[28-May-2013 12:27:16] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaka/public_html/interngration/RecruiterActivationMail.php on line 60
+[28-May-2013 12:27:16] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaka/public_html/interngration/RecruiterActivationMail.php on line 70
+[28-May-2013 12:27:17] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sumaka/public_html/interngration/RecruiterActivationMail.php:60) in /home/sumaka/public_html/interngration/RecruiterActivationMail.php on line 115
+[31-May-2013 01:24:40] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaka/public_html/interngration/RecruiterActivationMail.php on line 60
+[31-May-2013 01:24:40] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaka/public_html/interngration/RecruiterActivationMail.php on line 70
+[31-May-2013 01:24:40] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sumaka/public_html/interngration/RecruiterActivationMail.php:60) in /home/sumaka/public_html/interngration/RecruiterActivationMail.php on line 115
+[31-May-2013 01:25:22] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaka/public_html/interngration/RecruiterActivationMail.php on line 60
+[31-May-2013 01:25:22] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaka/public_html/interngration/RecruiterActivationMail.php on line 70
+[31-May-2013 01:25:22] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sumaka/public_html/interngration/RecruiterActivationMail.php:60) in /home/sumaka/public_html/interngration/RecruiterActivationMail.php on line 115
+[14-Jun-2013 01:15:19] PHP Fatal error:  Function name must be a string in /home/sumaka/public_html/interngration/ActivationMail.php on line 4
+[14-Jun-2013 01:34:41] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/sumaka/public_html/interngration/index.php:12) in /home/sumaka/public_html/interngration/index.php on line 28
+[14-Jun-2013 01:35:42] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home/sumaka/public_html/interngration/index.php:12) in /home/sumaka/public_html/interngration/index.php on line 26
+[21-Jun-2013 00:19:12] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaka/public_html/interngration/RecruiterActivationMail.php on line 60
+[21-Jun-2013 00:19:12] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaka/public_html/interngration/RecruiterActivationMail.php on line 70
+[21-Jun-2013 00:19:12] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sumaka/public_html/interngration/RecruiterActivationMail.php:60) in /home/sumaka/public_html/interngration/RecruiterActivationMail.php on line 115
+[25-Jun-2013 08:27:08] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'sumaka'@'localhost' (using password: NO) in /home/sumaka/public_html/interngration/student-registration-last.php on line 405
+[25-Jun-2013 08:27:08] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/sumaka/public_html/interngration/student-registration-last.php on line 405
+[25-Jun-2013 08:27:14] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'sumaka'@'localhost' (using password: NO) in /home/sumaka/public_html/interngration/student-registration-last.php on line 405
+[25-Jun-2013 08:27:14] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home/sumaka/public_html/interngration/student-registration-last.php on line 405
+[26-Jun-2013 23:26:36] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaka/public_html/interngration/RecruiterActivationMail.php on line 60
+[26-Jun-2013 23:26:36] PHP Warning:  Invalid argument supplied for foreach() in /home/sumaka/public_html/interngration/RecruiterActivationMail.php on line 70
+[26-Jun-2013 23:26:37] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/sumaka/public_html/interngration/RecruiterActivationMail.php:60) in /home/sumaka/public_html/interngration/RecruiterActivationMail.php on line 115
+[05-Jul-2013 11:45:50] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'sumaka'@'localhost' (using password: NO) in /home2/sumaka/public_html/interngration/student-registration-last.php on line 439
+[05-Jul-2013 11:45:50] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home2/sumaka/public_html/interngration/student-registration-last.php on line 439
+[10-Jul-2013 08:50:25] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/sumaka/public_html/interngration/studentInbxChkVal.php:104) in /home2/sumaka/public_html/interngration/studentInbxChkVal.php on line 113
+[13-Jul-2013 04:47:22] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'sumaka'@'localhost' (using password: NO) in /home2/sumaka/public_html/interngration/student-registration-last.php on line 432
+[13-Jul-2013 04:47:22] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home2/sumaka/public_html/interngration/student-registration-last.php on line 432
+[22-Jul-2013 00:41:58] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/sumaka/public_html/interngration/recruiterInbxChkVal.php:104) in /home2/sumaka/public_html/interngration/recruiterInbxChkVal.php on line 113
+[22-Jul-2013 00:42:12] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/sumaka/public_html/interngration/recruiterInbxChkVal.php:104) in /home2/sumaka/public_html/interngration/recruiterInbxChkVal.php on line 113
+[25-Jul-2013 09:20:58] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/postedJob.php on line 303
+[26-Jul-2013 07:56:58] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Too many connections in /home2/sumaka/public_html/interngration/config.php on line 4
+[26-Jul-2013 07:57:07] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Too many connections in /home2/sumaka/public_html/interngration/config.php on line 4
+[07-Aug-2013 03:34:21] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'sumaka'@'localhost' (using password: NO) in /home2/sumaka/public_html/interngration/student-registration-last.php on line 433
+[07-Aug-2013 03:34:21] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home2/sumaka/public_html/interngration/student-registration-last.php on line 433
+[21-Aug-2013 12:48:06] PHP Fatal error:  Cannot access protected property Citrix::$access_token in /home2/sumaka/public_html/interngration/StudentRegisterConfirmation.php on line 127
+[21-Aug-2013 13:37:26] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: Access denied for user 'sumaka'@'localhost' (using password: NO) in /home2/sumaka/public_html/interngration/student-registration-last.php on line 433
+[21-Aug-2013 13:37:26] PHP Warning:  mysql_select_db() [<a href='function.mysql-select-db'>function.mysql-select-db</a>]: A link to the server could not be established in /home2/sumaka/public_html/interngration/student-registration-last.php on line 433
+[22-Aug-2013 14:52:27] PHP Fatal error:  Class 'Citrix' not found in /home2/sumaka/public_html/interngration/StudentRegisterConfirmation.php on line 112
+[22-Aug-2013 20:42:50] PHP Fatal error:  Call to a member function citrixonline_create_registrant_of_webinar() on a non-object in /home2/sumaka/public_html/interngration/StudentRegisterConfirmation.php on line 125
+[03-Sep-2013 23:58:22] PHP Parse error:  syntax error, unexpected $end in /home2/sumaka/public_html/interngration/citrix.php on line 109
+[05-Sep-2013 13:12:28] PHP Fatal error:  Using $this when not in object context in /home2/sumaka/public_html/interngration/StudentCitrix.php on line 10
+[05-Sep-2013 13:13:23] PHP Fatal error:  Using $this when not in object context in /home2/sumaka/public_html/interngration/StudentCitrix.php on line 10
+[05-Sep-2013 13:18:27] PHP Fatal error:  Call to protected method citrix::make_request() from context '' in /home2/sumaka/public_html/interngration/StudentCitrix.php on line 10
+[05-Sep-2013 13:19:34] PHP Fatal error:  Access to undeclared static property: citrix::$CURL_OPTS in /home2/sumaka/public_html/interngration/StudentCitrix.php on line 80
+[05-Sep-2013 13:24:17] PHP Fatal error:  Uncaught exception 'Exception' with message 'InvalidToken' in /home2/sumaka/public_html/interngration/citrix.php:229
+Stack trace:
+#0 /home2/sumaka/public_html/interngration/student-homepage.php(218): Citrix->citrixonline_get_list_of_webinars()
+#1 {main}
+  thrown in /home2/sumaka/public_html/interngration/citrix.php on line 229
+[06-Sep-2013 08:38:18] PHP Fatal error:  Uncaught exception 'Exception' with message 'InvalidToken' in /home2/sumaka/public_html/interngration/citrix.php:229
+Stack trace:
+#0 /home2/sumaka/public_html/interngration/student-homepage.php(87): Citrix->citrixonline_get_list_of_webinars()
+#1 {main}
+  thrown in /home2/sumaka/public_html/interngration/citrix.php on line 229
+[06-Sep-2013 08:40:23] PHP Fatal error:  Uncaught exception 'Exception' with message 'InvalidToken' in /home2/sumaka/public_html/interngration/citrix.php:230
+Stack trace:
+#0 /home2/sumaka/public_html/interngration/student-homepage.php(87): Citrix->citrixonline_get_list_of_webinars()
+#1 {main}
+  thrown in /home2/sumaka/public_html/interngration/citrix.php on line 230
+[06-Sep-2013 09:21:39] PHP Fatal error:  Uncaught exception 'Exception' with message 'InvalidToken' in /home2/sumaka/public_html/interngration/citrix.php:230
+Stack trace:
+#0 /home2/sumaka/public_html/interngration/student-homepage.php(87): Citrix->citrixonline_get_list_of_webinars()
+#1 {main}
+  thrown in /home2/sumaka/public_html/interngration/citrix.php on line 230
+[06-Sep-2013 09:21:43] PHP Fatal error:  Uncaught exception 'Exception' with message 'InvalidToken' in /home2/sumaka/public_html/interngration/citrix.php:230
+Stack trace:
+#0 /home2/sumaka/public_html/interngration/student-homepage.php(87): Citrix->citrixonline_get_list_of_webinars()
+#1 {main}
+  thrown in /home2/sumaka/public_html/interngration/citrix.php on line 230
+[06-Sep-2013 09:21:58] PHP Fatal error:  Uncaught exception 'Exception' with message 'InvalidToken' in /home2/sumaka/public_html/interngration/citrix.php:230
+Stack trace:
+#0 /home2/sumaka/public_html/interngration/student-homepage.php(87): Citrix->citrixonline_get_list_of_webinars()
+#1 {main}
+  thrown in /home2/sumaka/public_html/interngration/citrix.php on line 230
+[06-Sep-2013 09:22:53] PHP Fatal error:  Uncaught exception 'Exception' with message 'InvalidToken' in /home2/sumaka/public_html/interngration/citrix.php:230
+Stack trace:
+#0 /home2/sumaka/public_html/interngration/student-homepage.php(87): Citrix->citrixonline_get_list_of_webinars()
+#1 {main}
+  thrown in /home2/sumaka/public_html/interngration/citrix.php on line 230
+[06-Sep-2013 09:29:37] PHP Fatal error:  Uncaught exception 'Exception' with message 'InvalidToken' in /home2/sumaka/public_html/interngration/citrix.php:230
+Stack trace:
+#0 /home2/sumaka/public_html/interngration/RecruiterUpcomingWebinar.php(143): Citrix->citrixonline_get_list_of_webinars()
+#1 {main}
+  thrown in /home2/sumaka/public_html/interngration/citrix.php on line 230
+[06-Sep-2013 14:32:19] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/RecruiterUpcomingWebinar.php on line 165
+[06-Sep-2013 14:32:19] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/RecruiterUpcomingWebinar.php on line 165
+[06-Sep-2013 14:33:53] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/RecruiterUpcomingWebinar.php on line 165
+[06-Sep-2013 14:33:53] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/RecruiterUpcomingWebinar.php on line 165
+[06-Sep-2013 14:35:43] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/RecruiterUpcomingWebinar.php on line 165
+[06-Sep-2013 14:35:43] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/RecruiterUpcomingWebinar.php on line 165
+[12-Sep-2013 08:30:21] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/pagination/function.php on line 104
+[12-Sep-2013 12:00:59] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/postedJob.php on line 334
+[12-Sep-2013 12:00:59] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/postedJob.php on line 334
+[12-Sep-2013 12:06:11] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/postedJob.php on line 334
+[12-Sep-2013 12:06:11] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/postedJob.php on line 334
+[12-Sep-2013 12:29:30] PHP Warning:  date_format() expects parameter 1 to be DateTime, string given in /home2/sumaka/public_html/interngration/student-profile.php on line 992
+[12-Sep-2013 12:29:30] PHP Warning:  date_format() expects parameter 1 to be DateTime, string given in /home2/sumaka/public_html/interngration/student-profile.php on line 992
+[12-Sep-2013 12:29:30] PHP Warning:  date_format() expects parameter 1 to be DateTime, string given in /home2/sumaka/public_html/interngration/student-profile.php on line 992
+[12-Sep-2013 12:29:30] PHP Warning:  date_format() expects parameter 1 to be DateTime, string given in /home2/sumaka/public_html/interngration/student-profile.php on line 992
+[12-Sep-2013 12:29:30] PHP Warning:  date_format() expects parameter 1 to be DateTime, string given in /home2/sumaka/public_html/interngration/student-profile.php on line 992
+[12-Sep-2013 12:29:30] PHP Warning:  date_format() expects parameter 1 to be DateTime, string given in /home2/sumaka/public_html/interngration/student-profile.php on line 992
+[12-Sep-2013 12:29:30] PHP Warning:  date_format() expects parameter 1 to be DateTime, string given in /home2/sumaka/public_html/interngration/student-profile.php on line 992
+[12-Sep-2013 12:29:30] PHP Warning:  date_format() expects parameter 1 to be DateTime, string given in /home2/sumaka/public_html/interngration/student-profile.php on line 992
+[12-Sep-2013 12:52:07] PHP Warning:  date() expects at least 1 parameter, 0 given in /home2/sumaka/public_html/interngration/student-profile.php on line 995
+[12-Sep-2013 12:52:07] PHP Warning:  date() expects at least 1 parameter, 0 given in /home2/sumaka/public_html/interngration/student-profile.php on line 995
+[12-Sep-2013 12:52:07] PHP Warning:  date() expects at least 1 parameter, 0 given in /home2/sumaka/public_html/interngration/student-profile.php on line 995
+[12-Sep-2013 12:52:07] PHP Warning:  date() expects at least 1 parameter, 0 given in /home2/sumaka/public_html/interngration/student-profile.php on line 995
+[12-Sep-2013 12:52:07] PHP Warning:  date() expects at least 1 parameter, 0 given in /home2/sumaka/public_html/interngration/student-profile.php on line 995
+[12-Sep-2013 12:52:07] PHP Warning:  date() expects at least 1 parameter, 0 given in /home2/sumaka/public_html/interngration/student-profile.php on line 995
+[12-Sep-2013 12:52:07] PHP Warning:  date() expects at least 1 parameter, 0 given in /home2/sumaka/public_html/interngration/student-profile.php on line 995
+[12-Sep-2013 12:52:07] PHP Warning:  date() expects at least 1 parameter, 0 given in /home2/sumaka/public_html/interngration/student-profile.php on line 995
+[12-Sep-2013 12:54:43] PHP Warning:  Unexpected character in input:  ''' (ASCII=39) state=1 in /home2/sumaka/public_html/interngration/student-profile.php on line 753
+[12-Sep-2013 12:54:43] PHP Parse error:  syntax error, unexpected T_STRING in /home2/sumaka/public_html/interngration/student-profile.php on line 753
+[13-Sep-2013 02:45:13] PHP Parse error:  syntax error, unexpected $end in /home2/sumaka/public_html/interngration/student-profile.php on line 1004
+[13-Sep-2013 02:46:31] PHP Catchable fatal error:  Object of class DateTime could not be converted to string in /home2/sumaka/public_html/interngration/student-profile.php on line 1002
+[13-Sep-2013 02:46:34] PHP Catchable fatal error:  Object of class DateTime could not be converted to string in /home2/sumaka/public_html/interngration/student-profile.php on line 1002
+[13-Sep-2013 02:46:38] PHP Catchable fatal error:  Object of class DateTime could not be converted to string in /home2/sumaka/public_html/interngration/student-profile.php on line 1002
+[13-Sep-2013 04:38:06] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/student-profile.php on line 1056
+[13-Sep-2013 04:38:06] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/student-profile.php on line 1058
+[13-Sep-2013 04:39:35] PHP Fatal error:  Call to undefined function  date_parse_from_format() in /home2/sumaka/public_html/interngration/student-profile.php on line 1005
+[13-Sep-2013 04:41:28] PHP Warning:  date_format() expects parameter 1 to be DateTime, null given in /home2/sumaka/public_html/interngration/student-profile.php on line 994
+[13-Sep-2013 04:41:28] PHP Warning:  date_format() expects parameter 1 to be DateTime, null given in /home2/sumaka/public_html/interngration/student-profile.php on line 994
+[13-Sep-2013 04:45:26] PHP Warning:  date_format() expects parameter 1 to be DateTime, null given in /home2/sumaka/public_html/interngration/student-profile.php on line 994
+[13-Sep-2013 04:45:26] PHP Warning:  date_format() expects parameter 1 to be DateTime, null given in /home2/sumaka/public_html/interngration/student-profile.php on line 994
+[13-Sep-2013 04:48:05] PHP Warning:  date_format() expects parameter 1 to be DateTime, string given in /home2/sumaka/public_html/interngration/student-profile.php on line 994
+[13-Sep-2013 04:48:05] PHP Warning:  date_format() expects parameter 1 to be DateTime, string given in /home2/sumaka/public_html/interngration/student-profile.php on line 994
+[13-Sep-2013 04:49:35] PHP Warning:  date_format() expects parameter 1 to be DateTime, string given in /home2/sumaka/public_html/interngration/student-profile.php on line 994
+[13-Sep-2013 04:49:35] PHP Warning:  date_format() expects parameter 1 to be DateTime, string given in /home2/sumaka/public_html/interngration/student-profile.php on line 994
+[13-Sep-2013 06:14:13] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/student-homepage.php on line 227
+[13-Sep-2013 06:14:13] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/student-homepage.php on line 229
+[13-Sep-2013 07:32:25] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/citrix.php on line 317
+[13-Sep-2013 08:32:38] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home2/sumaka/public_html/interngration/RecruiterUpcomingWebinar.php:2) in /home2/sumaka/public_html/interngration/RecruiterUpcomingWebinar.php on line 3
+[13-Sep-2013 08:33:43] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home2/sumaka/public_html/interngration/RecruiterUpcomingWebinar.php:2) in /home2/sumaka/public_html/interngration/RecruiterUpcomingWebinar.php on line 3
+[13-Sep-2013 13:36:10] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/studentTrash.php on line 120
+[13-Sep-2013 13:36:10] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/studentTrash.php on line 121
+[17-Sep-2013 21:58:27] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 341
+[17-Sep-2013 21:58:27] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 344
+[17-Sep-2013 21:58:27] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 341
+[17-Sep-2013 21:58:27] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 344
+[17-Sep-2013 21:58:27] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 341
+[17-Sep-2013 21:58:27] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 344
+[17-Sep-2013 21:58:27] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 341
+[17-Sep-2013 21:58:27] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 344
+[17-Sep-2013 21:58:27] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 341
+[17-Sep-2013 21:58:27] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 344
+[17-Sep-2013 21:58:27] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 341
+[17-Sep-2013 21:58:27] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 344
+[17-Sep-2013 21:58:48] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 341
+[17-Sep-2013 21:58:48] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 344
+[17-Sep-2013 21:58:48] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 341
+[17-Sep-2013 21:58:48] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 344
+[17-Sep-2013 21:58:48] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 341
+[17-Sep-2013 21:58:48] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 344
+[17-Sep-2013 21:58:48] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 341
+[17-Sep-2013 21:58:48] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 344
+[17-Sep-2013 21:58:48] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 341
+[17-Sep-2013 21:58:48] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 344
+[17-Sep-2013 21:58:48] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 341
+[17-Sep-2013 21:58:48] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 344
+[17-Sep-2013 22:00:16] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:00:16] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:00:16] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:00:16] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:00:16] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:00:16] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:00:16] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:00:16] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:00:16] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:00:16] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:00:16] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:00:16] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:03:06] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:03:06] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:03:06] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:03:06] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:03:06] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:03:06] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:03:06] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:03:06] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:03:06] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:03:06] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:03:06] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:03:06] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:06:25] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:06:25] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:06:25] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:06:25] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:06:25] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:06:25] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:06:25] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:06:25] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:06:25] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:06:25] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:06:25] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:06:25] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:15:57] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:15:57] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:15:57] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:15:57] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:15:57] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:15:57] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:15:57] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:15:57] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:15:57] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:15:57] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:15:57] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:15:57] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:16:00] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:16:00] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:16:00] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:16:00] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:16:00] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:16:00] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:16:00] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:16:00] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:16:00] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:16:00] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:16:00] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:16:00] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:17:14] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:17:14] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:17:14] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:17:14] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:17:14] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:17:14] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:17:14] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:17:14] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:17:14] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:17:14] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:17:14] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:17:14] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:17:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:17:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:17:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:17:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:17:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:17:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:17:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:17:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:17:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:17:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:17:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:17:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:04] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:04] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:04] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:04] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:04] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:04] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:04] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:04] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:04] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:04] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:04] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:04] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:10] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:10] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:10] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:10] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:10] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:10] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:10] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:10] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:10] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:10] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:10] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:10] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:19] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:19] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:19] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:19] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:19] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:19] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:19] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:19] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:19] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:19] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:19] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:19] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:39] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:39] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:39] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:39] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:39] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:39] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:39] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:39] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:39] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:39] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:39] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:39] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:18:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:18:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:02] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:02] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:02] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:02] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:02] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:02] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:02] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:02] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:02] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:02] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:02] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:02] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:12] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:12] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:12] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:12] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:12] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:12] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:12] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:12] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:12] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:12] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:12] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:12] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:34] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:34] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:34] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:34] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:34] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:34] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:34] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:34] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:34] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:34] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:34] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:34] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:38] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:38] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:38] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:38] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:38] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:38] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:38] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:38] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:38] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:38] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:38] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:38] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:40] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:40] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:40] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:40] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:40] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:40] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:40] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:40] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:40] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:40] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:40] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:40] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:46] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:46] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:46] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:46] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:46] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:46] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:46] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:46] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:46] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:46] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:19:46] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:19:46] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:26:04] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:26:04] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:26:04] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:26:04] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:26:04] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:26:04] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:26:04] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:26:04] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:26:04] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:26:04] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:26:04] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:26:04] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:27:31] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 341
+[17-Sep-2013 22:27:31] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 344
+[17-Sep-2013 22:27:31] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 341
+[17-Sep-2013 22:27:31] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 344
+[17-Sep-2013 22:27:31] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 341
+[17-Sep-2013 22:27:31] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 344
+[17-Sep-2013 22:27:31] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 341
+[17-Sep-2013 22:27:31] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 344
+[17-Sep-2013 22:27:31] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 341
+[17-Sep-2013 22:27:31] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 344
+[17-Sep-2013 22:27:31] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 341
+[17-Sep-2013 22:27:31] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 344
+[17-Sep-2013 22:27:47] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 341
+[17-Sep-2013 22:27:47] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 344
+[17-Sep-2013 22:27:47] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 341
+[17-Sep-2013 22:27:47] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 344
+[17-Sep-2013 22:27:47] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 341
+[17-Sep-2013 22:27:47] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 344
+[17-Sep-2013 22:27:47] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 341
+[17-Sep-2013 22:27:47] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 344
+[17-Sep-2013 22:27:47] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 341
+[17-Sep-2013 22:27:47] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 344
+[17-Sep-2013 22:27:47] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 341
+[17-Sep-2013 22:27:47] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/recruitercitrix.php on line 344
+[17-Sep-2013 22:42:37] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:42:37] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:42:37] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:42:37] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:42:37] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:42:37] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:42:37] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:42:37] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:42:37] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:42:37] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:42:37] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:42:37] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:42:54] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:42:54] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:42:54] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:42:54] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:42:54] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:42:54] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:42:54] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:42:54] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:42:54] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:42:54] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:42:54] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 22:42:54] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 22:59:21] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/student-profile.php on line 1069
+[17-Sep-2013 22:59:21] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/student-profile.php on line 1071
+[17-Sep-2013 23:13:37] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 23:13:37] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 23:13:37] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 23:13:37] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 23:13:37] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 23:13:37] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 23:13:37] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 23:13:37] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 23:13:37] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 23:13:37] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 23:13:37] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 23:13:37] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 23:13:41] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 23:13:41] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 23:13:41] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 23:13:41] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 23:13:41] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 23:13:41] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 23:13:41] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 23:13:41] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 23:13:41] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 23:13:41] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[17-Sep-2013 23:13:41] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[17-Sep-2013 23:13:41] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[18-Sep-2013 21:48:35] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[18-Sep-2013 21:48:35] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[18-Sep-2013 21:48:35] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[18-Sep-2013 21:48:35] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[18-Sep-2013 21:48:35] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[18-Sep-2013 21:48:35] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[18-Sep-2013 21:48:35] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[18-Sep-2013 21:48:35] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[19-Sep-2013 02:45:36] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[19-Sep-2013 02:45:36] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[19-Sep-2013 02:45:36] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[19-Sep-2013 02:45:36] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[19-Sep-2013 02:45:36] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[19-Sep-2013 02:45:36] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[19-Sep-2013 02:45:36] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[19-Sep-2013 02:45:36] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[19-Sep-2013 02:46:09] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[19-Sep-2013 02:46:09] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[19-Sep-2013 02:46:09] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[19-Sep-2013 02:46:09] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[19-Sep-2013 02:46:09] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[19-Sep-2013 02:46:09] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[19-Sep-2013 02:46:09] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 350
+[19-Sep-2013 02:46:09] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[19-Sep-2013 02:48:45] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[19-Sep-2013 02:48:45] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 356
+[19-Sep-2013 02:48:45] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[19-Sep-2013 02:48:45] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 356
+[19-Sep-2013 02:48:45] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[19-Sep-2013 02:48:45] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 356
+[19-Sep-2013 02:48:45] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 353
+[19-Sep-2013 02:48:45] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home2/sumaka/public_html/interngration/citrix.php on line 356
+[20-Sep-2013 13:44:37] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/studentTrashChkVal.php on line 24
+[20-Sep-2013 13:44:37] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/sumaka/public_html/interngration/studentTrashChkVal.php:24) in /home2/sumaka/public_html/interngration/studentTrashChkVal.php on line 49
+[20-Sep-2013 13:46:29] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/studentTrashChkVal.php on line 25
+[20-Sep-2013 13:46:29] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home2/sumaka/public_html/interngration/studentTrashChkVal.php:23) in /home2/sumaka/public_html/interngration/studentTrashChkVal.php on line 50
+[21-Sep-2013 05:45:39] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/postedJob.php on line 179
+[21-Sep-2013 05:45:39] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/postedJob.php on line 180
+[21-Sep-2013 05:45:51] PHP Warning:  mysql_num_rows(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/postedJob.php on line 179
+[21-Sep-2013 05:45:51] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home2/sumaka/public_html/interngration/postedJob.php on line 180
+[24-Sep-2013 13:23:52] PHP Parse error:  syntax error, unexpected $end in /home2/sumaka/public_html/interngration/WebinarReply.php on line 267
+[24-Sep-2013 13:26:35] PHP Parse error:  syntax error, unexpected $end in /home2/sumaka/public_html/interngration/WebinarReply.php on line 299
+[25-Sep-2013 09:22:04] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Too many connections in /home2/sumaka/public_html/interngration/config.php on line 4
+[27-Sep-2013 23:47:44] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'root'@'localhost' (using password: NO) in /home7/interngr/public_html/config.php on line 2
+[27-Sep-2013 23:55:13] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home7/interngr/public_html/student-profile.php on line 1230
+[27-Sep-2013 23:55:23] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home7/interngr/public_html/student-profile.php on line 1230
+[27-Sep-2013 23:55:35] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home7/interngr/public_html/student-profile.php on line 1230
+[03-Oct-2013 12:03:04] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home7/interngr/public_html/student-profile.php on line 1231
+[06-Oct-2013 19:14:24] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home7/interngr/public_html/citrix.php on line 366
+[06-Oct-2013 19:14:24] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home7/interngr/public_html/citrix.php on line 370
+[06-Oct-2013 19:24:51] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home7/interngr/public_html/citrix.php on line 366
+[06-Oct-2013 19:24:51] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home7/interngr/public_html/citrix.php on line 370
+[06-Oct-2013 19:24:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home7/interngr/public_html/citrix.php on line 366
+[06-Oct-2013 19:24:53] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home7/interngr/public_html/citrix.php on line 370
+[06-Oct-2013 19:24:55] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home7/interngr/public_html/citrix.php on line 366
+[06-Oct-2013 19:24:55] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home7/interngr/public_html/citrix.php on line 370
+[06-Oct-2013 19:24:57] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home7/interngr/public_html/citrix.php on line 366
+[06-Oct-2013 19:24:57] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home7/interngr/public_html/citrix.php on line 370
+[06-Oct-2013 19:26:55] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home7/interngr/public_html/citrix.php on line 366
+[06-Oct-2013 19:26:55] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home7/interngr/public_html/citrix.php on line 370
+[06-Oct-2013 19:28:51] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home7/interngr/public_html/recruitercitrix.php on line 351
+[06-Oct-2013 19:28:51] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home7/interngr/public_html/recruitercitrix.php on line 354
+[06-Oct-2013 19:28:55] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home7/interngr/public_html/recruitercitrix.php on line 351
+[06-Oct-2013 19:28:55] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home7/interngr/public_html/recruitercitrix.php on line 354
+[06-Oct-2013 19:29:06] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home7/interngr/public_html/recruitercitrix.php on line 351
+[06-Oct-2013 19:29:06] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home7/interngr/public_html/recruitercitrix.php on line 354
+[06-Oct-2013 19:31:31] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home7/interngr/public_html/recruitercitrix.php on line 351
+[06-Oct-2013 19:31:31] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home7/interngr/public_html/recruitercitrix.php on line 354
+[06-Oct-2013 20:40:20] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home7/interngr/public_html/citrix.php on line 366
+[06-Oct-2013 20:40:20] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home7/interngr/public_html/citrix.php on line 370
+[16-Oct-2013 19:26:30] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home7/interngr/public_html/student-profile.php on line 20
+[16-Oct-2013 19:26:38] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home7/interngr/public_html/student-profile.php on line 20
+[16-Oct-2013 19:29:50] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home7/interngr/public_html/student-profile.php on line 20
+[16-Oct-2013 19:31:58] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home7/interngr/public_html/student-profile.php on line 20

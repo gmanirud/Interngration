@@ -1,0 +1,71 @@
+/* -- Global Links & Background Colours --*/
+a { 
+	color: #E53F3F;
+}
+a:hover {
+	color: #000000;
+}
+#social-icon-container ul li div, .toplink, .text-wrapper:hover .text-heading-wrapper, ul#comments .author_mark, .contact-success, .no-rgba .hover a span, .hover a span strong, .post-out-text:hover .header-container, .coda-nav ul li a.current {
+	background-color: #E53F3F;
+}
+
+/* -- Nav Menu Colours --*/
+.menu ul li a.selected, .menu ul li a:hover,.menu ul li ul li a:link {
+	background-color: #E53F3F;	
+}
+.menu ul li ul li a:visited {
+	background-color: #E53F3F;	
+}
+.menu ul li ul li a:hover{
+	background-color: #e85f5f;
+}
+/* -- Nav Text Color -- */
+.menu ul li a:link, .menu ul li a:visited, .menu ul li ul li a:link, .menu ul li a:visited {
+	color: #FFF;
+	text-shadow: 0 -1px 0px rgba(0,0,0,.2);
+}
+
+/* -- Header, Footer, Big Quote Background, Post Date --*/
+body, #header-wrapper, .big-quote, .post-out-text  {
+	background-color: #191c24;
+}
+
+/* -- Header Strip --*/
+#header-wrapper {
+	border-top: 2px solid #E53F3F;
+}
+
+/* -- Page Header & Footer Background --*/
+#pageheader-background, #footer-wrapper {
+	background-image:  url(../images/topbackgrounds/1.png);
+}
+
+/* -- Page Header & Footer Text Color --*/
+#pageheader-background, .pageheader-title h1, .pageheader-title h2, .pageheader-title h3, .pageheader-title h4, .pageheader-title h5, .pageheader-title h6, .pageheader-title p, #footer-wrapper, #footer-container h1, #footer-container h2, #footer-container h3, #footer-container h4, #footer-container h5, #footer-container h6, #footer-container p, #jstwitter .tweet {
+	color: #333 !important;
+	text-shadow: 0 1px 0px rgba(255,255,255,.8);
+}
+
+/* -- Default Button Colour --*/
+.button, .button-big, .button:active, .button-big:active, .button:focus, .button-big:focus {
+	background-color: #E53F3F;	
+}
+
+/* -- Main Page Background (the element text background is a hack for isotope) --*/
+#body-background, .element-text {
+	background-color: #FFF;
+}
+
+/*-- SideBar Nav --*/
+ul.sidebar li a{
+	border-left-color: #E53F3F;
+}
+
+/*-- Footer Social Icons --*/
+#social-icon-container ul li div .arrow, .toplink div.arrow {
+	border-bottom: 10px solid #E53F3F;
+}
+
+/* -- Selection Colors --*/
+::-moz-selection{ color: #fff; background: rgba(229,63,63,.5); }
+::selection { color: #fff; background: rgba(229,63,63,.5); }
