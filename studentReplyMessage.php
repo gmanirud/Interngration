@@ -91,7 +91,7 @@ if(document.getElementById("to_mail").value=="")
         <div id="pageheader-background"><!-- area with alternate background -->
             <div class="pageheader-title">
                 <h1>Interngration</h1><span style="margin:0px 30px 0px 0px; float:right;">
-                <a href="studentJobApplication.php" class="button red">Job Application</a> 
+                <a href="studentJobApplication.php" class="button red">JobApplication</a> 
                 <a href="student-inbox.html" class="button red">Inbox</a>
                  <a href="student-profile.php" class="button red">Profile</a> 
                 <a href="studentAccount.php" class="button red">Account</a>

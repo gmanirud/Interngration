@@ -2,7 +2,7 @@
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Student Registration - Interngration</title>
+<title>Student Register</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 
@@ -66,7 +66,7 @@ if(isset($_GET['nextid']))
 			}
 			if($AboutMe=="")
 			{
-			 $AboutMe="Tell us a little bit about yourself, your interests and passion. Remember, recruiters will be reading this!";
+			 $AboutMe="Tell About Your Self";
 			 $AboutMe1="";	
 			}
 			
@@ -486,7 +486,7 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
               <td valign="top">
                <div style="float:left;" id="divupdate"> <br/>
                     <li>University: <?php print $schoolName; ?></li>
-                    <li>Program: <?php print $Program; ?></li>
+                    <li>rogram: <?php print $Program; ?></li>
                     <li>Contact: <?php print $Email; ?></li>
                   </div>
                
@@ -494,8 +494,6 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
               <select name="txtSchool" id="txtSchool">
               <option value="">Select University</option>
               <option value="University of toronto" <?php if($schoolName1=='University of toronto'){?> selected='selected' <?php  } ?>>University of Toronto</option>
-              <option value="University of Waterloo" <?php if($schoolName1=='University of Waterloo'){?> selected='selected' <?php  } ?>>University of Waterloo</option>
-              <option value="Ryerson University" <?php if($schoolName1=='Ryerson University'){?> selected='selected' <?php  } ?>>Ryerson University</option>
                <option value="York University" <?php if($schoolName1=='York University'){?> selected='selected' <?php  } ?>>York University</option>
               </select>
               <br/>
@@ -503,8 +501,7 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
               <option value="">Select Program</option>
               <option value="Electrical Engineering" <?php if($Program1=='Electrical Engineering'){?> selected='selected' <?php  } ?>>Electrical Engineering</option>
               <option value="Computer Engineering" <?php if($Program1=='Computer Engineering'){?> selected='selected' <?php  } ?>>Computer Engineering</option>
-              <option value="Chemical Engineering" <?php if($Program1=='Chemical Engineering'){?> selected='selected' <?php  } ?>>Chemical Engineering</option>
-               <option value="Civil Engineering" <?php if($Program1=='Civil Engineering'){?> selected='selected' <?php  } ?>>Civil Engineering</option>
+               <option value="Computer Science" <?php if($Program1=='Computer Science'){?> selected='selected' <?php  } ?>>Computer Science</option>
               </select>
                   
                   <br/>
@@ -559,11 +556,11 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
                 Invite Friends (+20 Coins/referral)
                 
                 <table width="100%" border="0">
-  <!--<tr>
+  <tr>
     <td width="25%"> <a href='#' onclick='FacebookInviteFriends();' rel='nofollow' title='Invite Your Facebook Friends'> <img src="images/facebook_invite.jpg" alt="Invite Friend" title="Face Book" width="100" /></a></td>
     <td width="40%"><input type="text" id="txtMail" name="txtMail" placeholder="Invite Friend" maxlength="100" /></td>
     <td width="35%"><a onClick="invitemail();" class="button red">Send Mail</a></td>
-  </tr>-->
+  </tr>
   <tr>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -574,6 +571,7 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
                
                 </p>                    
             </div>
+			<div style="width:490px; float:right; text-align:center; margin:0px 14px 0px 0px;">get more 2x coins by inviting more friends now</div>
 			<div style="width:490px; float:right; text-align:center; margin:0px 14px 0px 0px; display:none;color:#F00; font-weight:400;" id="error"></div>
             			 
 			  <div class="" style="float:right; width:600px;">
