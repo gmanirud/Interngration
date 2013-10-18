@@ -94,14 +94,14 @@ if(isset($_SESSION['ruid']))
 			if(($companyName=="")&&($hrLead=="")&&($Contact==""))
 			{
 				$companyName="Enter Company Name";
-			    $hrLead="Enter HR lead Name";
+			    $hrLead="Enter Recruiter Name";
 				$companyName1="";
 			    $hrLead1="";
 			    $Contact1="";
 			}
 			if($AboutMe=="")
 			{
-			    $AboutMe="Hello Recruiter, please tell us about yourself.";
+			    $AboutMe="Hey {$firstName}, please tell us a little bit about the company.";
 				$AboutMe1="";
 			}
 		}
@@ -176,7 +176,7 @@ function updaterecruiterabout()
 	if(document.getElementById("aboutme").value=="")
 	{
 		document.getElementById("error1").style.display='block';
-		document.getElementById("error1").innerHTML='Please enter a little something about yourself! You\'re not that boring.';
+		document.getElementById("error1").innerHTML='Please enter a little something about the company. It\'s not that boring!';
 		document.getElementById("aboutme").focus();
 		return false;
 	}
@@ -409,7 +409,7 @@ function chkimgvalidation()
 				if($Profile_Image!="")
 				{
 				?>
-                <a href="removeRecruiterImage.php?rid=<?php print $rid; ?>"><span id= "remove_pic_link" > Remove Image</span></a>
+                <a href="removeRecruiterImage.php?rid=<?php print $rid; ?>"><span id= "remove_pic_link">Remove Image</span></a>
 
                 <?php
 				}
@@ -422,8 +422,8 @@ function chkimgvalidation()
               <td valign="top">
                <div style="float:left;" id="divupdate"> <br/>
                     <li>Company Name: <?php print $companyName; ?></li>
-                    <li>HR lead: <?php print $hrLead; ?></li>
-                    <li>Contact: <?php print $Email; ?></li>
+                    <li>Recruiter: <?php print $hrLead; ?></li>
+                    <li>E-mail: <?php print $Email; ?></li>
                   </div>
                
               <div style="float:left; display:none" id="divedit">
@@ -467,7 +467,7 @@ function chkimgvalidation()
         </div>
 			
 			 <div class="grid_8" style="">
-            	<h4 style="margin:20px;">My Webinars - DOES NOT LINK TO WEBINAR FIXME</h4>
+            	<h4 style="margin:20px;">My Webinars</h4>
                 <table width="420" border="1" height="160" style="margin:20px; border:1px solid #666666; padding:10px;">
   <tr>
     <th scope="col">Session</th>
