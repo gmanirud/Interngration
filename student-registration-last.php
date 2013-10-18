@@ -491,17 +491,20 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
                   </div>
                
               <div style="float:left; display:none" id="divedit">
-              <select name="txtSchool" id="txtSchool">
-              <option value="">Select University</option>
-              <option value="University of toronto" <?php if($schoolName1=='University of toronto'){?> selected='selected' <?php  } ?>>University of Toronto</option>
-               <option value="York University" <?php if($schoolName1=='York University'){?> selected='selected' <?php  } ?>>York University</option>
-              </select>
+
               <br/>
                <select name="txtProgram" id="txtProgram">
               <option value="">Select Program</option>
               <option value="Electrical Engineering" <?php if($Program1=='Electrical Engineering'){?> selected='selected' <?php  } ?>>Electrical Engineering</option>
               <option value="Computer Engineering" <?php if($Program1=='Computer Engineering'){?> selected='selected' <?php  } ?>>Computer Engineering</option>
+              <option value="Computer Engineering" <?php if($Program1=='Engineering Science'){?> selected='selected' <?php  } ?>>Engineering Science</option>
+              <option value="Computer Engineering" <?php if($Program1=='Chemical Engineering'){?> selected='selected' <?php  } ?>>Chemical Engineering</option>
+              <option value="Computer Engineering" <?php if($Program1=='Mechanical Engineering'){?> selected='selected' <?php  } ?>>Mechanical Engineering</option>
+              <option value="Computer Engineering" <?php if($Program1=='Civil Engineering'){?> selected='selected' <?php  } ?>>Civil Engineering</option>
+              <option value="Computer Engineering" <?php if($Program1=='Industrial Engineering'){?> selected='selected' <?php  } ?>>Industrial Engineering</option>
+              <option value="Computer Engineering" <?php if($Program1=='Material Science Engineering'){?> selected='selected' <?php  } ?>>Material Science Engineering</option>
                <option value="Computer Science" <?php if($Program1=='Computer Science'){?> selected='selected' <?php  } ?>>Computer Science</option>
+
               </select>
                   
                   <br/>
