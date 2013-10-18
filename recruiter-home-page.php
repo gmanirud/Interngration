@@ -13,6 +13,7 @@ else
 header("location:recruiter-login.php");
 }
 ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -82,6 +83,8 @@ if(isset($_SESSION['ruid']))
 			$res=mysql_fetch_array($ses_result);
 			$rid=$res["id"];
 			$companyName=$res["companyName"];
+			$FirstName=$res["FirstName"];
+			$LastName=$res["LastName"];
 			$hrLead=$res["hrLead"];
 			$Email=$res["Email"];
 			$AboutMe=$res["AboutMe"];
@@ -101,7 +104,7 @@ if(isset($_SESSION['ruid']))
 			}
 			if($AboutMe=="")
 			{
-			    $AboutMe="Hey {$firstName}, please tell us a little bit about the company.";
+			    $AboutMe="Hey {$FirstName}, please tell us a little bit about the company.";
 				$AboutMe1="";
 			}
 		}
@@ -421,7 +424,7 @@ function chkimgvalidation()
             <tr>
               <td valign="top">
                <div style="float:left;" id="divupdate"> <br/>
-                    <li>Company Name: <?php print $companyName; ?></li>
+                    <li>Company: <?php print $companyName; ?></li>
                     <li>Recruiter: <?php print $hrLead; ?></li>
                     <li>E-mail: <?php print $Email; ?></li>
                   </div>
@@ -479,10 +482,10 @@ function chkimgvalidation()
   </tr>
   <tr>
     <td>Started</td>
-   <td>Q & A open - Expect Resume</td>
+   <td>Q & A open - Expect Resumes</td>
   </tr>
    <tr>
-    <td>Cuming in 3 days</td>
+    <td>Upcoming in 3 days</td>
     <td>Not yet started</td>
   </tr>
 </table></div>
