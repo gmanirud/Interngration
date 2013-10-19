@@ -13,11 +13,89 @@ else
 header("location:student-login.php");
 }
 ?>
+
+
 <!DOCTYPE HTML>
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Student Profile - Interngration</title>
+
+<?php
+
+  $session=$_SESSION["s_id"];
+  include "config.php"; 	
+  $ses_result=mysql_select_db($dbname) or die(mysql_error());
+  $sqlget="Select *  from student_register where session_id='$session'";
+  $ses_result=mysql_query($sqlget);
+  $rowcount= mysql_num_rows($ses_result);	
+  
+
+  if ($rowcount>0) {
+    $res=mysql_fetch_array($ses_result);
+    $FirstName = $res["FirstName"];
+    $LastName = $res["LastName"];
+    $schoolName=$res["schoolName"];
+    $Program=$res["Program"];
+    $Contact=$res["Contact"];
+    $AboutMe=$res["AboutMe"];
+    $Email=$res["Email"];
+    $schoolName1=$res["schoolName"];
+    $Program1=$res["Program"];
+    $univ_Year=$res["univ_Year"];
+    $Contact1=$res["Contact"];
+    $AboutMe1=$res["AboutMe"];
+    $Profile_Image=$res["Profile_Image"];
+    $work_experience=$res["work_experience"];
+    $projects=$res["projects"];
+    $job_resume=$res["job_resume"];
+    $skill_set=$res["skill_set"];
+    $position_for=$res["position_for"];
+    $language_pref=$res["language_pref"];
+
+    if(($schoolName=="")&&($Program=="")&&($Contact=="")) {
+      $schoolName="University of Toronto";
+      $Program="Engineering/CS";
+      $Contact="yourname@mail.utoronto.ca";
+      $univ_Year="Year of study";
+      $schoolName1="";
+      $Program1="";
+      $Contact1="";
+    }
+    
+    if($AboutMe=="") {
+       $AboutMe="Hello {$res["FirstName"]}, tell us a little something about yourself. It could be a fun fact about you or what you like to do outside of school. Anything to let the recruiters know about your fun side!";
+       $AboutMe1="";	
+    }
+    if($univ_Year=="") {
+      $univ_Year="Year of study";
+    }
+    if($skill_set=="") {
+      $skill_set="Please select the technical skills you're proficient in. ";
+    }
+    if($position_for=="") {
+      $position_for="What type of position are you looking for?";
+    }
+    if($language_pref=="") {
+	    $language_pref="Select your language preference";
+		}
+	}
+  else {
+    $schoolName="";
+    $Program="";
+    $Contact="";
+    $AboutMe="";
+    $schoolName1="";
+    $Program1="";
+    $Contact1="";
+    $AboutMe1="";	
+    $Profile_Image="";
+    $work_experience="";
+    $projects=$res["projects"];
+  }
+
+?>
+  
+<title> <?php echo ucfirst($FirstName),"$nbsp ",ucfirst($LastName) ?> - Interngration</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 
@@ -688,91 +766,6 @@ message: 'Join Interngration - An online multimedia platform to connect SMEs/sta
 
 </head>
 <body>
-<?php
-
-        $session=$_SESSION["s_id"];
-		
-		include "config.php"; 	
-		$ses_result=mysql_select_db($dbname) or die(mysql_error());
-					
-		$sqlget="Select *  from student_register where session_id='$session'";
-		
-		$ses_result=mysql_query($sqlget);
-		$rowcount= mysql_num_rows($ses_result);	
-		
-	
-		if ($rowcount>0)
-		{
-			$res=mysql_fetch_array($ses_result);
-			
-			$schoolName=$res["schoolName"];
-			$Program=$res["Program"];
-			$Contact=$res["Contact"];
-			$AboutMe=$res["AboutMe"];
-			$Email=$res["Email"];
-			$schoolName1=$res["schoolName"];
-			$Program1=$res["Program"];
-			$univ_Year=$res["univ_Year"];
-			$Contact1=$res["Contact"];
-			$AboutMe1=$res["AboutMe"];
-			$Profile_Image=$res["Profile_Image"];
-			$work_experience=$res["work_experience"];
-			$projects=$res["projects"];
-			$job_resume=$res["job_resume"];
-			$skill_set=$res["skill_set"];
-			$position_for=$res["position_for"];
-			$language_pref=$res["language_pref"];
-			if(($schoolName=="")&&($Program=="")&&($Contact==""))
-			{
-				$schoolName="University of Toronto";
-			    $Program="Engineering/CS";
-			    $Contact="yourname@mail.utoronto.ca";
-				$univ_Year="Year of study";
-				$schoolName1="";
-			    $Program1="";
-			    $Contact1="";
-			}
-			if($AboutMe=="")
-			{
-			 $AboutMe="Hello {$FirstName}, tell us a little something about yourself. It could be a fun fact about you or what you like to do outside of school. Anything to let the recruiters know about your fun side!";
-			 $AboutMe1="";	
-			}
-			if($univ_Year=="")
-			{
-			 $univ_Year="Year of study";
-			}
-			if($skill_set=="")
-			{
-			 $skill_set="Please select the technical skills you're proficient in.";
-			}
-			if($position_for=="")
-			{
-			 $position_for="What type of position are you looking for?";
-			}
-			if($language_pref=="")
-			{
-			 $language_pref="Select your language preference";
-			}
-			
-			
-		}
-		else
-		{
-			$schoolName="";
-			$Program="";
-			$Contact="";
-			$AboutMe="";
-			$schoolName1="";
-			$Program1="";
-			$Contact1="";
-			$AboutMe1="";	
-			$Profile_Image="";
-			$work_experience="";
-			$projects=$res["projects"];
-		}
-
-			
-?>
 <div id="wrapper"> 
   
   <!-- header -->
