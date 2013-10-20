@@ -6,7 +6,6 @@
 		$return_array = array();
 		$citrix=new citrix();
 		
-		
 		$reponse = json_decode($citrix->make_request("https://api.citrixonline.com/G2W/rest/organizers/".$organizerKey."/upcomingWebinars?oauth_token=".$accessToken), true);
 		
 		if(isset($reponse['int_err_code']) and $reponse['int_err_code'] != '')
@@ -43,33 +42,27 @@
 						//print $cnt;
 						for($i=0;$i<=$cnt;$i++)
 						{
-						$desc=$weblist["upcoming"]["webinars"][$i]["description"];
-						$subj=$weblist["upcoming"]["webinars"][$i]["subject"];
-						$regurl=$weblist["upcoming"]["webinars"][$i]["registrationUrl"];
-						$webkey=$weblist["upcoming"]["webinars"][$i]["webinarKey"];
-						$starttime=$weblist["upcoming"]["webinars"][$i]["times"]["0"]["startTime"];
-						$endtime=$weblist["upcoming"]["webinars"][$i]["times"]["0"]["endTime"];
-						//print $organizer_key;
-						if(isset($subj)!=0)
-						{
-
-						
-							$ses_result=mysql_select_db($dbname) or die(mysql_error());
-										
-							$sqlget="Select *  from upcoming_webinar where webinar_key='$webkey'";
+							$desc=$weblist["upcoming"]["webinars"][$i]["description"];
+							$subj=$weblist["upcoming"]["webinars"][$i]["subject"];
+							$regurl=$weblist["upcoming"]["webinars"][$i]["registrationUrl"];
+							$webkey=$weblist["upcoming"]["webinars"][$i]["webinarKey"];
+							$starttime=$weblist["upcoming"]["webinars"][$i]["times"]["0"]["startTime"];
+							$endtime=$weblist["upcoming"]["webinars"][$i]["times"]["0"]["endTime"];
+							//print $organizer_key;
+							if(isset($subj)!=0)
+							{						
+								$ses_result=mysql_select_db($dbname) or die(mysql_error());								
+								$sqlget="Select *  from upcoming_webinar where webinar_key='$webkey'";
+								$ses_result=mysql_query($sqlget);
+							    $rowcount= mysql_num_rows($ses_result);	
 							
-							$ses_result=mysql_query($sqlget);
-							$rowcount= mysql_num_rows($ses_result);	
-							
-							if($rowcount=='0')
-							{
-								$sqlInsert = "insert into upcoming_webinar (subject,description,webinar_url,webinar_key,start_time,end_time) values ('$subj','$desc','$regurl','$webkey','$starttime','$endtime')";
-								$result=mysql_db_query($dbname,$sqlInsert,$link);
+								if($rowcount=='0')
+								{
+									$sqlInsert = "insert into upcoming_webinar (subject,description,webinar_url,webinar_key,start_time,end_time) values ('$subj','$desc','$regurl','$webkey','$starttime','$endtime')";
+									$result=mysql_db_query($dbname,$sqlInsert,$link);
 								
-							}
-						
-						
-						}
+								}						
+						    }
 						}
 class citrix
 {						
@@ -100,5 +93,4 @@ public function make_request($url, $params = array())
 		return $result;
 	}
 }
-						
-	
+?>						

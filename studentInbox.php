@@ -82,7 +82,7 @@ $startpoint = ($page * $limit) - $limit;
         <div id="pageheader-background"><!-- area with alternate background -->
             <div class="pageheader-title">
             <span class="mailno"><?php include "StudentUnreadMail.php"; ?></span>
-                <a href="StudentRegisteredWebinar.php" class="button red">Upcoming Webinars</a>
+                <a href="StudentRegisteredWebinar.php" class="button red"> My Webinars</a>
                 <a href="StudentWatchedWebinar.php" class="button red">Watched Webinar</a>       
                 <a href="studentJobApplication.php" class="button red">Job Application</a> 
                 <a href="AppliedPostedJob.php" class="button red">Applied Job</a> 

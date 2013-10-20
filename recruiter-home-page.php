@@ -13,6 +13,7 @@ else
 header("location:recruiter-login.php");
 }
 ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -110,6 +111,66 @@ header("location:recruiter-login.php");
 	</style>
     
  <!-- Light box -->
+ <?php
+if(isset($_SESSION['ruid']))
+{
+		$uid=$_SESSION['ruid'];
+		
+		include "config.php"; 	
+		$ses_result=mysql_select_db($dbname) or die(mysql_error());
+					
+		$sqlget="Select *  from recruiter_register where id='$uid'";
+		//print $sqlget;
+		$ses_result=mysql_query($sqlget);
+		$rowcount= mysql_num_rows($ses_result);	
+					
+		if ($rowcount>0)
+		{
+			$res=mysql_fetch_array($ses_result);
+			$rid=$res["id"];
+			$companyName=$res["companyName"];
+			$FirstName=$res["FirstName"];
+			$LastName=$res["LastName"];
+			$hrLead=$res["hrLead"];
+			$Email=$res["Email"];
+			$AboutMe=$res["AboutMe"];
+			$companyName1=$res["companyName"];
+			$hrLead1=$res["hrLead"];
+			$Contact1=$res["Contact"];
+			$AboutMe1=$res["AboutMe"];
+			$Profile_Image=$res["Profile_Image"];
+			
+			if(($companyName=="")&&($hrLead=="")&&($Contact==""))
+			{
+				$companyName="Enter Company Name";
+			    $hrLead="Enter Recruiter Name";
+				$companyName1="";
+			    $hrLead1="";
+			    $Contact1="";
+			}
+			if($AboutMe=="")
+			{
+			    $AboutMe="Hey {$FirstName}, please tell us a little bit about the company.";
+				$AboutMe1="";
+			}
+		}
+		else
+		{
+			$companyName="";
+			$hrLead="";
+			$Contact="";
+			$AboutMe="";
+			$hrLead1="";
+			$Contact1="";
+			$AboutMe="";
+			$AboutMe1="";
+			$Profile_Image="";
+		}
+
+
+}				
+?>
+
 <!--  Citrix Authendication -->
 <?php
 include "citrix.php";
@@ -126,13 +187,6 @@ if(!$organizer_key)
 	exit;
 }
 ?>
-
-<!-- Citrix Acuthendication -->
-
-
-
-
-
 
 <!-- Load Jquery/Modernizr Javascript -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -163,7 +217,7 @@ function updaterecruiterabout()
 	if(document.getElementById("aboutme").value=="")
 	{
 		document.getElementById("error1").style.display='block';
-		document.getElementById("error1").innerHTML='Please enter a little something about yourself! You\'re not that boring.';
+		document.getElementById("error1").innerHTML='Please enter a little something about the company. It\'s not that boring!';
 		document.getElementById("aboutme").focus();
 		return false;
 	}
@@ -396,7 +450,7 @@ function chkimgvalidation()
 				if($Profile_Image!="")
 				{
 				?>
-                <a href="removeRecruiterImage.php?rid=<?php print $rid; ?>"><span id= "remove_pic_link" > Remove Image</span></a>
+                <a href="removeRecruiterImage.php?rid=<?php print $rid; ?>"><span id= "remove_pic_link">Remove Image</span></a>
 
                 <?php
 				}
@@ -408,9 +462,9 @@ function chkimgvalidation()
             <tr>
               <td valign="top">
                <div style="float:left;" id="divupdate"> <br/>
-                    <li>Company Name: <?php print $companyName; ?></li>
-                    <li>HR lead: <?php print $hrLead; ?></li>
-                    <li>Contact: <?php print $Email; ?></li>
+                    <li>Company: <?php print $companyName; ?></li>
+                    <li>Recruiter: <?php print $hrLead; ?></li>
+                    <li>E-mail: <?php print $Email; ?></li>
                   </div>
                
               <div style="float:left; display:none" id="divedit">
@@ -454,7 +508,7 @@ function chkimgvalidation()
         </div>
 			
 			 <div class="grid_8" style="">
-            	<h4 style="margin:20px;">My Webinars - DOES NOT LINK TO WEBINAR FIXME</h4>
+            	<h4 style="margin:20px;">My Webinars</h4>
                 <table width="420" border="1" height="160" style="margin:20px; border:1px solid #666666; padding:10px;">
   <tr>
     <th scope="col">Session</th>
@@ -466,10 +520,10 @@ function chkimgvalidation()
   </tr>
   <tr>
     <td>Started</td>
-   <td>Q & A open - Expect Resume</td>
+   <td>Q & A open - Expect Resumes</td>
   </tr>
    <tr>
-    <td>Cuming in 3 days</td>
+    <td>Upcoming in 3 days</td>
     <td>Not yet started</td>
   </tr>
 </table></div>

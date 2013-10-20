@@ -102,7 +102,6 @@ if(!$organizer_key)
          <!-- header nav menu -->        
         <div id="menu" class="menu"> 
                <ul>
-                <li><a href="recruiterAccount.php">Welcome:&nbsp; <?php print $username; ?></a></li>
                <li><a href="recruiter-home-page.php">Home</a></li>
                <li><a href="recruiterAccount.php">Account</a></li>
                <li><a href="logout.php">Logout</a></span></li> 
@@ -165,6 +164,11 @@ if(!$organizer_key)
 								$end_time=$res["end_time"];
 								$status=$res["status"];
 								
+								#Set timezone
+								#echo "Original Time: ". date("h:i:s")."\n";
+								#putenv("TZ=US/Eastern");
+								#echo "New Time: ". date("h:i:s")."\n"; 
+													
 								$stdate = date_create($start_time);
 								$stdt=date_format($stdate, 'Y-m-d');
 								$sttime = date_create($start_time);
@@ -187,16 +191,19 @@ if(!$organizer_key)
                
 					    <div class="post-out-text" style="min-width:950px;">     
 					    <div class="header-container" style="min-width:950px;">
-                                <div class="date" style="font-size:12px;"><ul><li>Total Registrants: <?php print $rowcount1; ?></li>
-                                 <?php if($status=='Cancelled') { ?>  
-                                 <li>Cancelled</li>
-                                 <?php
-								 }
+                                <div class="date" style="font-size:12px;">
+                                	<ul>
+                                		<li>Total Registrants: <?php print $rowcount1; ?></li>
+                                 		<?php if($status=='Cancelled') { ?>  
+                                 		<li>Cancelled</li>
+                                    	<?php
+								 	}
 								 ?>
-                                </ul></div>
+                                	</ul>
+                                </div>
                                 <h4><?php print $subject; ?></h4>
-                      <p class="post-subtitle" style="font-size:12px;">Start Time: <?php print $stdt." To ".$stte; ?></p> <p class="post-subtitle" style="font-size:12px;">End Time : <?php print $endt." To ".$ente; ?></p> 
-                            </div>
+                                  <p class="post-subtitle" style="font-size:12px;">Start Time: <?php print $stdt." From: ".$stte; ?></p> <p class="post-subtitle" style="font-size:12px;">End Time : <?php print $endt." To: ".$ente; ?></p> 
+                        </div>
 							<div class="padding10 float-left"><p><?php print $description; ?><br><div style="padding-left:700px;">
                             <?php
 							if($rowcount>0)
