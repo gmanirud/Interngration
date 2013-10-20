@@ -67,7 +67,7 @@ header("location:student-login.php");
         <div id="pageheader-background"><!-- area with alternate background -->
             <div class="pageheader-title">
              <span class="mailno"><?php include "StudentUnreadMail.php"; ?></span>
-                <h1>My Dashboard</h1><span style="margin:0px 30px 0px 0px; float:right;"> 
+                <h1>Upcoming Webinars</h1><span style="margin:0px 30px 0px 0px; float:right;"> 
                 <a href="StudentRegisteredWebinar.php" class="button red"> My Webinars</a>   
                 <a href="StudentWatchedWebinar.php" class="button red">Watched Webinars</a>              
                 <a href="postedJob.php" class="button red">Job Board</a> 
@@ -98,36 +98,8 @@ if(!$organizer_key)
 }
 include "config.php";
 ?>
-        <!-- side bar -->
-        <div class="section">
-            <div class="grid_20"> 
-              
-                <!-- sidebar nav -->
-                <div class="title"><h4>Featured Webinars</h4></div>
-                <!-- post 6 -->
-                <div class="post-out-wrapper">
-
-                    <!-- post image and details -->                    
-                    <div class="post-out-image">
-                               
-                        <!-- image -->                          
-                        <div class="hover">                
-                            <!-- job 4 -->
-            <div class="recent-job">                    
-            <div class="hover"><a href="#" data-rel="prettyPhoto" title="Enter Title Here" >
-            <span class="play"></span><img src="images/job1.jpg" width="220" height="175" alt=""/></a></div>
-            </div>  
-                        </div>  
-                         <!-- details -->
-                    </div>
-                </div> 
-                            
-        <div class="clear"></div> 
-
-            </div><!-- end grid_4 -->
-        </div><!-- end side bar -->    
-
-		<!-- posts -->
+        
+ 		<!-- posts -->
 		<div class="section">
        		<div class="grid_21">           
 
@@ -135,106 +107,51 @@ include "config.php";
            		<!-- title -->
                 <div class="title"><h4>Coming soon</h4></div>                
 
-               
-                <!-- post 1 -->
-                <div class="post-out-wrapper">
-
-                    <!-- post image and details -->                    
-                    <div class="post-out-image">
-                               
-                        <!-- image -->                          
-                        <div class="hover">                
-                            <!-- job 4 -->
-            <div class="recent-job">                    
-            <div class="hover"><a href="#" data-rel="prettyPhoto" title="Enter Title Here" >
-            <span class="play"></span><img src="images/job1.jpg" width="220" height="175" alt=""/></a></div>
-            </div>  
-                        </div>  
-                         <!-- details -->
-                    </div>
-                </div>                    
-                    
-				<!-- post 2 -->
-                <div class="post-out-wrapper">
-
-                    <!-- post image and details -->                    
-                    <div class="post-out-image">
-                               
-                        <!-- image -->                          
-                        <div class="hover">                
-                            <!-- job 4 -->
-            <div class="recent-job">                    
-            <div class="hover"><a href="#" data-rel="prettyPhoto" title="Enter Title Here" >
-            <span class="play"></span><img src="images/job1.jpg" width="220" height="175" alt=""/></a></div>
-            </div>  
-                        </div>  
-                         <!-- details -->
-                       </div></div> 
-                    
-                    
-                    
-              <!-- post 3 -->
-                <div class="post-out-wrapper">
-
-                    <!-- post image and details -->                    
-                    <div class="post-out-image">
-                               
-                        <!-- image -->                          
-                        <div class="hover">                
-                            <!-- job 4 -->
-            <div class="recent-job">                    
-            <div class="hover"><a href="#" data-rel="prettyPhoto" title="Enter Title Here" >
-            <span class="play"></span><img src="images/job1.jpg" width="220" height="175" alt=""/></a></div>
-            </div>  
-                        </div>  
-                         <!-- details -->
-                    </div>
-                </div> 
-                      
-					   <?php
-					     include "config.php";
+				<?php
+					include "config.php";
+					
+						$ses_result=mysql_select_db($dbname) or die(mysql_error());
+									
+						$sqlget="Select *  from upcoming_webinar where start_time>NOW() ";
 						
-							$ses_result=mysql_select_db($dbname) or die(mysql_error());
-										
-							$sqlget="Select *  from upcoming_webinar where start_time>NOW() ";
+						$ses_result=mysql_query($sqlget);
+						$rowcount= mysql_num_rows($ses_result);	
+						$i=1;
+						while($res=mysql_fetch_array($ses_result))
+						{
 							
-							$ses_result=mysql_query($sqlget);
-							$rowcount= mysql_num_rows($ses_result);	
-							$i=1;
-							while($res=mysql_fetch_array($ses_result))
-							{
-								
-								$subject=$res["subject"];
-								$description=$res["description"];
-								$webinar_url=$res["webinar_url"];
-								$webinar_key=$res["webinar_key"];
-								$start_time=$res["start_time"];
-								$end_time=$res["end_time"];
-								$status=$res["status"];
-								$stdate = date_create($start_time);
-								$stdt=date_format($stdate, 'Y-m-d');
-								$sttime = date_create($start_time);
-								$stte=date_format($sttime, 'h:i a');
-								$endate = date_create($end_time);
-								$endt=date_format($endate, 'Y-m-d');
-								$entime = date_create($end_time);
-								$ente=date_format($entime, 'h:i a');
-						?>
+							$subject=$res["subject"];
+							$description=$res["description"];
+							$webinar_url=$res["webinar_url"];
+							$webinar_key=$res["webinar_key"];
+							$start_time=$res["start_time"];
+							$end_time=$res["end_time"];
+							$status=$res["status"];
+							$stdate = date_create($start_time);
+							$stdt=date_format($stdate, 'Y-m-d');
+							$sttime = date_create($start_time);
+							$stte=date_format($sttime, 'h:i a');
+							$endate = date_create($end_time);
+							$endt=date_format($endate, 'Y-m-d');
+							$entime = date_create($end_time);
+							$ente=date_format($entime, 'h:i a');
+					?>
 					    <form method="post" action="StudentRegisterConfirmation.php" id="form<?php print $i; ?>">
 					   <!-- post 4 -->
                
-					    <div class="post-out-text">     
+					<div class="post-out-text">     
 					    <div class="header-container">
                          
-                                <h4><?php print $subject; ?></h4>
-                      <p class="post-subtitle" style="font-size:12px;">Start Time: <?php print $stdt." To ".$stte; ?> </p> <p class="post-subtitle" style="font-size:12px;">End Time : <?php print $endt." To ".$ente; ?></p> 
-                            </div>
-							<div class="padding10 float-left"><p><?php print $description; ?><br>
-                           
-                            <a style="cursor:pointer" onClick="document.getElementById('form<?php print $i; ?>').submit();">Register</a>
-                           
-                            </p></div>
-				 </div>
+                            <h4><?php print $subject; ?></h4>
+                            <p class="post-subtitle" style="font-size:12px;">Start Time: <?php print $stdt." To ".$stte; ?> </p> <p class="post-subtitle" style="font-size:12px;">End Time : <?php print $endt.  " To ".$ente; ?></p> 
+                        </div>
+						<div class="padding10 float-left">
+                            <p><?php print $description; ?><br>
+                              <a style="cursor:pointer" onClick="document.getElementById('form<?php print $i; ?>').submit();">Register</a>
+                            </p>
+                        </div>
+				    </div>
+
                  <input type="hidden" name="regid" id="regid" value="<?php print $webinar_key; ?>">
                  <input type="hidden" name="subj" id="subj" value="<?php print $subject; ?>">
                  <input type="hidden" name="desc" id="desc" value="<?php print $description; ?>">
