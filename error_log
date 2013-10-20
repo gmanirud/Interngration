@@ -538,3 +538,7 @@ Stack trace:
 [06-Oct-2013 19:31:31] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home7/interngr/public_html/recruitercitrix.php on line 354
 [06-Oct-2013 20:40:20] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home7/interngr/public_html/citrix.php on line 366
 [06-Oct-2013 20:40:20] PHP Warning:  mysql_db_query(): supplied argument is not a valid MySQL-Link resource in /home7/interngr/public_html/citrix.php on line 370
+[16-Oct-2013 19:26:30] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home7/interngr/public_html/student-profile.php on line 20
+[16-Oct-2013 19:26:38] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home7/interngr/public_html/student-profile.php on line 20
+[16-Oct-2013 19:29:50] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home7/interngr/public_html/student-profile.php on line 20
+[16-Oct-2013 19:31:58] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home7/interngr/public_html/student-profile.php on line 20

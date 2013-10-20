@@ -72,9 +72,9 @@ header("location:student-login.php");
 
 <!--  Validate Engine  -->
 <script type="text/javascript">
-function chkoldpass(opass)
+function chkoldpass()
 {
-	var opass=opass;
+	var opass=document.getElementById("oldpassword").value;
 	var userid=document.getElementById("userid").value;
 	
 	if (window.XMLHttpRequest)
@@ -105,12 +105,16 @@ function chkoldpass(opass)
 		         document.getElementById("error").innerHTML='Old password is not correct!';
 				document.getElementById('oldpassword').value="";
 				document.getElementById('oldpassword').focus();
+				//document.getElementById('oldpass').value="false";
+				return false;
 				
 			
 			}
 			else
 			{
 			    document.getElementById("error").style.display='none';	
+				//document.getElementById('oldpass').value="true";
+				return true;
 			}
 			
 			
@@ -135,38 +139,39 @@ function updatestudentaccount()
 	var password2=document.getElementById("password2").value;
 	var userid=document.getElementById("userid").value;
 	
+		
 	if(FirstName=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Please enter your first name';
+		document.getElementById("error").innerHTML='Enter the First Name...!';
 		document.getElementById("FirstName").focus();
 		return false;
 	}
 	if(LastName=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Please enter your last name';
+		document.getElementById("error").innerHTML='Enter the Last Name...!';
 		document.getElementById("LastName").focus();
 		return false;
 	}
 	if(Company=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Please enter your school name';
+		document.getElementById("error").innerHTML='Select Affiliated University...!';
 		document.getElementById("Company").focus();
 		return false;
 	}
 	if(Address=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Which city do you live in?';
+		document.getElementById("error").innerHTML='Enter the City...!';
 		document.getElementById("Address").focus();
 		return false;
 	}
 	if(Country=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Which country do you live in?';
+		document.getElementById("error").innerHTML='Enter the Country...!';
 		document.getElementById("Country").focus();
 		return false;
 	}
@@ -176,7 +181,7 @@ function updatestudentaccount()
 	if(document.getElementById("oldpassword").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Please enter your old password';
+		document.getElementById("error").innerHTML='Enter the Old Password...!';
 		document.getElementById("oldpassword").focus();
 		return false;
 	}
@@ -184,24 +189,37 @@ function updatestudentaccount()
 	if(document.getElementById("password1").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Please enter a new password';
+		document.getElementById("error").innerHTML='Enter the New Password...!';
 		document.getElementById("password1").focus();
 		return false;
 	}
 	if(document.getElementById("password2").value=="")
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='Please confirm your new password';
+		document.getElementById("error").innerHTML='Enter the Confirm Password...!';
 		document.getElementById("password2").focus();
 		return false;
 	}
 	if(document.getElementById("password2").value!=document.getElementById("password1").value)
 	{
 		document.getElementById("error").style.display='block';
-		document.getElementById("error").innerHTML='The entered passwords do not match. Please try again';
+		document.getElementById("error").innerHTML='Confirm Password is not incorrect...!';
 		document.getElementById("password2").focus();
 		return false;
 	}
+	
+	
+	
+	
+	/*if((document.getElementById("oldpass").value=='false') || (document.getElementById("oldpass").value==''))
+	{
+		document.getElementById("error").style.display='block';
+		 document.getElementById("error").innerHTML='Old password is not correct!';
+		document.getElementById('oldpassword').value="";
+		document.getElementById('oldpassword').focus();
+		return false;
+	}*/
+	
 	}
 
 	
@@ -224,15 +242,32 @@ function updatestudentaccount()
 		}
 	  if (xmlhttp.readyState==4 && xmlhttp.status==200)
 		{
+			var resText=xmlhttp.responseText;
+			//alert(resText);
 			
+			if(resText == 1)
+			{
+				document.getElementById("error").style.display='block';
+		         document.getElementById("error").innerHTML='Old password is not correct!';
+				document.getElementById('oldpassword').value="";
+				document.getElementById('oldpassword').focus();
+				return false;
+				
+			
+			}
+			else
+			{
+			 document.getElementById("error").style.display='block';
 			 document.getElementById('editpage').style.display="none";
 			 document.getElementById('normalpage1').style.display="block";
 			 document.getElementById('normalpage1').innerHTML=xmlhttp.responseText;
+			 
+			}
 			
 			
 		}
 	  }
-	xmlhttp.open("GET","ajaxpage/ajaxUpdateAccount.php?FirstName="+FirstName+"&LastName="+LastName+"&Company="+Company+"&Address="+Address+"&Country="+Country+"&password2="+password2+"&userid="+userid,true);
+	xmlhttp.open("GET","ajaxpage/ajaxUpdateAccount.php?FirstName="+FirstName+"&LastName="+LastName+"&Company="+Company+"&Address="+Address+"&Country="+Country+"&password2="+password2+"&userid="+userid+"&opass="+oldpassword,true);
 	xmlhttp.send();
 }
 
@@ -245,7 +280,11 @@ function editstudentaccount()
 	  document.getElementById('normalpage1').style.display="none";
 	  document.getElementById('editpage').style.display="block";
 	  document.getElementById('editacc').style.display="none";
-	  document.getElementById('updtacc').style.display="block";	  
+	  document.getElementById('updtacc').style.display="block";	 
+	  document.getElementById("oldpassword").value="";
+	  document.getElementById("password1").value="";
+	  document.getElementById("password2").value="";
+	   
 	 
 }
 
@@ -363,7 +402,7 @@ Country &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb
 <div style="margin-top:20px;">
 Email &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: &nbsp;&nbsp;<?php print $Email; ?><br><br>
 User Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;: &nbsp;&nbsp;<?php print $UserName; ?> <br><br>
-Old Password &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="password" size="30"  name="oldpassword" id="oldpassword" onChange="chkoldpass(this.value);"><br><br>
+Old Password &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="password" size="30"  name="oldpassword" id="oldpassword"><br><br>
 New Password &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" size="30"  name="password1" id="password1"><br><br>
 Confirm Password &nbsp; &nbsp;<input type="password" size="30"  name="password2" id="password2"><br><br>
 </div>

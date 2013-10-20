@@ -491,12 +491,20 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
                   </div>
                
               <div style="float:left; display:none" id="divedit">
+<<<<<<< HEAD
 
+=======
+              <select name="txtSchool" id="txtSchool">
+              <option value="">Select University</option>
+              <option value="University of toronto" <?php if($schoolName1=='University of toronto'){?> selected='selected' <?php  } ?>>University of Toronto</option>
+              </select>
+>>>>>>> 6251310e83193947f885aa4bfbdc6b74b698b7c1
               <br/>
                <select name="txtProgram" id="txtProgram">
               <option value="">Select Program</option>
               <option value="Electrical Engineering" <?php if($Program1=='Electrical Engineering'){?> selected='selected' <?php  } ?>>Electrical Engineering</option>
               <option value="Computer Engineering" <?php if($Program1=='Computer Engineering'){?> selected='selected' <?php  } ?>>Computer Engineering</option>
+<<<<<<< HEAD
               <option value="Computer Engineering" <?php if($Program1=='Engineering Science'){?> selected='selected' <?php  } ?>>Engineering Science</option>
               <option value="Computer Engineering" <?php if($Program1=='Chemical Engineering'){?> selected='selected' <?php  } ?>>Chemical Engineering</option>
               <option value="Computer Engineering" <?php if($Program1=='Mechanical Engineering'){?> selected='selected' <?php  } ?>>Mechanical Engineering</option>
@@ -505,6 +513,9 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
               <option value="Computer Engineering" <?php if($Program1=='Material Science Engineering'){?> selected='selected' <?php  } ?>>Material Science Engineering</option>
                <option value="Computer Science" <?php if($Program1=='Computer Science'){?> selected='selected' <?php  } ?>>Computer Science</option>
 
+=======
+              <option value="Computer Science" <?php if($Program1=='Computer Science'){?> selected='selected' <?php  } ?>>Computer Science</option>
+>>>>>>> 6251310e83193947f885aa4bfbdc6b74b698b7c1
               </select>
                   
                   <br/>

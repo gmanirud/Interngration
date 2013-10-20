@@ -808,7 +808,7 @@ message: 'Join Interngration - An online multimedia platform to connect SMEs/sta
         <span style="margin:0px 30px 0px 0px; float:right;">
           <a href="StudentRegisteredWebinar.php" class="button red">Upoming Webinars</a>
           <a href="StudentWatchedWebinar.php" class="button red">Watched Webinar</a>    
-          <a href="studentJobApplication.php" class="button red">Job Application</a> 
+          <a href="studentJobApplication.php" class="button red">JobApplication</a> 
           <a href="AppliedPostedJob.php" class="button red">Applied Job</a> 
           <a href="studentInbox.php" class="button red">Inbox</a>
           <a href="student-profile.php" class="button red">Profile</a></span> 
@@ -883,13 +883,11 @@ message: 'Join Interngration - An online multimedia platform to connect SMEs/sta
                   <select name="txtSchool" id="txtSchool">
                     <option value="">Select University</option>
                     <option value="University of Toronto" <?php if($schoolName1=='University of Toronto'){?> selected='selected' <?php  } ?>>University of Toronto</option>
-                    <option value="University of Waterloo" <?php if($schoolName1=='University of Waterloo'){?> selected='selected' <?php  } ?>>University of Waterloo</option>
-                    <option value="Ryerson University" <?php if($schoolName1=='Ryerson University'){?> selected='selected' <?php  } ?>>Ryerson University</option>
-                    <option value="York University" <?php if($schoolName1=='York University'){?> selected='selected' <?php  } ?>>York University</option>
                   </select>
                   <br/>
                   <select name="txtProgram" id="txtProgram">
                     <option value="Electrical Engineering" <?php if($Program1=='Electrical Engineering'){?> selected='selected' <?php  } ?>>Electrical Engineering</option>
+<<<<<<< HEAD
               		<option value="Computer Engineering" <?php if($Program1=='Computer Engineering'){?> selected='selected' <?php  } ?>>Computer Engineering</option>
               		<option value="Computer Engineering" <?php if($Program1=='Engineering Science'){?> selected='selected' <?php  } ?>>Engineering Science</option>
               		<option value="Computer Engineering" <?php if($Program1=='Chemical Engineering'){?> selected='selected' <?php  } ?>>Chemical Engineering</option>
@@ -897,7 +895,11 @@ message: 'Join Interngration - An online multimedia platform to connect SMEs/sta
               		<option value="Computer Engineering" <?php if($Program1=='Civil Engineering'){?> selected='selected' <?php  } ?>>Civil Engineering</option>
               		<option value="Computer Engineering" <?php if($Program1=='Industrial Engineering'){?> selected='selected' <?php  } ?>>Industrial Engineering</option>
               		<option value="Computer Engineering" <?php if($Program1=='Material Science Engineering'){?> selected='selected' <?php  } ?>>Material Science Engineering</option>
+=======
+                    <option value="Computer Engineering" <?php if($Program1=='Computer Engineering'){?> selected='selected' <?php  } ?>>Computer Engineering</option>
+>>>>>>> 6251310e83193947f885aa4bfbdc6b74b698b7c1
                     <option value="Computer Science" <?php if($Program1=='Computer Science'){?> selected='selected' <?php  } ?>>Computer Science</option>
+                    <option value="Other" <?php if($Program1=='Other'){?> selected='Other' <?php  } ?>>Other</option>
                   </select>
                   <br/>
                   <select name="txtyear" id="txtyear">
@@ -907,7 +909,7 @@ message: 'Join Interngration - An online multimedia platform to connect SMEs/sta
                     <option value="2nd Year" <?php if($univ_Year=='2nd Year'){?> selected='selected' <?php  } ?>>2nd Year</option>
                     <option value="3rd Year" <?php if($univ_Year=='3rd Year'){?> selected='selected' <?php  } ?>>3rd Year</option>
                     <option value="4th Year" <?php if($univ_Year=='4th Year'){?> selected='selected' <?php  } ?>>4th Year</option>
-                    <option value="4th Year" <?php if($univ_Year=='Graduate Student'){?> selected='selected' <?php  } ?>>Graduate Student</option>
+                    <option value="5th Year" <?php if($univ_Year=='Graduate Student'){?> selected='selected' <?php  } ?>>Graduate Student</option>
                   </select>
                   </br>
                   <ul>
@@ -998,25 +1000,60 @@ message: 'Join Interngration - An online multimedia platform to connect SMEs/sta
 	     
 		  ?>
             <tr valign="top">
-              <td width="20%" ><input type="checkbox" name="technicalskill[]" id="technicalskill1" <?php foreach ($array as  $arr)
+            <td width="20%" >
+                <input type="checkbox" name="technicalskill[]" id="technicalskill1" <?php  foreach ($array as  $arr)
+	   {  if($arr=="C#"){ ?> checked="checked" <?php } } ?> value="C#">
+                C#<br/>
+            <input type="checkbox" name="technicalskill[]" id="technicalskill1" <?php foreach ($array as  $arr)
 	   {  if($arr=="C++"){ ?> checked="checked" <?php }  }?> value="C++">
                 C++<br/>
                 <input type="checkbox" name="technicalskill[]" id="technicalskill2" <?php  foreach ($array as  $arr)
-	   {  if($arr=="SQL"){ ?> checked="checked" <?php } } ?> value="SQL">
-                SQL<br/></td>
-              <td width="20%"><input type="checkbox" name="technicalskill[]" id="technicalskill3" <?php  foreach ($array as  $arr)
-	   {  if($arr=="PHP"){ ?> checked="checked" <?php } } ?> value="PHP">
-                PHP<br/>
+	   {  if($arr=="C"){ ?> checked="checked" <?php } } ?> value="C">
+                C<br/>
+                <input type="checkbox" name="technicalskill[]" id="technicalskill2" <?php  foreach ($array as  $arr)
+	   {  if($arr=="CoffeeScript"){ ?> checked="checked" <?php } } ?> value="CoffeeScript">
+                CoffeeScript<br/>
+                <input type="checkbox" name="technicalskill[]" id="technicalskill2" <?php  foreach ($array as  $arr)
+	   {  if($arr=="Go"){ ?> checked="checked" <?php } } ?> value="Go">
+                Go<br/>
+              </td>
+
+              <td width="20%">
+                 <input type="checkbox" name="technicalskill[]" id="technicalskill2" <?php  foreach ($array as  $arr)
+	   {  if($arr=="HTML"){ ?> checked="checked" <?php } } ?> value="HTML">
+                HTML<br/>
+                  <input type="checkbox" name="technicalskill[]" id="technicalskill3" <?php  foreach ($array as  $arr)
+	   {  if($arr=="Java"){ ?> checked="checked" <?php } } ?> value="Java">
+                Java<br/>
+                <input type="checkbox" name="technicalskill[]" id="technicalskill2" <?php  foreach ($array as  $arr)
+	   {  if($arr=="JavaScript"){ ?> checked="checked" <?php } } ?> value="JavaScript">
+                JavaScript<br/>
                 <input type="checkbox" name="technicalskill[]" id="technicalskill4" <?php  foreach ($array as  $arr)
-	   {  if($arr=="JAVA"){ ?> checked="checked" <?php } } ?> value="JAVA">
-                JAVA<br/></td>
-              <td width="20%"><input type="checkbox" name="technicalskill[]" id="technicalskill5" <?php  foreach ($array as  $arr)
-	   {  if($arr=="Apps Development"){ ?> checked="checked" <?php } } ?> value="Apps Development">
-                Apps Development<br/>
+	   {  if($arr=="Matlab"){ ?> checked="checked" <?php } } ?> value="Matlab">
+                Matlab<br/>
+                <input type="checkbox" name="technicalskill[]" id="technicalskill6" <?php  foreach ($array as  $arr)
+	   {  if($arr=="Pearl"){ ?> checked="checked" <?php } } ?> value="Pearl">
+                Pearl<br/>
+              </td>
+
+              <td width="20%">
                 <input type="checkbox" name="technicalskill[]" id="technicalskill6" <?php  foreach ($array as  $arr)
 	   {  if($arr=="Python"){ ?> checked="checked" <?php } } ?> value="Python">
-                Python<br/></td>
-            </tr>
+                Python<br/>
+                <input type="checkbox" name="technicalskill[]" id="technicalskill4" <?php  foreach ($array as  $arr)
+	   {  if($arr=="Rails"){ ?> checked="checked" <?php } } ?> value="Rails">
+                Rails<br/>
+                <input type="checkbox" name="technicalskill[]" id="technicalskill6" <?php  foreach ($array as  $arr)
+	   {  if($arr=="Ruby"){ ?> checked="checked" <?php } } ?> value="Ruby">
+                Ruby<br/>
+                <input type="checkbox" name="technicalskill[]" id="technicalskill2" <?php  foreach ($array as  $arr)
+	   {  if($arr=="SQL"){ ?> checked="checked" <?php } } ?> value="SQL">
+                SQL<br/>
+                <input type="checkbox" name="technicalskill[]" id="technicalskill6" <?php  foreach ($array as  $arr)
+	   {  if($arr=="Verilog"){ ?> checked="checked" <?php } } ?> value="Verilog">
+                Verilog<br/>
+              </td>
+          </tr>
           </table>
         </div>
         <!-- Technical Skill --> 
