@@ -288,6 +288,7 @@ img, iframe {max-width:100%;}
 #logo img{
 	float: left;
 	display: block;
+	border:none;
 }
 
 #body-wrapper {

@@ -133,14 +133,7 @@ if(document.getElementById("to_mail").value=="")
                           
 <form id="frmProfile" action="sendRecruiterMail.php" method="post" onSubmit="return chkvalid();">
             <!-- tab 1 -->
-            <div class="grid_22">
-                
-                <div class="" style="float:left; margin:0px 0px 20px 0px; width:700px;">
-                <input type='submit' name="Send" value="Send" class="button white" style="width:70"  />
-                    <input type='button' onclick="window.location.href='recruiterInbox.php'" name="Cancel" value="Cancel" class="button white" style="width:70"  />
-                <div style="float:left;color:#F00; font-weight:400; padding-top:2px; display:none" id="error2"></div>  
-                </div><!-- end .tabs-wrapper -->
-    		</div><!-- end grid_8-->         
+            <!-- end grid_8-->         
         
 
         <!-- end tabs -->  
@@ -156,10 +149,14 @@ if(document.getElementById("to_mail").value=="")
 				        </div>	
 					</div>
 					   
-					<div class="" style="float:left; margin:0px 0px 20px 0px; width:700px;">
-                     <input type='submit' name="Send" value="Send" class="button white" style="width:70"  />
-                     <input type='button' onclick="window.location.href='recruiterInbox.php'" name="Cancel" value="Cancel" class="button white" style="width:70"  />
-                   
+					<div class="grid_22">
+                
+                <div class="" style="float:left; margin:0px 0px 20px 0px; width:700px;">
+                <input type='submit' name="Send" value="Send" class="button white" style="width:70"  />
+                    <input type='button' onclick="window.location.href='recruiterInbox.php'" name="Cancel" value="Cancel" class="button white" style="width:70"  />
+                <div style="float:left;color:#F00; font-weight:400; padding-top:2px; display:none" id="error2"></div>  
+                </div><!-- end .tabs-wrapper -->
+    		</div>
 					 
 			</form>		   
 					    

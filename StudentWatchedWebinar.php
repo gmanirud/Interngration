@@ -142,7 +142,7 @@ if(!$organizer_key)
 			<!-- one half-->
             
             <?php
-			
+                        date_default_timezone_set('GMT/UTC-4');			
 						include "config.php"; 	
 						$ses_result=mysql_select_db($dbname) or die(mysql_error());									
 						$sqlget="Select distinct *  from student_web_reg where student_id='$uid' ";						

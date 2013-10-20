@@ -53,7 +53,7 @@ a
 	<ul>
 		<li >
 			<a href="studentInbox.php"   title="Mail Notification">
-			<img src="images/emailIcon3.png" style="width: 30px;" />
+			<img src="images/emailIcon3.png" style="width: 30px;border:none;" />
 			<?php
 			include "config.php"; 	
 		$ses_result=mysql_select_db($dbname) or die(mysql_error());

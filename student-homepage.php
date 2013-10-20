@@ -120,46 +120,38 @@ include "config.php";
 						while($res=mysql_fetch_array($ses_result))
 						{
 							
-							$ses_result=mysql_query($sqlget);
-							$rowcount= mysql_num_rows($ses_result);	
-							$i=1;
-							while($res=mysql_fetch_array($ses_result))
-							{
-								
-								$subject=$res["subject"];
-								$description=$res["description"];
-								$webinar_url=$res["webinar_url"];
-								$webinar_key=$res["webinar_key"];
-								$start_time=$res["start_time"];
-								$end_time=$res["end_time"];
-								$status=$res["status"];
-								$stdate = date_create($start_time);
-								$stdt=date_format($stdate, 'Y-m-d');
-								$sttime = date_create($start_time);
-								$stte=date_format($sttime, 'h:i a');
-                $stte_offset = date('h:i a', strtotime($stte) -4*3600);
-								$endate = date_create($end_time);
-								$endt=date_format($endate, 'Y-m-d');
-								$entime = date_create($end_time);
-								$ente=date_format($entime, 'h:i a');
-                $ente_offset = date('h:i a', strtotime($ente) -4*3600);
-						?>
-              
-        <form method="post" action="StudentRegisterConfirmation.php" id="form<?php print $i; ?>">
+							$subject=$res["subject"];
+							$description=$res["description"];
+							$webinar_url=$res["webinar_url"];
+							$webinar_key=$res["webinar_key"];
+							$start_time=$res["start_time"];
+							$end_time=$res["end_time"];
+							$status=$res["status"];
+							$stdate = date_create($start_time);
+							$stdt=date_format($stdate, 'Y-m-d');
+							$sttime = date_create($start_time);
+							$stte=date_format($sttime, 'h:i a');
+							$endate = date_create($end_time);
+							$endt=date_format($endate, 'Y-m-d');
+							$entime = date_create($end_time);
+							$ente=date_format($entime, 'h:i a');
+					?>
+					    <form method="post" action="StudentRegisterConfirmation.php" id="form<?php print $i; ?>">
 					   <!-- post 4 -->
                
 					<div class="post-out-text">     
 					    <div class="header-container">
                          
-                                <h4><?php print $subject; ?></h4>
-                      <p class="post-subtitle" style="font-size:12px;">Start Time: <?php print $stdt." To ".$stte_offset; ?> </p> <p class="post-subtitle" style="font-size:12px;">End Time : <?php print $endt." To ".$ente_offset; ?></p> 
-                            </div>
-							<div class="padding10 float-left"><p><?php print $description; ?><br>
-                           
-                            <a style="cursor:pointer" onClick="document.getElementById('form<?php print $i; ?>').submit();">Register</a>
-                           
-                            </p></div>
-				 </div>
+                            <h4><?php print $subject; ?></h4>
+                            <p class="post-subtitle" style="font-size:12px;">Start Time: <?php print $stdt." To ".$stte; ?> </p> <p class="post-subtitle" style="font-size:12px;">End Time : <?php print $endt.  " To ".$ente; ?></p> 
+                        </div>
+						<div class="padding10 float-left">
+                            <p><?php print $description; ?><br>
+                              <a style="cursor:pointer" onClick="document.getElementById('form<?php print $i; ?>').submit();">Register</a>
+                            </p>
+                        </div>
+				    </div>
+
                  <input type="hidden" name="regid" id="regid" value="<?php print $webinar_key; ?>">
                  <input type="hidden" name="subj" id="subj" value="<?php print $subject; ?>">
                  <input type="hidden" name="desc" id="desc" value="<?php print $description; ?>">

@@ -17,11 +17,7 @@ header("location:student-login.php");
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<<<<<<< HEAD
 <title> My Webinars - Interngration</title>
-=======
-<title>Upcoming Webinars</title>
->>>>>>> 6251310e83193947f885aa4bfbdc6b74b698b7c1
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 

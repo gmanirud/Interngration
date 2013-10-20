@@ -883,18 +883,15 @@ message: 'Join Interngration - An online multimedia platform to connect SMEs/sta
                   <br/>
                   <select name="txtProgram" id="txtProgram">
                     <option value="Electrical Engineering" <?php if($Program1=='Electrical Engineering'){?> selected='selected' <?php  } ?>>Electrical Engineering</option>
-
-
               		<option value="Computer Engineering" <?php if($Program1=='Computer Engineering'){?> selected='selected' <?php  } ?>>Computer Engineering</option>
-              		<option value="Engineering Science" <?php if($Program1=='Engineering Science'){?> selected='selected' <?php  } ?>>Engineering Science</option>
-              		<option value="Chemical Engineering" <?php if($Program1=='Chemical Engineering'){?> selected='selected' <?php  } ?>>Chemical Engineering</option>
-              		<option value="Mechanical Engineering" <?php if($Program1=='Mechanical Engineering'){?> selected='selected' <?php  } ?>>Mechanical Engineering</option>
-              		<option value="Civil Engineering" <?php if($Program1=='Civil Engineering'){?> selected='selected' <?php  } ?>>Civil Engineering</option>
-              		<option value="Industrial Engineering" <?php if($Program1=='Industrial Engineering'){?> selected='selected' <?php  } ?>>Industrial Engineering</option>
-              		<option value="Material Science Engineering" <?php if($Program1=='Material Science Engineering'){?> selected='selected' <?php  } ?>>Material Science Engineering</option>
+              		<option value="Computer Engineering" <?php if($Program1=='Engineering Science'){?> selected='selected' <?php  } ?>>Engineering Science</option>
+              		<option value="Computer Engineering" <?php if($Program1=='Chemical Engineering'){?> selected='selected' <?php  } ?>>Chemical Engineering</option>
+              		<option value="Computer Engineering" <?php if($Program1=='Mechanical Engineering'){?> selected='selected' <?php  } ?>>Mechanical Engineering</option>
+              		<option value="Computer Engineering" <?php if($Program1=='Civil Engineering'){?> selected='selected' <?php  } ?>>Civil Engineering</option>
+              		<option value="Computer Engineering" <?php if($Program1=='Industrial Engineering'){?> selected='selected' <?php  } ?>>Industrial Engineering</option>
+              		<option value="Computer Engineering" <?php if($Program1=='Material Science Engineering'){?> selected='selected' <?php  } ?>>Material Science Engineering</option>
                     <option value="Computer Science" <?php if($Program1=='Computer Science'){?> selected='selected' <?php  } ?>>Computer Science</option>
                   </select>
-                  
                   <br/>
                   <select name="txtyear" id="txtyear">
                     <option value="">Select Year</option>

@@ -110,7 +110,7 @@ header("location:recruiter-login.php");
                 <div class="" style="float:left; margin:0px 0px 20px 0px; width:700px;">
                
                 <input type="submit" id="btndelete" name="btndelete" value="Remove from Trash" class="button white" />
-               
+                <input type="submit" id="btnmove" name="btnmove" value="Restore" class="button white" />
                 </div><!-- end .tabs-wrapper -->
     		</div><!-- end grid_8-->        
         

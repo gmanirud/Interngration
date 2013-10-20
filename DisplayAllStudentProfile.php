@@ -98,7 +98,7 @@
               <a href="student-profile.php" class="button red">Profile</a></span> 
              </div>
         </div>
-        Profiles will be shown here !z
+        Profiles will be shown here !
         <!-- body -->
         <!-- copyright -->
         <div id="copyright-wrapper">
