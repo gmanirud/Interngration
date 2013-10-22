@@ -12,6 +12,9 @@ $Email = $_POST["Email"];
 $UserName = $_POST["UserName"];
 $password1 = $_POST["password1"];
 
+//SHA-1 hashing of the password
+//$password1 = sha1($password1);
+
 $sqlInsert = "insert into recruiter_register_temp (FirstName,LastName,Company,Address,Email,UserName,Password,session_id) values ('$FirstName','$LastName','$Company','$Address','$Email','$UserName','$password1','$sessionid')";
 
 //print $sqlInsert;
