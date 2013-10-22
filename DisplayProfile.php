@@ -127,7 +127,7 @@
           <form id="frmProfile"  enctype="multipart/form-data" action="updateStudentProfileImage.php" method="post"  >
             <table width="435"  style="margin:10px; min-height:270px; border:1px solid; border-color:#CCC; padding:10px;">
             <tr>
-              <td valign="top"><div style="float:left;">
+        git       <td valign="top"><div style="float:left;">
                   <input type="button" value="Edit" onClick="editstudentprofile()" name="edt1" id="edt1" style="width:60px; cursor:pointer"/>
                   <input type="button" style="display:none; width:60px;cursor:pointer" value="Update" onClick="updatestudentprofile()" name="upd1" id="upd1" />
                 </div></td>
