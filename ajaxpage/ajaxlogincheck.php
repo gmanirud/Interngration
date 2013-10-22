@@ -6,8 +6,6 @@
 	$txt_UserName = $_GET["User"];
 	$txt_Password = $_GET["Pass"];
 
-	
-
 	$sql="SELECT * FROM student_register WHERE UserName='$txt_UserName' and Password='$txt_Password'";
 	$result=mysql_query($sql);
 	
