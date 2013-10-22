@@ -66,7 +66,7 @@ if(isset($_GET['nextid']))
 			}
 			if($AboutMe=="")
 			{
-			 $AboutMe="Tell About Your Self";
+			 $AboutMe="Tell us a little something about yourself. It could be a fun fact about you or what you like to do outside of school. Anything to let the recruiters know about your fun side!";
 			 $AboutMe1="";	
 			}
 			
@@ -88,9 +88,7 @@ if(isset($_GET['nextid']))
 
 }				
 ?>
-
-
-                
+             
                 
 <!-- Load Jquery/Modernizr Javascript -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -117,7 +115,7 @@ function updatestudentabout()
 	if(document.getElementById("aboutme").value=="")
 	{
 		document.getElementById("error1").style.display='block';
-		document.getElementById("error1").innerHTML='Please Fill the About Me!';
+		document.getElementById("error1").innerHTML='C\'mon you aren\'t that boring, right?';
 		document.getElementById("aboutme").focus();
 		return false;
 	}
@@ -182,14 +180,14 @@ function updatestudentprofile()
 	if(document.getElementById("txtSchool").value=="")
 	{
 		document.getElementById("error2").style.display='block';
-		document.getElementById("error2").innerHTML='Please Select University!';
+		document.getElementById("error2").innerHTML='Select the school that you go to';
 		document.getElementById("txtSchool").focus();
 		return false;
 	}
 	if(document.getElementById("txtProgram").value=="")
 	{
 		document.getElementById("error2").style.display='block';
-		document.getElementById("error2").innerHTML='Please Select Program!';
+		document.getElementById("error2").innerHTML='What are you majoring in?';
 		document.getElementById("txtProgram").focus();
 		return false;
 	}
@@ -308,13 +306,13 @@ xmlhttp.onreadystatechange=function()
 		{
 			document.getElementById("txtMail").value="";
 			document.getElementById("error").style.display='block';
-		    document.getElementById("error").innerHTML='Your Invitation mail has been send successfully'; 
+		    document.getElementById("error").innerHTML='Your invitation has been sent successfully'; 
 		}
 		if(resp=='3')
 		{
 			document.getElementById("txtMail").value="";
 			document.getElementById("error").style.display='block';
-		    document.getElementById("error").innerHTML='This Email Id is already exist in Interngration Student account'; 
+		    document.getElementById("error").innerHTML='This email already exists in the system. If you\'ve forgotten your password you can get it reset from the login page.'; 
 		}
 	
     }
@@ -509,7 +507,6 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
               <option value="Industrial Engineering" <?php if($Program1=='Industrial Engineering'){?> selected='selected' <?php  } ?>>Industrial Engineering</option>
               <option value="Material Science Engineering" <?php if($Program1=='Material Science Engineering'){?> selected='selected' <?php  } ?>>Material Science Engineering</option>
               <option value="Computer Science" <?php if($Program1=='Computer Science'){?> selected='selected' <?php  } ?>>Computer Science</option>
-
               </select>
                   
                   <br/>
@@ -550,7 +547,7 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
           <p align="justify" style="width:415px; min-height:190px; border:1px solid;border-color:#CCCCCC; margin:20px;" id="para_aboutme"><?php print $AboutMe; ?>
           </p>
          
-          <textarea id="aboutme"  name="aboutme" style="width:400px; height:170px;margin:20px; display:none;" placeholder="Tell About Me" ><?php print $AboutMe1; ?></textarea>
+          <textarea id="aboutme"  name="aboutme" style="width:400px; height:170px;margin:20px; display:none;" placeholder="Tell us a little something about yourself. It could be a fun fact about you or what you like to do outside of school. Anything to let the recruiters know about your fun side!" ><?php print $AboutMe1; ?></textarea>
         </div>
         
         
@@ -567,7 +564,7 @@ message: 'Recruit Smarter Hire faster ! Register Today for Free Webinar.'
   <tr>
     <td width="25%"> <a href='#' onclick='FacebookInviteFriends();' rel='nofollow' title='Invite Your Facebook Friends'> <img src="images/facebook_invite.jpg" alt="Invite Friend" title="Face Book" width="100" /></a></td>
     <td width="40%"><input type="text" id="txtMail" name="txtMail" placeholder="Invite Friend" maxlength="100" /></td>
-    <td width="35%"><a onClick="invitemail();" class="button red">Send Mail</a></td>
+    <td width="35%"><a onClick="invitemail();" class="button red">Invite</a></td>
   </tr>
   <tr>
     <td>&nbsp;</td>
