@@ -32,18 +32,27 @@ $invmail=$_GET['invmail'];
 <body>
 <table width='100%' border='0'>
   <tr>
-    <td>Hi</td>
+    <td>Hey you</td>
     <td>&nbsp;</td>
   </tr>
   <tr>
   <td>&nbsp;</td>
     <td align='justify'>
-    ".$invitename." has invited you to join Interngration, where you can Register for Webinar
+    ".$invitename." has invited you to join Interngration. . Interngration is an online multimedia platform that connects startups and SME’s with a great pool of students, like yourself. As students, we know how overwhelming and frustrating a career fair can be, so we wanted to improve this experience for you by bringing it to the online platform. 
+                
+We’ve handpicked some fantastic companies to be our launch partners who are looking to hire engineering students for internship, PEY and new grad positions.  
+ 
+Interngration’s alpha is now open for registration, so head over to http://interngration.com and join the quickly increasing pool of candidates.
+
+And in the meantime, watch this video to see what we have to offer: http://vimeo.com/76490050. We look forward to having you onboard, thanks!
+ 
+Cheers,
+The Interngration Team"
     </td>
   </tr>
   <tr>
     <td>&nbsp;</td>
-    <td>Join Here:<a href='http://keshavatech.com/interngration/index.php?coinsessid=".$session_id."'>http://keshavatech.com/interngration/</a></td>
+
   </tr>
   <tr>
     <td>&nbsp;</td>
