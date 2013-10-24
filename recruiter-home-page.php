@@ -281,8 +281,8 @@ function chkimgvalidation()
 	}
 	else
 	{
-	    document.getElementById("error5").style.display='block';
-		document.getElementById("error5").innerHTML='Please upload a profile picture';
+	  document.getElementById("error5").style.display='block';
+		document.getElementById("error5").innerHTML='Your picture has to be one of the following formats: JPF or GIF';
 		document.getElementById("txtFile").focus();
 		return false;	
 	}
@@ -443,7 +443,7 @@ function chkimgvalidation()
           
          
          
-          <textarea id="aboutme" placeholder="Enter About Me"  name="aboutme" style="width:400px; height:180px;margin:20px;display:none" ><?php print $AboutMe1; ?></textarea>
+          <textarea id="aboutme" placeholder="Tell us about your company"  name="aboutme" style="width:400px; height:180px;margin:20px;display:none" ><?php print $AboutMe1; ?></textarea>
         </div>
 			
 			  <div class="grid_8" style="">
