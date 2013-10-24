@@ -17,7 +17,7 @@ header("location:recruiter-login.php");
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Recruiter Posted Job</title>
+<title>Posted Jobs - Interngration</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 
@@ -63,9 +63,11 @@ $startpoint = ($page * $limit) - $limit;
         <div id="logo"><a href="recruiter-home-page.php"><img src="images/logo.png" alt="interngration" width="400" height="64" /></a></div>
          <!-- header nav menu -->        
         <div id="menu" class="menu"> 
-               <ul>
-                <li><a href="">Welcome&nbsp; :&nbsp; <?php print $username; ?></a></li>
-               <li><a href="recruiter-home-page.php">Home</a></li></ul>
+            <ul>                           
+               <li><a href="recruiter-home-page.php">Home</a></li>
+               <li><a href="recruiterAccount.php">Account</a></li>
+               <li><a href="logout.php">Logout</a></span></li>    
+            </ul>
                 <br style="clear: left" />
         </div>
         <!-- end header nav menu-->
@@ -78,14 +80,12 @@ $startpoint = ($page * $limit) - $limit;
         <div id="pageheader-background"><!-- area with alternate background -->
         <div class="pageheader-title">
           <span class="mailno"><?php include "RecruiterUnreadMail.php"; ?></span>
-        <h1>Recruiter Posted Job</h1><span style="margin:0px 30px 0px 0px; float:right;">
-          <a href="https://login.citrixonline.com/login?service=https%3A%2F%2Fglobal.gotomeeting.com%2Fmeeting%2Fj_spring_cas_security_check" target="_blank" class="button red">Schedule your Webinar</a>                
+          <h1>Posted Jobs</h1><span style="margin:0px 30px 0px 0px; float:right;">
+                <a href="https://login.citrixonline.com/login?service=https%3A%2F%2Fglobal.gotomeeting.com%2Fmeeting%2Fj_spring_cas_security_check" target="_blank" class="button red">Schedule your Webinar</a>                
                 <a href="RecruiterUpcomingWebinar.php" class="button red">Scheduled Webinar</a>
-                 <a href="RecruiterWatchedWebinar.php" class="button red">Past Webinar</a>
-        <a href="recruiterInbox.php" class="button red">Inbox</a>
+                <a href="RecruiterWatchedWebinar.php" class="button red">Past Webinar</a>
+                <a href="recruiterInbox.php" class="button red">Inbox</a>
                 <a href="jobPosting.php" class="button red">Job Posting</a>
-                <a href="recruiterAccount.php" class="button red">Account</a>
-                <a href="logout.php" class="button red">Logout</a>
         </span>
         </div></div>        
                           
@@ -115,7 +115,7 @@ $startpoint = ($page * $limit) - $limit;
 			?>
 <table width="1000px" height="300px" border="0">
   <tr>
-    <td align="center" style="font-weight:bolder">Still Job Not Posted</td>
+    <td align="center" style="font-weight:bolder">You haven't posted any jobs yet!</td>
   </tr>
 </table>
 

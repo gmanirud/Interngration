@@ -16,7 +16,7 @@ header("location:recruiter-login.php");
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Job Posting</title>
+<title>Job Posting - Interngration </title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 
@@ -69,7 +69,7 @@ function chkval()
     if(document.getElementById("job_title").value=="")
 	{
 		document.getElementById("error2").style.display='block';
-		document.getElementById("error2").innerHTML='Please Enter the Job Title!';
+		document.getElementById("error2").innerHTML='Please enter the job title';
 		document.getElementById("job_title").focus();
 		return false;
 	}
@@ -83,28 +83,28 @@ function chkval()
 	if(document.getElementById("jbdept").value=="")
 	{
 		document.getElementById("error2").style.display='block';
-		document.getElementById("error2").innerHTML='Please Enter the Job Department!';
+		document.getElementById("error2").innerHTML='Please enter the job department';
 		document.getElementById("jbdept").focus();
 		return false;
 	}
 	if(document.getElementById("jbdetails").value=="")
 	{
 		document.getElementById("error2").style.display='block';
-		document.getElementById("error2").innerHTML='Please Enter the Job Detail!';
+		document.getElementById("error2").innerHTML='Please enter the job description';
 		document.getElementById("jbdetails").focus();
 		return false;
 	}
 	if(document.getElementById("dt_post").value=="")
 	{
 		document.getElementById("error2").style.display='block';
-		document.getElementById("error2").innerHTML='Please Enter the Date Post!';
+		document.getElementById("error2").innerHTML='Please select the date to post the listing';
 		document.getElementById("dt_post").focus();
 		return false;
 	}
 	if(document.getElementById("dead_line").value=="")
 	{
 		document.getElementById("error2").style.display='block';
-		document.getElementById("error2").innerHTML='Please Enter the Dead Line!';
+		document.getElementById("error2").innerHTML='Please enter the job application deadline';
 		document.getElementById("dead_line").focus();
 		return false;
 	}
@@ -126,7 +126,7 @@ function chkval()
 			{
 				
 				document.getElementById("error2").style.display='block';
-				document.getElementById("error2").innerHTML='Please Enter the Dead Line from date posted with in One Year!';
+				document.getElementById("error2").innerHTML='The job application deadline has to be within a year from the date posted';
 				document.getElementById("dead_line").focus();
 				return false;
 				
@@ -137,7 +137,7 @@ function chkval()
 				{
 					
 					document.getElementById("error2").style.display='block';
-					document.getElementById("error2").innerHTML='Please Enter the Dead Line from date posted with in One Year!';
+					document.getElementById("error2").innerHTML='The job application deadline has to be within a year from the date posted';
 					document.getElementById("dead_line").focus();
 					return false;
 				}				
@@ -165,9 +165,11 @@ function chkval()
         <div id="logo"><a href="recruiter-home-page.php"><img src="images/logo.png" alt="interngration" width="400" height="64" /></a></div>
          <!-- header nav menu -->        
         <div id="menu" class="menu"> 
-               <ul>
-                <li><a href="">Welcome&nbsp; :&nbsp; <?php print $username; ?></a></li>
-               <li><a href="recruiter-home-page.php">Home</a></li></ul>
+            <ul>    
+               <li><a href="recruiter-home-page.php">Home</a></li>
+               <li><a href="recruiterAccount.php">Account</a></li>
+               <li><a href="logout.php">Logout</a></span></li>    
+            </ul>
                 <br style="clear: left" />
         </div>
         <!-- end header nav menu-->
@@ -186,8 +188,6 @@ function chkval()
                  <a href="RecruiterWatchedWebinar.php" class="button red">Past Webinar</a>
                 <a href="recruiterInbox.php" class="button red">Inbox</a>
                 <a href="jobPosting.php" class="button red">Job Posting</a>
-                <a href="recruiterAccount.php" class="button red">Account</a>
-                <a href="logout.php" class="button red">Logout</a></span>
             </div>        
         </div>     
                           
@@ -199,7 +199,7 @@ function chkval()
 	 if(isset($_GET['stats'])=='1')
 	 {
 		 ?>
-     <div style="float:left;color:#390; font-weight:400;" id="stats">Job Posted Successfully</div>
+     <div style="float:left;color:#390; font-weight:400;" id="stats">Job successfully posted</div>
      <?php
 	 }
 	 ?>
