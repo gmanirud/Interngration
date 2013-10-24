@@ -41,15 +41,15 @@ header("location:recruiter-login.php");
       $Profile_Image=$res["Profile_Image"];
       
       if(($companyName=="")&&($hrLead=="")&&($Contact=="")) {
-        $companyName="Enter Company Name";
-        $hrLead="Enter HR lead Name";
+        $companyName="Enter the company's name";
+        $hrLead="Enter the recruiter's name";
         $companyName1="";
         $hrLead1="";
         $Contact1="";
       }
       
       if($AboutMe=="") {
-        $AboutMe="Hello Recruiter, please tell us about yourself.";
+        $AboutMe="Please tell us a little bit about your company.";
         $AboutMe1="";
       }
     }
@@ -128,12 +128,6 @@ if(!$organizer_key)
 ?>
 
 <!-- Citrix Acuthendication -->
-
-
-
-
-
-
 <!-- Load Jquery/Modernizr Javascript -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/modernizr.js"></script>
@@ -163,7 +157,7 @@ function updaterecruiterabout()
 	if(document.getElementById("aboutme").value=="")
 	{
 		document.getElementById("error1").style.display='block';
-		document.getElementById("error1").innerHTML='Please enter a little something about yourself! You\'re not that boring.';
+		document.getElementById("error1").innerHTML='Please enter a little something about the company';
 		document.getElementById("aboutme").focus();
 		return false;
 	}
@@ -226,14 +220,14 @@ function updaterecruiterprofile()
 	if(document.getElementById("txtcompany").value=="")
 	{
 		document.getElementById("error2").style.display='block';
-		document.getElementById("error2").innerHTML='Please Enter the Company!';
+		document.getElementById("error2").innerHTML='Please enter the company name';
 		document.getElementById("txtcompany").focus();
 		return false;
 	}
 	if(document.getElementById("txthr").value=="")
 	{
 		document.getElementById("error2").style.display='block';
-		document.getElementById("error2").innerHTML='Please Enter HR Lead!';
+		document.getElementById("error2").innerHTML='Please enter the recruiter\'s name';
 		document.getElementById("txthr").focus();
 		return false;
 	}
@@ -288,7 +282,7 @@ function chkimgvalidation()
 	else
 	{
 	    document.getElementById("error5").style.display='block';
-		document.getElementById("error5").innerHTML='Please Upload the image file';
+		document.getElementById("error5").innerHTML='Please upload a profile picture';
 		document.getElementById("txtFile").focus();
 		return false;	
 	}
@@ -296,7 +290,6 @@ function chkimgvalidation()
 	
 }
 </script>
-
 
 </head>
 <body>
@@ -408,9 +401,9 @@ function chkimgvalidation()
             <tr>
               <td valign="top">
                <div style="float:left;" id="divupdate"> <br/>
-                    <li>Company Name: <?php print $companyName; ?></li>
-                    <li>HR lead: <?php print $hrLead; ?></li>
-                    <li>Contact: <?php print $Email; ?></li>
+                    <li>Company: <?php print $companyName; ?></li>
+                    <li>Recruiter: <?php print $hrLead; ?></li>
+                    <li>Email: <?php print $Email; ?></li>
                   </div>
                
               <div style="float:left; display:none" id="divedit">
@@ -453,26 +446,27 @@ function chkimgvalidation()
           <textarea id="aboutme" placeholder="Enter About Me"  name="aboutme" style="width:400px; height:180px;margin:20px;display:none" ><?php print $AboutMe1; ?></textarea>
         </div>
 			
-			 <div class="grid_8" style="">
-            	<h4 style="margin:20px;">My Webinars - DOES NOT LINK TO WEBINAR FIXME</h4>
-                <table width="420" border="1" height="160" style="margin:20px; border:1px solid #666666; padding:10px;">
-  <tr>
-    <th scope="col">Session</th>
-    <th scope="col">Status</th>
-  </tr>
-  <tr>
-    <td>Started</td>
-    <td>Q & A open</td>
-  </tr>
-  <tr>
-    <td>Started</td>
-   <td>Q & A open - Expect Resume</td>
-  </tr>
-   <tr>
-    <td>Cuming in 3 days</td>
-    <td>Not yet started</td>
-  </tr>
-</table></div>
+			  <div class="grid_8" style="">
+            	<h4 style="margin:20px;">My Webinars</h4>
+              <table width="420" border="1" height="160" style="margin:20px; border:1px solid #666666; padding:10px;">
+                  <tr>
+                    <th scope="col">Session</th>
+                    <th scope="col">Status</th>
+                  </tr>
+                  <tr>
+                    <td>Webinar 1</td>
+                    <td>Q & A open</td>
+                  </tr>
+                  <tr>
+                    <td>Webinar 2</td>
+                   <td>Q & A open - Expect Resume</td>
+                  </tr>
+                   <tr>
+                    <td>Webinar 3</td>
+                    <td>Not yet started</td>
+                  </tr>
+              </table>
+        </div>
 			
 			 <div class="grid_8" style="">
             	<h4 style="margin:20px;">Applicant Tracking</h4>
