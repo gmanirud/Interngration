@@ -130,7 +130,7 @@ if (top.location!= self.location) {
     <div id="copyright-wrapper">
         <div id="copyright-content">
             <p class="float-left">Copyright © 2013 <a href="">interngration</a> All rights reserved.</p> 
-            <p class="float-right"> <a href="contact-us.php">Contact Us</a></p>      
+            <p class="float-right"> <a href="contact-us.php">Contact Us</a></p>
         </div>
     </div>
 

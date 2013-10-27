@@ -233,8 +233,8 @@ function updatestudentaccount()
 		}
 	  }
 	xmlhttp.open("GET","ajaxpage/ajaxUpdateAccount.php?FirstName="+FirstName+"&LastName="+LastName+"&Company="+Company+"&Address="+Address+"&Country="+Country+"&password2="+password2+"&userid="+userid,true);
-	xmlhttp.send();
-}
+  xmlhttp.send();
+  }
 
 
 
@@ -344,6 +344,8 @@ User Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : &nbsp;&nbsp;
                
                 <p id="error" style="padding-left:60px; display:none; padding-top:5px; height:30px; color:#F00; font-weight:400; background-color:##CCC;"></p>
                 <div class="one-half"><h4>Basic Information</h4>
+
+
 <div style="margin-top:20px;">First Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="30"  name="FirstName" id="FirstName" value="<?php print $FirstName; ?>"><br><br>
 Last Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="30"  name="LastName" id="LastName" value="<?php print $LastName; ?>"><br><br>
 Affiliated University &nbsp; &nbsp; &nbsp;
@@ -370,13 +372,12 @@ Confirm Password &nbsp; &nbsp;<input type="password" size="30"  name="password2"
                 </div>     
  <div class="grid_4">
  
- 
-  <input type='button' name="Update" value="Update" class="button-big red" onClick="updatestudentaccount();" id="updtacc" />
+ <input type='button' name="Update" value="Update" class="button-big red" onClick="updatestudentaccount();" id="updtacc" /> 
 
   </div>   
   
             </div>
-            
+
             <!--  Edit Page -->
             
             <input type="hidden" name="userid" id="userid" value="<?php print $uid ?>" />
