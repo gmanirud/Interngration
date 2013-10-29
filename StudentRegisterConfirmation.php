@@ -138,7 +138,7 @@ include "citrix.php";
                             </tr>
                             <tr align="center">
                             <td style="color:#F00; font-size:14px;">
-                           You Already Registered this webinar
+                           You are already registered for this webinar.
                             </td>
                             </tr>
                             </table>
