@@ -122,6 +122,7 @@ header("location:student-login.php");
               <span class="mailno"><?php include "StudentUnreadMail.php"; ?></span>
               <h1> My Webinars</h1>
               <span style="margin:0px 30px 0px 0px; float:right;">
+                <a href="student-homepage.php" class="button red">Upcoming Webinars</a>
                 <a href="StudentRegisteredWebinar.php" class="button red"> My Webinars</a>
                 <a href="StudentWatchedWebinar.php" class="button red">Watched Webinar</a>    
                 <a href="studentJobApplication.php" class="button red">Job Application</a> 
@@ -174,7 +175,7 @@ header("location:student-login.php");
 						while($res=mysql_fetch_array($ses_result))
 						{
 							
-			    			$webinar_id=$res["webinar_id"];
+			    		$webinar_id=$res["webinar_id"];
 							$Joinurl=$res["Joinurl"];
 							$reg_date=$res["reg_date"];
 							$subj=$res["subject"];
@@ -183,13 +184,15 @@ header("location:student-login.php");
 							$endTime=$res["endtime"];
 							$status=$res["status"];
 							$stdate = date_create($starttime);
-								$stdt=date_format($stdate, 'Y-m-d');
-								$sttime = date_create($starttime);
-								$stte=date_format($sttime, 'h:i a');
-								$endate = date_create($endTime);
-								$endt=date_format($endate, 'Y-m-d');
-								$entime = date_create($endTime);
-								$ente=date_format($entime, 'h:i a');
+						  $stdt=date_format($stdate, 'Y-m-d');
+              $sttime = date_create($starttime);
+              $stte=date_format($sttime, 'h:i a');
+              $stte_offset = date('h:i a', strtotime($stte) -4*3600);
+              $endate = date_create($endTime);
+              $endt=date_format($endate, 'Y-m-d');
+              $entime = date_create($endTime);
+              $ente=date_format($entime, 'h:i a');
+              $ente_offset = date('h:i a', strtotime($ente) -4*3600);
 			?>
             <div class="post-out-text"  style="min-width:950px;">     
 					    <div class="header-container" style="min-width:950px;">
@@ -204,7 +207,7 @@ header("location:student-login.php");
 								?>
                                 </ul></div>
                                 <h4><?php print $subj; ?></h4>
-                      <p class="post-subtitle" style="font-size:12px;">Start Time: <?php print $stdt." To ".$stte; ?></p> <p class="post-subtitle" style="font-size:12px;">End Time : <?php print $endt." To ".$ente; ?></p> 
+                      <p class="post-subtitle" style="font-size:12px;">Start Time: <?php print $stdt." To ".$stte_offset; ?></p> <p class="post-subtitle" style="font-size:12px;">End Time : <?php print $endt." To ".$ente_offset; ?></p> 
                             </div>                          
 							<div class="padding10 float-left" align="justify"><p><?php print $desc; ?><br>
                               <?php
