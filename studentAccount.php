@@ -56,13 +56,15 @@ header("location:student-login.php");
 			$Address=$res["Address"];
 			$Country=$res["Country"];
 			$Email=$res["Email"];
-			$UserName=$res["UserName"];
+      $UserName=$res["UserName"];
+      $SessionId=$res["session_id"];
 			
 		}
 	
 
 			
 ?>
+
 
 
 
@@ -134,7 +136,7 @@ function updatestudentaccount()
 	var password1=document.getElementById("password1").value;
 	var password2=document.getElementById("password2").value;
 	var userid=document.getElementById("userid").value;
-	
+	var sessionid=document.getElementById("sessionid").value;
 	if(FirstName=="")
 	{
 		document.getElementById("error").style.display='block';
@@ -232,7 +234,7 @@ function updatestudentaccount()
 			
 		}
 	  }
-	xmlhttp.open("GET","ajaxpage/ajaxUpdateAccount.php?FirstName="+FirstName+"&LastName="+LastName+"&Company="+Company+"&Address="+Address+"&Country="+Country+"&password2="+password2+"&userid="+userid,true);
+	xmlhttp.open("GET","ajaxpage/ajaxUpdateAccount.php?FirstName="+FirstName+"&LastName="+LastName+"&Company="+Company+"&Address="+Address+"&Country="+Country+"&password2="+password2+"&userid="+userid+"&sessionid="+sessionid,true);
   xmlhttp.send();
   }
 
@@ -382,7 +384,8 @@ Confirm Password &nbsp; &nbsp;<input type="password" size="30"  name="password2"
             <!--  Edit Page -->
             
             <input type="hidden" name="userid" id="userid" value="<?php print $uid ?>" />
-            <!-- end one-half -->                
+            <input type="hidden" name="sessionid" id="sessionid" style="visibility:hidden; display:none;" value="<?php print $SessionId ?>" />
+           <!-- end one-half -->                
         </div><!-- end grid columns -->
   
     <div class="clear"></div>

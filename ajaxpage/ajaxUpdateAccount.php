@@ -11,23 +11,24 @@ $Address = $_GET["Address"];
 $Country = $_GET["Country"];
 $password2 = $_GET["password2"];
 $userid = $_GET["userid"];
-$opass = $_GET["opass"];
-//if(isset($opass)!="")
-//{
-        $ses_result1=mysql_select_db($dbname) or die(mysql_error());
-		$sql1="SELECT * FROM student_register WHERE Password='$opass' AND id='$userid'";  
-        $ses_result1=mysql_query($sql1);        
-		$count=mysql_num_rows($ses_result1);
-//}
-		if(($count>0)|| ($opass==""))
+//$opass = $_GET["opass"];
+$sessionid = $_GET["sessionid"];
+
+$ses_result1=mysql_select_db($dbname) or die(mysql_error());
+$sql1="SELECT * FROM student_register WHERE session_id='$sessionid' AND id='$userid'";  
+$ses_result1=mysql_query($sql1);        
+$count=mysql_num_rows($ses_result1);
+
+  if($count>0) //|| ($opass==""))
 		{
 
-			 $sqlupdate = "update student_register set FirstName='$FirstName',LastName='$LastName',Company='$Company',Address='$Address',Country='$Country'";
+	    $sqlupdate = "update student_register set FirstName='$FirstName',LastName='$LastName',Company='$Company',Address='$Address',Country='$Country'";
 			if($password2!="")
-			{
-				   $sqlupdate=$sqlupdate." ,Password='$password2' ";
-			}
-			$sqlupdate=$sqlupdate."  where id='$userid'";
+			  {
+			    $sqlupdate=$sqlupdate." ,Password='$password2' ";
+			  }
+
+       $sqlupdate=$sqlupdate."  where id='$userid'";
 			
 			 $result=mysql_query($sqlupdate,$link);
 			
@@ -48,7 +49,7 @@ $opass = $_GET["opass"];
 	<div class="one-half"><h4>Basic Information</h4>
 	<div style="margin-top:20px;">First Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;<?php print $FirstName; ?><br><br>
 	Last Name  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : &nbsp;&nbsp;<?php print $LastName; ?><br><br>
-	Affiliated University &nbsp; &nbsp; &nbsp; : &nbsp;&nbsp;<?php print $Company; ?><br><br>
+	Affiliated University &nbsp; &nbsp; &nbsp; : &nbsp;&nbsp;<?php print $Company; ?> <br><br>
 	City &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; : &nbsp;&nbsp;<?php print $Address; ?><br><br>
 	Country &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; : &nbsp;&nbsp;<?php print $Country; ?><br><br>
 	</div>
@@ -72,7 +73,7 @@ $opass = $_GET["opass"];
 		}
 		else if(($count=='0'))
 		{
-			print "1";
+			print "Please login to change your credentials";
 		}
 		
 		?>
