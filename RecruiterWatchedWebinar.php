@@ -167,10 +167,12 @@ if(!$organizer_key)
 								$stdt=date_format($stdate, 'Y-m-d');
 								$sttime = date_create($start_time);
 								$stte=date_format($sttime, 'h:i a');
+                $stte_offset = date('h:i a', strtotime($stte) -4*3600);
 								$endate = date_create($end_time);
 								$endt=date_format($endate, 'Y-m-d');
 								$entime = date_create($end_time);
 								$ente=date_format($entime, 'h:i a');
+                $ente_offset = date('h:i a', strtotime($ente) -4*3600);
 								
 								$sqlget1="select *  from student_web_reg where webinar_id='$webinar_key'";
 								//print $sqlget1;
@@ -193,7 +195,7 @@ if(!$organizer_key)
 								 ?>
                                 </ul></div>
                                 <h4><?php print $subject; ?></h4>
-                      <p class="post-subtitle" style="font-size:12px;">Start Time: <?php print $stdt." To ".$stte; ?></p> <p class="post-subtitle" style="font-size:12px;">End Time : <?php print $endt." To ".$ente; ?></p> 
+                      <p class="post-subtitle" style="font-size:12px;">Start Time: <?php print $stdt." To ".$stte_offset; ?></p> <p class="post-subtitle" style="font-size:12px;">End Time : <?php print $endt." To ".$ente_offset; ?></p> 
                             </div>
 							<div class="padding10 float-left"><p><?php print $description; ?><br><div style="padding-left:700px;">
                            <a href="RecruiterWebinarQuestion.php?webId=<?php print $webinar_key; ?>" title="View Video" class="button-big red"  >Q & A Forum</a>

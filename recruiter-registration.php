@@ -305,7 +305,7 @@ Username &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a c
         Username cannot be changed.
     </span></a><br><br>
 Password &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="password" size="30" placeholder="Password"  name="password1" id="password1"><br><br>
-Confirm Password &nbsp; &nbsp; &nbsp; &nbsp;<input type="password" size="30"  name="password2" id="password2" placeholder="Confirm Password"><br><br>
+Confirm Password &nbsp; &nbsp;<input type="password" size="30"  name="password2" id="password2" placeholder="Confirm Password"><br><br>
 </div>
                 </div>     
 <div class="grid_4">

@@ -56,6 +56,7 @@ header("location:student-login.php");
 			$Address=$res["Address"];
 			$Email=$res["Email"];
 			$UserName=$res["UserName"];
+      $SessionId=$res["session_id"];
 			
 		}
 	
@@ -132,6 +133,7 @@ function updatestudentaccount()
 	var password1=document.getElementById("password1").value;
 	var password2=document.getElementById("password2").value;
 	var userid=document.getElementById("userid").value;
+	var sessionid=document.getElementById("sessionid").value;
 	
 	if(FirstName=="")
 	{
@@ -223,7 +225,7 @@ function updatestudentaccount()
 			
 		}
 	  }
-	xmlhttp.open("GET","ajaxpage/ajaxrecruiterUpdateAccount.php?FirstName="+FirstName+"&LastName="+LastName+"&Company="+Company+"&Address="+Address+"&password2="+password2+"&userid="+userid,true);
+	xmlhttp.open("GET","ajaxpage/ajaxrecruiterUpdateAccount.php?FirstName="+FirstName+"&LastName="+LastName+"&Company="+Company+"&Address="+Address+"&password2="+password2+"&userid="+userid+"&sessionid="+sessionid,true);
 	xmlhttp.send();
 }
 
@@ -342,9 +344,9 @@ City &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="text" name="Ad
 <div style="margin-top:20px;">
 Email &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: &nbsp;&nbsp;<?php print $Email; ?><br><br>
 User Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;: &nbsp;&nbsp;<?php print $UserName; ?> <br><br>
-Old Password &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" size="30"  name="oldpassword" id="oldpassword" onChange="chkoldpass(this.value);"><br><br>
-New Password &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" size="30"  name="password1" id="password1"><br><br>
-Confirm Password &nbsp; &nbsp;&nbsp; &nbsp;<input type="text" size="30"  name="password2" id="password2"><br><br>
+Old Password &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="password" size="30"  name="oldpassword" id="oldpassword" onChange="chkoldpass(this.value);"><br><br>
+New Password &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" size="30"  name="password1" id="password1"><br><br>
+Confirm Password &nbsp; &nbsp;&nbsp;<input type="password" size="30"  name="password2" id="password2"><br><br>
 </div>
                 </div>     
  <div class="grid_4">
@@ -358,6 +360,7 @@ Confirm Password &nbsp; &nbsp;&nbsp; &nbsp;<input type="text" size="30"  name="p
             <!--  Edit Page -->
             
             <input type="hidden" name="userid" id="userid" value="<?php print $uid ?>" />
+            <input type="hidden" name="sessionid" id="sessionid" style="visibility:hidden; display:none;" value="<?php print $SessionId ?>" />
             <!-- end one-half -->                
         </div><!-- end grid columns -->
   
