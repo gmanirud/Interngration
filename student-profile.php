@@ -801,7 +801,8 @@ message: 'Join Interngration - An online multimedia platform to connect SMEs/sta
         <span style="margin:0px 30px 0px 0px; float:right;">
           <a href="student-homepage.php" class="button red">Upcoming Webinars</a>
           <a href="StudentRegisteredWebinar.php" class="button red">My Webinars</a>
-          <a href="StudentWatchedWebinar.php" class="button red">Watched Webinar</a>    
+          <a href="StudentWatchedWebinar.php" class="button red">Watched Webinar</a>
+          <a href="archived-webinars.php" class="button red">Archived Webinars</a>      
           <a href="studentJobApplication.php" class="button red">Job Application</a> 
           <a href="AppliedPostedJob.php" class="button red">Applied Job</a> 
           <a href="studentInbox.php" class="button red">Inbox</a>
