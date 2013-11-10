@@ -147,7 +147,7 @@ if(!$organizer_key)
 						
 							$ses_result=mysql_select_db($dbname) or die(mysql_error());
 										
-							$sqlget="select *  from upcoming_webinar where start_time<NOW()";
+							$sqlget="select *  from upcoming_webinar where start_time<NOW() AND subject like '%$Company%'";
 							
 							$ses_result=mysql_query($sqlget);
 							$rowcount= mysql_num_rows($ses_result);	
