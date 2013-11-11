@@ -86,7 +86,7 @@ if (top.location!= self.location) {
       <div class="grid_16">           
 
       <!-- Team Member 1 - Anirudh -->
-                <div class="one-third">
+                <div class="one-half-orig">
                     <!-- post image and details -->                    
                     <div class="circular" style="background: url(../images/gm_cropped.jpg) no-repeat;"></div>
                     <!-- Team member description and text -->                                              
@@ -95,11 +95,12 @@ if (top.location!= self.location) {
                       <h4>Anirudh Ganti</h4>
                       <p align="justify">The motivation to find Interngration came about when he was applying for his PEY placement and career fairs were often clashing with his timetable. With an idea, it wasn't long before he decided to plunge into the world of web programming and Interngration was founded. </p>
                       <p align="center" style="font-weight: bold; font-style: italic;"> Email: anirudh@interngration.com </p>
+                      <a href="http://www.linkedin.com/in/anirudhganti"><img src="images/social-linkedin.png" width="24" height="24" alt="Anirudh LinkedIn" class="center"/></a>
                     </div>
                 </div> <!--End team member 1--> 
 
                   <!-- Team Member 2 - Hargun -->
-                <div class="one-third">
+                <div class="one-half-orig">
                     <!-- post image and details -->                    
                     <div class="circular" style="background: url() no-repeat;"></div>
                     <!-- Team member description and text -->                                              
@@ -108,21 +109,10 @@ if (top.location!= self.location) {
                       <h4>Hargun Suri</h4>
                       <p align="justify"> I am lazy and I need to update my information. :) </p>
                       <p align="center" style="font-weight: bold; font-style: italic;"> Email: hargun@interngration.com </p>
+                      <a href="http://www.linkedin.com/pub/hargun-suri/59/410/a49"><img src="images/social-linkedin.png" width="24" height="24" alt="Anirudh LinkedIn" class="center"/></a>
+                      
                     </div>
-                </div> <!--End team member 2-->  
-
-                  <!-- Team Member 3 - Ian Xiao-->
-                <div class="one-third">
-                    <!-- post image and details -->                    
-                    <div class="circular" style="background: url(../images/ian_cropped.jpg) no-repeat;"></div>
-                    <!-- Team member description and text -->                                              
-                    <div class="float-left">                           
-                      <br/>
-                      <h4>Ian Xiao</h4>
-                      <p align="justify">Ian is an aspiring social entrepreneur with deep interests in technology and business. He captures opportunities to improve people's lives and getting involved in Intergration is a part of this plan. Internships are unarguably of of the most important channels for students to explore their interests and are a stepping stone to accelerate their careers. Choosing the right internship is the key, but it's difficult to do so without getting some extra insight aside from attending crowded info sessions and listening vague responses from company representatives. This is why he decided to join the team at Interngration. </p>
-                      <p align="center" style="font-weight: bold; font-style: italic;"> Email: ian@interngration.com </p>
-                    </div>
-                </div> <!--End team member 3-->            
+                </div> <!--End team member 2-->   
             
     </div>
 

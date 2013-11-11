@@ -216,9 +216,10 @@ img, iframe {max-width:100%;}
 .col16 { width: 930px; }
 
 /*-- responsive columns --*/
-.one-third, .one-half, .one-fourth {float: left;}
+.one-third, .one-half, .one-fourth, .one-half-orig {float: left;}
 .one-half{width:400px;padding-right:2%; margin:0px 0px 0px 60px;}
 .one-half-last{width:350px; float:right; padding-right:2%; margin:0px 0px 0px 60px;}
+.one-half-orig{width:48%;padding-right:2%;}
 .one-third {width:31.3333333%; padding-right: 2%;}
 .one-fourth {width:23%;padding-right:2%;}
 
