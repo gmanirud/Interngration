@@ -77,12 +77,18 @@ if(document.getElementById("to_mail").value=="")
         <div id="logo"><a href="student-homepage.php"><img src="images/logo.png" alt="interngration" width="400" height="64" /></a></div>
          <!-- header nav menu -->        
         <div id="menu" class="menu"> 
-               <ul>
-               <li><a href="student-homepage.php">Home</a></li></ul>
+            <ul>
+                <!-- <li><a href="">Welcome&nbsp; :&nbsp; <?php print $username; ?></a></li> -->
+                <li><a href="student-homepage.php">Home</a></li>
+                <li><a href="studentAccount.php"> My Account</a></li>
+                <li><a href="logout.php" >Logout</a></li>
+            </ul>
                 <br style="clear: left" />
         </div>
         <!-- end header nav menu-->
- </div> </div> </div>
+    </div>
+    </div>
+    </div>
     <!-- end header -->     
     <div id="body-background"><!-- this is the main background color of the page -->
     <div id="header-buffer"></div><!-- hack for header overlap **DONT'TOUCH** -->
@@ -90,12 +96,12 @@ if(document.getElementById("to_mail").value=="")
     <!-- page header -->
         <div id="pageheader-background"><!-- area with alternate background -->
             <div class="pageheader-title">
-             <span class="mailno"><?php include "StudentUnreadMail.php"; ?></span>
-                <a href="studentJobApplication.php" class="button red">Job Application</a> 
-                <a href="studentInbox.php" class="button red">Inbox</a> 
-                <a href="student-profile.php" class="button red">Profile</a> 
-                <a href="studentAccount.php" class="button red">Account</a>
-                <a href="logout.php" class="button red">Logout</a></span>
+            <span class="mailno"><?php include "StudentUnreadMail.php"; ?></span>
+            <a href="student-homepage.php" class="button red">Upcoming Webinars</a>
+            <a href="StudentRegisteredWebinar.php" class="button red"> My Webinars</a>   
+            <a href="StudentWatchedWebinar.php" class="button red">Watched Webinars</a> 
+            <a href="archived-webinars.php" class="button red">Recorded Webinars</a>               
+            <a href="student-profile.php" class="button red">My Profile</a></span>
             </div>        
         </div>        
        

@@ -799,14 +799,14 @@ message: 'Join Interngration - An online multimedia platform to connect SMEs/sta
       <span class="mailno"><?php include "StudentUnreadMail.php"; ?></span>
         <h1>Student Profile</h1>
         <span style="margin:0px 30px 0px 0px; float:right;">
-          <a href="student-homepage.php" class="button red">Upcoming Webinars</a>
-          <a href="StudentRegisteredWebinar.php" class="button red">My Webinars</a>
-          <a href="StudentWatchedWebinar.php" class="button red">Watched Webinar</a>
-          <a href="archived-webinars.php" class="button red">Archived Webinars</a>      
-          <a href="studentJobApplication.php" class="button red">Job Application</a> 
-          <a href="AppliedPostedJob.php" class="button red">Applied Job</a> 
-          <a href="studentInbox.php" class="button red">Inbox</a>
-          <a href="student-profile.php" class="button red">Profile</a></span> 
+        <a href="student-homepage.php" class="button red">Upcoming Webinars</a>
+        <a href="StudentRegisteredWebinar.php" class="button red"> My Webinars</a>   
+        <a href="StudentWatchedWebinar.php" class="button red">Watched Webinars</a> 
+        <a href="archived-webinars.php" class="button red">Recorded Webinars</a>               
+        <a href="postedJob.php" class="button red">Job Board</a> 
+        <a href="AppliedPostedJob.php" class="button red">My Jobs</a> 
+        <a href="studentInbox.php" class="button red">My Inbox</a> 
+        <a href="student-profile.php" class="button red">My Profile</a></span>
          </div>
     </div>
     

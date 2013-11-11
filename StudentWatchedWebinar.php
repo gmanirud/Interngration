@@ -117,14 +117,15 @@ if(!$organizer_key)
         <div id="pageheader-background"><!-- area with alternate background -->
             <div class="pageheader-title">
             <span class="mailno"><?php include "StudentUnreadMail.php"; ?></span>
-                <h1>Watched Webinars</h1><span style="margin:0px 30px 0px 0px; float:right;">
+                <h1>Watched Webinars</h1>
                 <a href="student-homepage.php" class="button red">Upcoming Webinars</a>
-                 <a href="StudentRegisteredWebinar.php" class="button red"> My Webinars</a>
-                 <a href="StudentWatchedWebinar.php" class="button red">Watched Webinar</a>    
-                 <a href="studentJobApplication.php" class="button red">JobApplication</a> 
-                 <a href="AppliedPostedJob.php" class="button red">Applied Job</a> 
-                 <a href="studentInbox.php" class="button red">Inbox</a>
-                 <a href="student-profile.php" class="button red">Profile</a></span>
+                <a href="StudentRegisteredWebinar.php" class="button red"> My Webinars</a>   
+                <a href="StudentWatchedWebinar.php" class="button red">Watched Webinars</a> 
+                <a href="archived-webinars.php" class="button red">Recorded Webinars</a>               
+                <a href="postedJob.php" class="button red">Job Board</a> 
+                <a href="AppliedPostedJob.php" class="button red">My Jobs</a> 
+                <a href="studentInbox.php" class="button red">My Inbox</a> 
+                <a href="student-profile.php" class="button red">My Profile</a></span>
             </div>       
         </div>
         

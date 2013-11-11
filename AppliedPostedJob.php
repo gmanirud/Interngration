@@ -18,7 +18,7 @@ header("location:student-login.php");
 <html lang="en" class="no_js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Applied Job</title>
+<title>Applied Jobs</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="favicon.ico" />
 
@@ -114,13 +114,14 @@ function filterjob()
         <?php
                  }                 
 				 ?>
-                 <a href="student-homepage.php" class="button red">Upcoming Webinars</a>
-                 <a href="StudentRegisteredWebinar.php" class="button red">My Webinars</a>
-                 <a href="StudentWatchedWebinar.php" class="button red">Watched Webinar</a>       
-                 <a href="postedJob.php" class="button red">Job Application</a>
-                 <a href="AppliedPostedJob.php" class="button red">Applied Job</a>  
-                 <a href="studentInbox.php" class="button red">Inbox</a> 
-                 <a href="student-profile.php" class="button red">Profile</a></span> 
+              <a href="student-homepage.php" class="button red">Upcoming Webinars</a>
+              <a href="StudentRegisteredWebinar.php" class="button red"> My Webinars</a>   
+              <a href="StudentWatchedWebinar.php" class="button red">Watched Webinars</a> 
+              <a href="archived-webinars.php" class="button red">Recorded Webinars</a>               
+              <a href="postedJob.php" class="button red">Job Board</a> 
+              <a href="AppliedPostedJob.php" class="button red">My Jobs</a> 
+              <a href="studentInbox.php" class="button red">My Inbox</a> 
+              <a href="student-profile.php" class="button red">My Profile</a></span>
             </div>        
         </div>      
                           
