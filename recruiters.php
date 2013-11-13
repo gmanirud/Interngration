@@ -67,10 +67,9 @@ if (top.location!= self.location) {
         <!-- header nav menu -->        
         <div id="menu" class="menu"> 
         <ul>
-          <li><a href="student-login.php">Student Login</a> </li>  
-          <li><a href="student-registration.php">Sign Up</a> </li>  
-          <li><a href="recruiters.php">Recruiter?</a> </li>  
-                                  
+        <li><?php if($_GET['coinsessid']==""){ ?><a href="recruiter-login.php">Recruiter Login</a><?php }?></li>
+        <li><a href="student-login.php">Sign Up</a> </li>
+        <li><a href="index.php">Student?</a> </li>                   
         </ul>
         <br style="clear: left" />
 		</div>
@@ -84,30 +83,19 @@ if (top.location!= self.location) {
         
         <!-- page header -->
         <div id="pageheader-background"><!-- area with alternate background -->
-     		 <center>
-			 	<iframe src="//player.vimeo.com/video/76490050" width="800" height="491" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
+     		 <center>  <iframe src="//player.vimeo.com/video/79167478" width="800" height="491" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></center>
             <!-- slider -->
-      
-           </div><!-- end #pageheader-background-->		
+    
+        </div><!-- end #pageheader-background-->		
      
 	 <!-- body -->
     <div id="body-wrapper" class="container_16">
     
         <!-- title -->
-    <div class="grid_16 center-text"><h2>Why Join Interngration?</h2> <div class="clear"></div>            
+    <div class="grid_16 center-text"><h2>A dedicated channel to reach out to students - right from your office.</h2> <div class="clear"></div>            
 
 		 <!-- Why join Interngration -->
-        <div class ="grid_8_orig light-type grey" style = "float:left; text-align: justify;">
-        <img src="images/student.png" alt ="recruiter picture" class = "center">
-        <h4 class ="center-text">Students</h4>
-             <p>Our webinars allows you to understand stories of the uprising startups and apply 
-            for jobs that can shape the companies' futures. Our recruiting platform provides a hassle free environment 
-            for both you to avoid the trouble brought by traditional career fairs and tedious job 
-            application process. You can now connect with potential employers from great companies, virtually - <strong>all for free</strong></p>
-        
-        </div>
-
-        <div class ="grid_8_orig light-type grey" style = "float:right; text-align: justify;" >
+        <div class ="grid_8_orig light-type grey" style = "padding-left: 250px;" >
         <img src="images/recruiter.png" alt ="recruiter picture" class = "center">
         <h4 class ="center-text">Recruiters</h4>
         <p> You can now reach out to pools of talented students, right from your office. You don't have to dedicate a whole day
